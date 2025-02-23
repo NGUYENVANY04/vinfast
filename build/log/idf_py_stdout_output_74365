@@ -1,0 +1,60 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/8] Building C object esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj
+FAILED: esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj 
+/home/ynghia/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.4-52-g978d574e5e-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I../components/app_wifi/include -I/home/ynghia/esp/esp-idf/components/newlib/platform_include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/ynghia/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/ynghia/esp/esp-idf/components/heap/include -I/home/ynghia/esp/esp-idf/components/log/include -I/home/ynghia/esp/esp-idf/components/soc/include -I/home/ynghia/esp/esp-idf/components/soc/esp32 -I/home/ynghia/esp/esp-idf/components/soc/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/include -I/home/ynghia/esp/esp-idf/components/hal/platform_port/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include/esp32 -I/home/ynghia/esp/esp-idf/components/esp_rom/esp32 -I/home/ynghia/esp/esp-idf/components/esp_common/include -I/home/ynghia/esp/esp-idf/components/esp_system/include -I/home/ynghia/esp/esp-idf/components/esp_system/port/soc -I/home/ynghia/esp/esp-idf/components/esp_system/port/include/private -I/home/ynghia/esp/esp-idf/components/xtensa/include -I/home/ynghia/esp/esp-idf/components/xtensa/esp32/include -I/home/ynghia/esp/esp-idf/components/lwip/include -I/home/ynghia/esp/esp-idf/components/lwip/include/apps -I/home/ynghia/esp/esp-idf/components/lwip/include/apps/sntp -I/home/ynghia/esp/esp-idf/components/lwip/lwip/src/include -I/home/ynghia/esp/esp-idf/components/lwip/port/include -I/home/ynghia/esp/esp-idf/components/lwip/port/freertos/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/ynghia/esp/esp-idf/components/esp_wifi/include -I/home/ynghia/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/ynghia/esp/esp-idf/components/esp_event/include -I/home/ynghia/esp/esp-idf/components/esp_phy/include -I/home/ynghia/esp/esp-idf/components/esp_phy/esp32/include -I/home/ynghia/esp/esp-idf/components/esp_netif/include -mlongcalls -Wno-frame-address    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/ynghia/CODE/IDF/vinfast=. -fmacro-prefix-map=/home/ynghia/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj -MF esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj.d -o esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj   -c ../components/app_wifi/app_wifi.c
+../components/app_wifi/app_wifi.c: In function 'wifi_event_handler':
+../components/app_wifi/app_wifi.c:13:39: warning: unused variable 'event' [-Wunused-variable]
+   13 |         wifi_event_ap_staconnected_t *event = (wifi_event_ap_staconnected_t *)event_data;
+      |                                       ^~~~~
+../components/app_wifi/app_wifi.c:18:42: warning: unused variable 'event' [-Wunused-variable]
+   18 |         wifi_event_ap_stadisconnected_t *event = (wifi_event_ap_stadisconnected_t *)event_data;
+      |                                          ^~~~~
+../components/app_wifi/app_wifi.c: In function 'init_wifi':
+../components/app_wifi/app_wifi.c:37:14: error: 'wifi_sta_config_t' has no member named 'ssid_len'; did you mean 'bssid_set'?
+   37 |             .ssid_len = strlen(EXAMPLE_ESP_WIFI_SSID),
+      |              ^~~~~~~~
+      |              bssid_set
+In file included from ../components/app_wifi/app_wifi.c:3:
+../components/app_wifi/include/app_wifi.h:4:31: warning: initialized field overwritten [-Woverride-init]
+    4 | #define EXAMPLE_ESP_WIFI_PASS "123456789"
+      |                               ^~~~~~~~~~~
+../components/app_wifi/app_wifi.c:39:25: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+   39 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../components/app_wifi/include/app_wifi.h:4:31: note: (near initialization for 'wifi_config.sta.password')
+    4 | #define EXAMPLE_ESP_WIFI_PASS "123456789"
+      |                               ^~~~~~~~~~~
+../components/app_wifi/app_wifi.c:39:25: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+   39 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+../components/app_wifi/app_wifi.c:40:14: error: 'wifi_sta_config_t' has no member named 'max_connection'
+   40 |             .max_connection = EXAMPLE_MAX_STA_CON,
+      |              ^~~~~~~~~~~~~~
+../components/app_wifi/app_wifi.c:40:31: error: 'EXAMPLE_MAX_STA_CON' undeclared (first use in this function); did you mean 'EXAMPLE_MAX_STA_CONN'?
+   40 |             .max_connection = EXAMPLE_MAX_STA_CON,
+      |                               ^~~~~~~~~~~~~~~~~~~
+      |                               EXAMPLE_MAX_STA_CONN
+../components/app_wifi/app_wifi.c:40:31: note: each undeclared identifier is reported only once for each function it appears in
+../components/app_wifi/app_wifi.c:34:33: error: missing braces around initializer [-Werror=missing-braces]
+   34 |     wifi_config_t wifi_config = {
+      |                                 ^
+......
+   37 |             .ssid_len = strlen(EXAMPLE_ESP_WIFI_SSID),
+      |                         {                            }
+../components/app_wifi/app_wifi.c:41:10: error: expected '}' before ';' token
+   41 |         };
+      |          ^
+../components/app_wifi/app_wifi.c:34:33: note: to match this '{'
+   34 |     wifi_config_t wifi_config = {
+      |                                 ^
+../components/app_wifi/app_wifi.c:53:1: error: expected ',' or ';' at end of input
+   53 | }
+      | ^
+../components/app_wifi/app_wifi.c:53:1: error: expected declaration or statement at end of input
+../components/app_wifi/app_wifi.c:34:19: warning: unused variable 'wifi_config' [-Wunused-variable]
+   34 |     wifi_config_t wifi_config = {
+      |                   ^~~~~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
