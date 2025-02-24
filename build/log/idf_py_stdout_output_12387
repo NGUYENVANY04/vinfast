@@ -1,0 +1,23 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/8] Building C object esp-idf/app_request_https/CMakeFiles/__idf_app_request_https.dir/app_request_https.c.obj
+../components/app_request_https/app_request_https.c: In function 'init_https':
+../components/app_request_https/app_request_https.c:142:19: warning: unused variable 'err_read' [-Wunused-variable]
+  142 |         esp_err_t err_read = esp_http_client_read(client, bf, 50);
+      |                   ^~~~~~~~
+../components/app_request_https/app_request_https.c:118:10: warning: unused variable 'local_response_buffer' [-Wunused-variable]
+  118 |     char local_response_buffer[MAX_HTTP_OUTPUT_BUFFER] = { 0 };
+      |          ^~~~~~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/app_request_https/libapp_request_https.a
+[4/8] Linking C static library esp-idf/main/libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable vinfast.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+[8/8] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xe2200 bytes. Smallest app partition is 0x100000 bytes. 0x1de00 bytes (12%) free.

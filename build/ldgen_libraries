@@ -59,8 +59,8 @@
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/perfmon/libperfmon.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/spiffs/libspiffs.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/libapp_request_https.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_wifi/libapp_wifi.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common/libcommon.a
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/libapp_request_https.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/libdriver_gpio.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/main/libmain.a

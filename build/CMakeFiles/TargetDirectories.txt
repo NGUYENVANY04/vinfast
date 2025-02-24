@@ -614,6 +614,13 @@
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/wifi_provisioning/CMakeFiles/rebuild_cache.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/wifi_provisioning/CMakeFiles/edit_cache.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/install/strip.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/install/local.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/install.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/list_install_components.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/rebuild_cache.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/edit_cache.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/__idf_app_request_https.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_wifi/CMakeFiles/install/strip.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_wifi/CMakeFiles/install/local.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_wifi/CMakeFiles/install.dir
@@ -628,13 +635,6 @@
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common/CMakeFiles/rebuild_cache.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common/CMakeFiles/edit_cache.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common/CMakeFiles/__idf_common.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/install/strip.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/install/local.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/install.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/list_install_components.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/rebuild_cache.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/edit_cache.dir
-/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/CMakeFiles/__idf_app_request_https.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/CMakeFiles/install/strip.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/CMakeFiles/install/local.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/CMakeFiles/install.dir

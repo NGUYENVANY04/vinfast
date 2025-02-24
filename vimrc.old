@@ -1,0 +1,217 @@
+
+"    __   __(_)___ ___  __________
+"    | | / / / __ `__ \/ ___/ ___/
+"   _| |/ / / / / / / / /  / /__
+"  (_)___/_/_/ /_/ /_/_/   \___/
+  
+
+
+
+"----------------------------------------------------------------
+" Version : 1.0.0 (Modified for C Programming)
+" License : NGUYEN VAN Y
+"----------------------------------------------------------------
+
+" Change background and text color of suggestion menu
+hi CocFloating ctermbg=Black ctermfg=White
+hi CocMenuSel ctermbg=DarkBlue ctermfg=White
+hi CocSearch ctermfg=Yellow
+let g:lightline = {'colorscheme' : 'tokyonight'}
+let g:airline_theme = "tokyonight"
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+" Change color of suggestion tab
+"-------------------
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
+
+" Set the home directory for Coc.nvim configuration
+let g:coc_config_home = "~/.config/vem"
+
+" General Settings
+"-------------------
+set nocompatible            " Disable compatibility mode with Vi
+set backspace=indent,eol,start " Enable backspace functionality in insert mode
+set encoding=utf-8          " Set UTF-8 encoding
+if has("gui_running")
+    set guifont=DejaVu\ Sans\ Mono:h12 " Set font to avoid display errors
+endif
+
+set showcmd                 " Show the command being typed
+set showmode                " Show current mode
+set hidden                  " Allow buffer switching without saving
+set history=1000            " Store up to 1000 history items for commands and searches
+set ruler                   " Show cursor position
+set signcolumn=no           " Disable sign column
+"set cursorline              " Highlight the current line
+set number                  " Display line numbers
+let g:NERDTreeWinSize = 25
+
+set relativenumber          " Display relative line numbers
+filetype plugin on          " Enable filetype detection and plugin
+
+" User Interface Settings
+"-------------------
+             " Enable syntax highlighting
+set background=dark         " Set dark background
+"colorscheme desert          " Use 'desert' color scheme
+
+" C Programming Settings
+"-------------------
+filetype plugin indent on   " Enable filetype-specific indenting
+autocmd FileType c,cpp setlocal tabstop=4 shiftwidth=4 expandtab autoindent smartindent
+let g:floaterm_width = 0.8   " 80% chiều rộng của cửa sổ hiện tại
+let g:floaterm_height = 0.7  " 70% chiều cao của cửa sổ hiện tại
+
+" Search Settings
+"-------------------
+set ignorecase              " Ignore case in search
+set smartcase               " Enable case-sensitive search when uppercase letters are used
+set incsearch               " Show search results as you type
+set hlsearch                " Highlight all search results
+set clipboard=unnamedplus   " Use system clipboard
+
+" File Backup Settings
+"-------------------
+set nobackup                " Disable backup file creation
+set nowritebackup           " Disable write backup file creation
+set noswapfile              " Disable swap file creation
+
+" Key Mappings
+"-------------------
+
+" Plugin Manager: vim-plug
+"-------------------
+call plug#begin('~/.vim/plugged')
+
+" Plugins for C Programming
+
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'      " Elegant status line
+Plug 'vim-airline/vim-airline-themes' " Themes for vim-airline
+Plug 'preservim/nerdcommenter'      " Easily comment/uncomment code
+Plug 'jiangmiao/auto-pairs'         " Auto-close brackets and quotes
+Plug 'vim-syntastic/syntastic'      " Syntax checking
+Plug 'Yggdroot/indentLine'          " Show indent lines
+Plug 'majutsushi/tagbar'            " Show code structure
+Plug 'easymotion/vim-easymotion'    " Quick navigation within the file
+Plug 'voldikss/vim-floaterm'        " Open terminal windows
+Plug 'rhysd/vim-clang-format'       " Source code formatting
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Coc.nvim for autocompletion and LSP support
+Plug 'ghifarit53/tokyonight-vim'
+
+call plug#end()
+
+
+" Plugin Configuration
+"-------------------
+" NERDTree - Toggle with Ctrl+b
+nmap <C-b> :NERDTreeToggle<CR>
+
+autocmd BufEnter NERD_tree_* | execute 'normal R'
+
+" Floaterm - Toggle terminal window with Ctrl+j
+nmap <C-j> :w<CR> :FloatermToggle<CR>
+imap <C-j> <Esc> :w<CR> :FloatermToggle<CR>
+
+" vim-airline - Enable tabline
+let g:airline#extensions#tabline#enabled = 1
+" nerdcommenter - Enable default mappings for commenting
+let g:NERDCreateDefaultMappings = 1
+" Show file hidien 
+let NERDTreeShowHidden=1
+let g:floaterm_autoclose = 2
+
+
+" auto-pairs - Enable backspace mapping for auto-pairs
+let g:AutoPairsMapBS = 1
+" syntastic - Enable syntax checking signs
+let g:syntastic_enable_signs=1
+" indentLine - Enable indent line plugin
+let g:indentLine_enabled = 1
+" vim-easymotion - Quick navigation
+map <Leader><Leader>w <Plug>(easymotion-w)
+
+" Shortcut Mappings
+"-------------------
+" Format code with Ctrl+s in insert mode
+
+inoremap <C-s> <Esc>:ClangFormat<CR> :w<CR> a
+
+" inoremap <C-s> <Esc>:ClangFormat<CR> i 
+" Format code and save with Ctrl+s in normal mode
+nnoremap <C-s> :ClangFormat<CR> :w<CR>
+inoremap <C-x> <Esc>:w <CR> <C-w>w 
+" Undo changes with Ctrl+z in insert mode
+nnoremap <C-x>  <C-w>w
+inoremap <C-z> <Esc>u i
+" Insert a tab with Ctrl+i
+nnoremap <C-i> i
+nnoremap <c-z> <nop>
+nnoremap <C-a> ggVGy
+ 
+tnoremap <C-\> <C-\><C-n>
+
+" Configure clang-format options
+let g:clang_format#style_options = {
+  \ "BasedOnStyle": "WebKit",
+  \ "ColumnLimit": 100,
+  \ "PointerBindsToType": v:false,
+  \ "BreakBeforeBinaryOperators": "NonAssignment",
+  \ "BreakBeforeBraces": "Allman",
+  \ "AlignAfterOpenBracket": v:true,
+  \ "SortIncludes": v:false,
+  \ }
+
+" Use <tab> to trigger completion and navigate to the next completion item
+"C/C++ support with Coc.nvim
+" Trigger completion with Tab
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+" Trigger completion with Shift+Tab
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" Use arrow keys to navigate through suggestion list
+" Change cursor position
+
+" Check for backspace in current line
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Trigger coc#refresh() on <c-space> for Neovim
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" Confirm completion with Enter key, otherwise insert new line
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" Highlight references when cursor holds on a symbol
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Display Coc.nvim status in the statusline
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" ESC toggle terminal not clear
+tnoremap <ESC><ESC> <C-\><C-n>:FloatermToggle<CR>
+
+" Switch tabs with Tab and Shift+Tab
+nnoremap  <silent>   <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+
+" Reduce Coc update delay to 300ms
+set updatetime=300
+" Tagbar open with file 
+nmap <F3> :TagbarToggle<CR>
+" Thiết lập chiều rộng cửa sổ Tagbar
+let g:tagbar_width = 30
+" Change theme vim
+set termguicolors
+syntax enable
+colorscheme tokyonight
+" hãy format để trực quan hơn , khong được thay đổi gì cả

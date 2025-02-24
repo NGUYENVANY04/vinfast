@@ -1,0 +1,53 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008a25f: taskSelectHighestPriorityTaskSMP at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3758
+[0m
+[0;33m--- 0x4008a25c: taskSelectHighestPriorityTaskSMP at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3744 (discriminator 1)
+0x4008aa3e: vTaskSwitchContext at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3855 (discriminator 3)
+0x4008c180: _frxt_dispatch at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+0x4008c132: _frxt_int_exit at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008a25f: taskSelectHighestPriorityTaskSMP at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3758
+[0m
+[0;33m--- 0x4008a25c: taskSelectHighestPriorityTaskSMP at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3744 (discriminator 1)
+0x4008aa3e: vTaskSwitchContext at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3855 (discriminator 3)
+0x4008c180: _frxt_dispatch at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+0x4008c132: _frxt_int_exit at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c032: vApplicationStackOverflowHook at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+0x4008a9f3: vTaskSwitchContext at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3840
+0x4008c180: _frxt_dispatch at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+0x4008c132: _frxt_int_exit at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+0x4015cd49: gettimeofday at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/syscalls/sysgettod.c:11
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c032: vApplicationStackOverflowHook at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+0x4008a9f3: vTaskSwitchContext at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3840
+0x4008c180: _frxt_dispatch at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+0x4008c132: _frxt_int_exit at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+0x4015cd49: gettimeofday at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/syscalls/sysgettod.c:11
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

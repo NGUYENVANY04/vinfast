@@ -12,7 +12,7 @@
 #include "esp_event.h"
 #include "lwip/err.h"
 #include "lwip/sys.h"
-
+#include "app_request_https.h"
 #define EXAMPLE_ESP_WIFI_SSID "P401"
 #define EXAMPLE_ESP_WIFI_PASS "conmeovang"
 #define EXAMPLE_ESP_MAXIMUM_RETRY CONFIG_ESP_MAXIMUM_RETRY
@@ -49,6 +49,7 @@ static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_
     }
     else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP)
     {
+        init_https();
         ESP_LOGI(TAG, "connect to the AP complete");
         ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
