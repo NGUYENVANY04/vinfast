@@ -6,6 +6,7 @@
 #include "esp_tls.h"
 #include "app_handle_query.h"
 #include "string.h"
+#include "common_nvs.h"
 #define MIN(index_1, index_2) (index_1 < index_2 ? index_1 : index_2)
 #define HTTP_RECEIVE_BUFFER_SIZE 1024
 #define CONFIG_CALE_BEARER_TOKEN "IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7"
@@ -58,10 +59,7 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         ESP_LOGI(TAG, "HTTP_EVENT_ON_FINISH");
         if (output_buffer != NULL)
         {
-            // ESP_LOGI(TAG, "Full Response: %s", output_buffer);
             handler_json_query(output_buffer, "HAU");
-            // free(output_buffer);
-            // output_buffer = NULL;
         }
         output_len = 0;
         break;

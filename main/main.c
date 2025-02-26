@@ -12,6 +12,7 @@
 #include "esp_log.h"
 #include "driver_sleep_mode.h"
 #include "app_handle_query.h"
+#include "common_nvs.h"
 void app_main(void)
 {
     init_gpio();
@@ -24,5 +25,8 @@ void app_main(void)
     }
 
     ESP_ERROR_CHECK(ret);
+    init_info_last_id_payload();
+    // init_info_wifi();
+
     init_wifi();
 }

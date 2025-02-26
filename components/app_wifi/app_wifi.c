@@ -14,8 +14,8 @@
 #include "lwip/sys.h"
 #include "app_request_https.h"
 #include "common_nvs.h"
-#define EXAMPLE_ESP_WIFI_SSID "P401"
-#define EXAMPLE_ESP_WIFI_PASS "conmeovang"
+#define EXAMPLE_ESP_WIFI_SSID "SetupTime"
+#define EXAMPLE_ESP_WIFI_PASS "123456789"
 #define EXAMPLE_ESP_MAXIMUM_RETRY CONFIG_ESP_MAXIMUM_RETRY
 static EventGroupHandle_t s_wifi_event_group;
 
@@ -78,11 +78,11 @@ void init_wifi(void)
 
     wifi_config_t wifi_config = {
         .sta = {
-            .ssid = "P401",
-            .password = "conmeovang",
+            .ssid = EXAMPLE_ESP_WIFI_SSID,
+            .password = EXAMPLE_ESP_WIFI_PASS,
         },
     };
-    init_info_wifi("conmeovang", "P401");
+
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
     ESP_ERROR_CHECK(esp_wifi_start());

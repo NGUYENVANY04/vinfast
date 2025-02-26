@@ -2089,7 +2089,7 @@ features	build/esp-idf/mbedtls/mbedtls/library/version_features.c	/^static const
 flag	components/app_request_https/app_request_https.c	/^bool flag = false;$/;"	v
 fuct	components/common/common.c	/^void fuct(void) { printf("Hello\\n"); }$/;"	f
 func	components/app_smart_config/app_smart_config.c	/^void func(void)$/;"	f
-get_old_id_payload	components/common_nvs/common_nvs.c	/^void get_old_id_payload(void) { }$/;"	f
+get_last_id_payload	components/common_nvs/common_nvs.c	/^uint32_t get_last_id_payload(void)$/;"	f
 handler_json_query	components/app_handle_query/app_handle_query.c	/^void handler_json_query(char *buffer_input, char *charger_id)$/;"	f
 id	components/common_nvs/common_nvs.c	/^nvs_handle_t id;$/;"	v
 info_arch	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
@@ -2133,7 +2133,8 @@ info_version_internal	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXC
 init_gpio	components/driver_gpio/driver_gpio.c	/^void init_gpio(void)$/;"	f
 init_gpio_wakeup	components/driver_sleep_mode/driver_sleep_mode.c	/^void init_gpio_wakeup(void)$/;"	f
 init_https	components/app_request_https/app_request_https.c	/^void init_https(void)$/;"	f
-init_info_wifi	components/common_nvs/common_nvs.c	/^void init_info_wifi(char *pass, char *ssid)$/;"	f
+init_info_last_id_payload	components/common_nvs/common_nvs.c	/^void init_info_last_id_payload(void)$/;"	f
+init_info_wifi	components/common_nvs/common_nvs.c	/^void init_info_wifi(void)$/;"	f
 init_wifi	components/app_wifi/app_wifi.c	/^void init_wifi(void)$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
@@ -2165,8 +2166,9 @@ qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char 
 qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 s_retry_num	components/app_wifi/app_wifi.c	/^static int s_retry_num = 0;$/;"	v	file:
 s_wifi_event_group	components/app_wifi/app_wifi.c	/^static EventGroupHandle_t s_wifi_event_group;$/;"	v	file:
-save_wifi	components/common_nvs/common_nvs.c	/^void save_wifi(void) { }$/;"	f
-test	test/main.c	/^void test(char *str) { printf("%s", str); }$/;"	f
+save_wifi	components/common_nvs/common_nvs.c	/^void save_wifi(char *pass, char *ssid)$/;"	f
+set_last_id_payload	components/common_nvs/common_nvs.c	/^void set_last_id_payload(uint32_t id_last)$/;"	f
+test	test/main.c	/^void test(char *str)$/;"	f
 volatile	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 volatile	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 wifi	components/common_nvs/common_nvs.c	/^nvs_handle_t wifi;$/;"	v

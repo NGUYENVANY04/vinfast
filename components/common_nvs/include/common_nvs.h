@@ -1,10 +1,12 @@
 #ifndef _COMMON_NVS_H_
 #define _COMMON_NVS_H_
 #include "nvs.h"
+#include <stdint.h>
 extern nvs_handle_t id;
 extern nvs_handle_t wifi;
-int init_info_wifi(char *pass, char *ssid);
-int init_info_old_id_payload(char *id);
-void get_old_id_payload(void);
-void save_wifi(void);
+void init_info_wifi(void);
+void init_info_last_id_payload(void);
+uint32_t get_last_id_payload(void);
+void set_last_id_payload(uint32_t id_last);
+void save_wifi(char *pass, char *ssid);
 #endif

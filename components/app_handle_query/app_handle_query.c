@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <cJSON.h>
 #include <stdlib.h>
@@ -13,15 +14,8 @@
 #include "common_nvs.h"
 void handler_json_query(char *buffer_input, char *charger_id)
 {
-    static int last_transaction_id = 0;
-
-    if (init_info_old_id_payload(charger_id) == 0)
-    {
-        last_transaction_id = 0;
-    }
-else {
-last_transaction_id= 
-}
+    uint32_t last_transaction_id = get_last_id_payload();
+    ESP_LOGI("NVS TEST", "%ld", last_transaction_id);
     cJSON *root = cJSON_Parse(buffer_input);
     if (!root)
     {
@@ -77,7 +71,8 @@ last_transaction_id=
                 found = 1;
                 last_transaction_id = transaction_id; // update new id
                 enable_output();
-                vTaskDelay(5000);
+                set_last_id_payload(last_transaction_id);
+                vTaskDelay(1000);
                 ESP_LOGW("HTTP", "Sleep mode start");
                 esp_deep_sleep_start();
                 break; // get ID the first and break
