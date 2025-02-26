@@ -1,23 +1,21 @@
-
 #include <stdio.h>
-#include "app_request_https.h"
+#include "include/app_request_https.h"
 #include "esp_http_client.h"
 #include <esp_log.h>
 #include "esp_err.h"
 #include "esp_tls.h"
-#include "cJSON.h"
+#include "app_handle_query.h"
 #include "string.h"
 #define MIN(index_1, index_2) (index_1 < index_2 ? index_1 : index_2)
 #define HTTP_RECEIVE_BUFFER_SIZE 1024
 #define CONFIG_CALE_BEARER_TOKEN "IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7"
 #define MAX_HTTP_OUTPUT_BUFFER 2048
+char *output_buffer; // Buffer to store response of http request from event handler
+bool flag = false;
 
 const char *TAG = "HTTPS";
-char bearerToken[100] = "";
-
 esp_err_t _http_event_handler(esp_http_client_event_t *evt)
 {
-    static char *output_buffer; // Buffer to store response of http request from event handler
     static int output_len; // Stores number of bytes read
     switch (evt->event_id)
     {
@@ -35,46 +33,35 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         break;
     case HTTP_EVENT_ON_DATA:
         ESP_LOGI(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
-        ESP_LOGI(TAG, "Received chunk: %.*s", evt->data_len, (char *)evt->data);
+        // ESP_LOGI(TAG, "Received chunk: %.*s", evt->data_len, (char *)evt->data);
 
-        if (!esp_http_client_is_chunked_response(evt->client))
+        char *new_buffer = realloc(output_buffer, output_len + evt->data_len + 1);
+
+        if (new_buffer == NULL)
         {
-
-            // Lần đầu nhận dữ liệu, cấp phát bộ nhớ theo Content-Length
-            if (output_buffer == NULL)
-            {
-                int buffer_len = esp_http_client_get_content_length(evt->client);
-                if (buffer_len <= 0)
-                {
-                    buffer_len = MAX_HTTP_OUTPUT_BUFFER; // Dự phòng nếu không có Content-Length
-                }
-                output_buffer = (char *)malloc(buffer_len);
-                output_len = 0;
-
-                if (output_buffer == NULL)
-                {
-                    ESP_LOGE(TAG, "Failed to allocate memory for output buffer");
-                    return ESP_FAIL;
-                }
-            }
-
-            // Sao chép dữ liệu vào buffer
-            int copy_len = MIN(evt->data_len, (MAX_HTTP_OUTPUT_BUFFER - output_len));
-            if (copy_len > 0)
-            {
-                memcpy(output_buffer + output_len, evt->data, copy_len);
-                output_len += copy_len;
-            }
-        }
-        break;
-    case HTTP_EVENT_ON_FINISH:
-        ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
-        if (output_buffer != NULL)
-        {
-            // Response is accumulated in output_buffer. Uncomment the below line to print the
-            // accumulated response ESP_LOG_BUFFER_HEX(TAG, output_buffer, output_len);
+            ESP_LOGE(TAG, "Failed to allocate memory!");
             free(output_buffer);
             output_buffer = NULL;
+            output_len = 0;
+            return ESP_FAIL;
+        }
+
+        // Gán buffer mới và nối dữ liệu vào cuối
+        output_buffer = new_buffer;
+        memcpy(output_buffer + output_len, evt->data, evt->data_len);
+        output_len += evt->data_len;
+        output_buffer[output_len] = '\0'; // Đảm bảo chuỗi kết thúc
+
+        break;
+
+    case HTTP_EVENT_ON_FINISH:
+        ESP_LOGI(TAG, "HTTP_EVENT_ON_FINISH");
+        if (output_buffer != NULL)
+        {
+            // ESP_LOGI(TAG, "Full Response: %s", output_buffer);
+            handler_json_query(output_buffer, "HAU");
+            // free(output_buffer);
+            // output_buffer = NULL;
         }
         output_len = 0;
         break;
@@ -88,11 +75,7 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
             ESP_LOGI(TAG, "Last esp error code: 0x%x", err);
             ESP_LOGI(TAG, "Last mbedtls failure: 0x%x", mbedtls_err);
         }
-        if (output_buffer != NULL)
-        {
-            free(output_buffer);
-            output_buffer = NULL;
-        }
+
         output_len = 0;
         break;
     case HTTP_EVENT_REDIRECT:
@@ -104,10 +87,12 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
     }
     return ESP_OK;
 }
+// void parse_json() { printf("Data get =%s", buffer); }
 void init_https(void)
 {
+
     esp_http_client_config_t config = {
-        .url = "https://my.sepay.vn/userapi/transactions/count",
+        .url = "https://my.sepay.vn/userapi/transactions/list?since_id=8672446",
         .event_handler = _http_event_handler,
         .method = HTTP_METHOD_GET,
         .timeout_ms = 9000,
@@ -122,6 +107,7 @@ void init_https(void)
         "Bearer IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7");
 
     esp_err_t err = esp_http_client_perform(client);
+
     if (err == ESP_OK)
     {
         ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %" PRIu64,
@@ -132,7 +118,6 @@ void init_https(void)
     {
         ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
     }
-
-    esp_http_client_cleanup(client);
+    esp_http_client_close(client);
 }
 

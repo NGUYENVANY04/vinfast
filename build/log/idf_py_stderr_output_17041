@@ -1,0 +1,1306 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x401697cf: queue_send_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+0x40085581: pp_post at ??:?
+[0m
+[0;33m--- 0x400d4ba9: timer_process_alarm at /home/ynghia/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+0x400d4bf5: timer_task at /home/ynghia/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4016976d: queue_recv_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:319
+0x40091e79: ppTask at ??:?
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+[0m
+[0;33m--- 0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+[0m
+[0;33m--- 0x40085581: pp_post at ??:?
+0x40115ef8: ieee80211_timer_process at ??:?
+[0m
+[0;33m--- 0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4016976d: queue_recv_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:319
+0x40091e79: ppTask at ??:?
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+[0m
+[0;33m--- 0x40085581: pp_post at ??:?
+0x40115ef8: ieee80211_timer_process at ??:?
+[0m
+[0;33m--- 0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4000bfed: _xtos_set_intlevel in ROM
+0x4008bfe7: vPortClearInterruptMaskFromISR at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:568
+ (inlined by) vPortExitCritical at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:532
+0x40115ef8: ieee80211_timer_process at ??:?
+0x4011e49f: pp_timer_process at ??:?
+0x4011bbdd: lmac_stop_hw_txq at ??:?
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x40085581: pp_post at ??:?
+[0m
+[0;33m--- 0x400d4bf5: timer_task at /home/ynghia/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082d49: _xt_lowint1 at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+[0m
+[0;33m--- 0x40115ef8: ieee80211_timer_process at ??:?
+0x4011e49f: pp_timer_process at ??:?
+[0m
+[0;33m--- 0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+[0m
+[0;33m--- 0x40089be5: xQueueReceive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1576
+0x4016976d: queue_recv_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:319
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+[0m
+[0;33m--- 0x40089817: xQueueGenericSend at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:998
+0x401697cf: queue_send_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+0x4011e49f: pp_timer_process at ??:?
+0x400d4ba9: timer_process_alarm at /home/ynghia/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+0x400d4bf5: timer_task at /home/ynghia/esp/esp-idf/components/esp_timer/src/esp_timer.c:477 (discriminator 1)
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400850a6: esp_crosscore_isr at /home/ynghia/esp/esp-idf/components/esp_system/crosscore_int.c:96
+[0m
+[0;33m--- 0x40089817: xQueueGenericSend at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:998
+0x401697cf: queue_send_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+0x40085287: zalloc_internal_wrapper at /home/ynghia/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:414
+0x4011bbdd: lmac_stop_hw_txq at ??:?
+0x400d4ba9: timer_process_alarm at /home/ynghia/esp/esp-idf/components/esp_timer/src/esp_timer.c:451
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x40089d22: xQueueTakeMutexRecursive at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:769 (discriminator 1)
+0x40168b2a: esp_event_post_to at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:867
+0x4016816b: esp_event_post at /home/ynghia/esp/esp-idf/components/esp_event/default_event_loop.c:75
+0x400e1f9a: http_dispatch_event_to_event_loop at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:190
+0x400e21bf: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:310
+0x4014b481: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2104 (discriminator 5)
+0x400e2719: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400e357c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7464: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d6ff8: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:52
+0x40168c05: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016875f: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x40168815: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

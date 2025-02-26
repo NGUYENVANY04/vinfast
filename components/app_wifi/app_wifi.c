@@ -13,6 +13,7 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 #include "app_request_https.h"
+#include "common_nvs.h"
 #define EXAMPLE_ESP_WIFI_SSID "P401"
 #define EXAMPLE_ESP_WIFI_PASS "conmeovang"
 #define EXAMPLE_ESP_MAXIMUM_RETRY CONFIG_ESP_MAXIMUM_RETRY
@@ -81,6 +82,7 @@ void init_wifi(void)
             .password = "conmeovang",
         },
     };
+    init_info_wifi("conmeovang", "P401");
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
     ESP_ERROR_CHECK(esp_wifi_start());

@@ -8,4 +8,5 @@
  **/
 
 void init_gpio(void);
+
 #endif

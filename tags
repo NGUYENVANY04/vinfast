@@ -681,7 +681,7 @@ CONFIG_BROWNOUT_DET_LVL	build/bootloader/config/sdkconfig.h	384;"	d
 CONFIG_BROWNOUT_DET_LVL	build/config/sdkconfig.h	661;"	d
 CONFIG_BROWNOUT_DET_LVL_SEL_0	build/bootloader/config/sdkconfig.h	385;"	d
 CONFIG_BROWNOUT_DET_LVL_SEL_0	build/config/sdkconfig.h	662;"	d
-CONFIG_CALE_BEARER_TOKEN	components/app_request_https/app_request_https.c	12;"	d	file:
+CONFIG_CALE_BEARER_TOKEN	components/app_request_https/app_request_https.c	11;"	d	file:
 CONFIG_COMPILER_FLOAT_LIB_FROM_GCCLIB	build/bootloader/config/sdkconfig.h	265;"	d
 CONFIG_COMPILER_FLOAT_LIB_FROM_GCCLIB	build/config/sdkconfig.h	265;"	d
 CONFIG_COMPILER_HIDE_PATHS_MACROS	build/bootloader/config/sdkconfig.h	267;"	d
@@ -1838,14 +1838,14 @@ DEC	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	544;"	d	file:
 DEC	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	529;"	d	file:
 DEC	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	544;"	d	file:
 DEC	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	529;"	d	file:
-EXAMPLE_ESP_MAXIMUM_RETRY	components/app_wifi/app_wifi.c	18;"	d	file:
-EXAMPLE_ESP_WIFI_PASS	components/app_wifi/app_wifi.c	17;"	d	file:
-EXAMPLE_ESP_WIFI_SSID	components/app_wifi/app_wifi.c	16;"	d	file:
+EXAMPLE_ESP_MAXIMUM_RETRY	components/app_wifi/app_wifi.c	19;"	d	file:
+EXAMPLE_ESP_WIFI_PASS	components/app_wifi/app_wifi.c	18;"	d	file:
+EXAMPLE_ESP_WIFI_SSID	components/app_wifi/app_wifi.c	17;"	d	file:
 HEX	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
 HEX	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	540;"	d	file:
 HEX	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
 HEX	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	540;"	d	file:
-HTTP_RECEIVE_BUFFER_SIZE	components/app_request_https/app_request_https.c	11;"	d	file:
+HTTP_RECEIVE_BUFFER_SIZE	components/app_request_https/app_request_https.c	10;"	d	file:
 ID_VOID_MAIN	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 KEY	build/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	10;"	d	file:
@@ -1864,10 +1864,10 @@ KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	18;"	d	file:
 KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	20;"	d	file:
 KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	6;"	d	file:
 KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	8;"	d	file:
-MAX_HTTP_OUTPUT_BUFFER	components/app_request_https/app_request_https.c	13;"	d	file:
+MAX_HTTP_OUTPUT_BUFFER	components/app_request_https/app_request_https.c	12;"	d	file:
 MBEDTLS_TEST_OPAQUE_DRIVER_ID	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	51;"	d	file:
 MBEDTLS_TEST_TRANSPARENT_DRIVER_ID	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	52;"	d	file:
-MIN	components/app_request_https/app_request_https.c	10;"	d	file:
+MIN	components/app_request_https/app_request_https.c	9;"	d	file:
 P256_TRANSPARENT_DRIVER_ID	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	53;"	d	file:
 PIN_TEST	components/common/include/common.h	5;"	d
 PLATFORM_ID	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	339;"	d	file:
@@ -2068,22 +2068,30 @@ STRINGIFY_HELPER	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId
 STRINGIFY_HELPER	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
 TAG	components/app_request_https/app_request_https.c	/^const char *TAG = "HTTPS";$/;"	v
 TAG	components/app_wifi/app_wifi.c	/^static const char *TAG = "wifi station";$/;"	v	file:
-WIFI_CONNECTED_BIT	components/app_wifi/app_wifi.c	24;"	d	file:
-WIFI_FAIL_BIT	components/app_wifi/app_wifi.c	25;"	d	file:
+WIFI_CONNECTED_BIT	components/app_wifi/app_wifi.c	25;"	d	file:
+WIFI_FAIL_BIT	components/app_wifi/app_wifi.c	26;"	d	file:
+_APP_HANDLE_QUERY_H_	components/app_handle_query/include/app_handle_query.h	2;"	d
 _APP_REQUEST_HTTPS_H_	components/app_request_https/include/app_request_https.h	2;"	d
 _APP_WIFI_H_	components/app_wifi/include/app_wifi.h	2;"	d
 _COMMON_H_	components/common/include/common.h	2;"	d
+_COMMON_NVS_H_	components/common_nvs/include/common_nvs.h	2;"	d
+_DRIVER_ENABLE_OUTPUT_H_	components/driver_enable_output/include/driver_enable_output.h	2;"	d
 _DRIVER_GPIO_H_	components/driver_gpio/include/driver_gpio.h	2;"	d
 _binary_x509_crt_bundle_end	build/x509_crt_bundle.S	/^_binary_x509_crt_bundle_end: \/* for objcopy compatibility *\/$/;"	l
 _binary_x509_crt_bundle_start	build/x509_crt_bundle.S	/^_binary_x509_crt_bundle_start: \/* for objcopy compatibility *\/$/;"	l
 _http_event_handler	components/app_request_https/app_request_https.c	/^esp_err_t _http_event_handler(esp_http_client_event_t *evt)$/;"	f
 app_main	main/main.c	/^void app_main(void)$/;"	f
-bearerToken	components/app_request_https/app_request_https.c	/^char bearerToken[74] = "";$/;"	v
 const	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
 const	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+enable_output	components/driver_enable_output/driver_enable_output.c	/^void enable_output(void) { gpio_set_level(GPIO_NUM_2, 1); }$/;"	f
 event_handler	components/app_wifi/app_wifi.c	/^static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_id,$/;"	f	file:
 features	build/esp-idf/mbedtls/mbedtls/library/version_features.c	/^static const char * const features[] = {$/;"	v	file:
+flag	components/app_request_https/app_request_https.c	/^bool flag = false;$/;"	v
 fuct	components/common/common.c	/^void fuct(void) { printf("Hello\\n"); }$/;"	f
+func	components/app_smart_config/app_smart_config.c	/^void func(void)$/;"	f
+get_old_id_payload	components/common_nvs/common_nvs.c	/^void get_old_id_payload(void) { }$/;"	f
+handler_json_query	components/app_handle_query/app_handle_query.c	/^void handler_json_query(char *buffer_input, char *charger_id)$/;"	f
+id	components/common_nvs/common_nvs.c	/^nvs_handle_t id;$/;"	v
 info_arch	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_arch	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
@@ -2123,7 +2131,9 @@ info_version_internal	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.c
 info_version_internal	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
 info_version_internal	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
 init_gpio	components/driver_gpio/driver_gpio.c	/^void init_gpio(void)$/;"	f
+init_gpio_wakeup	components/driver_sleep_mode/driver_sleep_mode.c	/^void init_gpio_wakeup(void)$/;"	f
 init_https	components/app_request_https/app_request_https.c	/^void init_https(void)$/;"	f
+init_info_wifi	components/common_nvs/common_nvs.c	/^void init_info_wifi(char *pass, char *ssid)$/;"	f
 init_wifi	components/app_wifi/app_wifi.c	/^void init_wifi(void)$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
@@ -2133,6 +2143,7 @@ main	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^int mai
 main	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	test/main.c	/^int main()$/;"	f
 mbedtls_high_level_strerr	build/esp-idf/mbedtls/mbedtls/library/error.c	/^const char *mbedtls_high_level_strerr(int error_code)$/;"	f
 mbedtls_low_level_strerr	build/esp-idf/mbedtls/mbedtls/library/error.c	/^const char *mbedtls_low_level_strerr(int error_code)$/;"	f
 mbedtls_ssl_key_export_type_str	build/esp-idf/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c	/^const char *mbedtls_ssl_key_export_type_str( mbedtls_ssl_key_export_type in )$/;"	f
@@ -2144,6 +2155,7 @@ mbedtls_strerror	build/esp-idf/mbedtls/mbedtls/library/error.c	/^void mbedtls_st
 mbedtls_test_hook_error_add	build/esp-idf/mbedtls/mbedtls/library/error.c	/^void (*mbedtls_test_hook_error_add)(int, int, const char *, int);$/;"	v
 mbedtls_tls_prf_types_str	build/esp-idf/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c	/^const char *mbedtls_tls_prf_types_str( mbedtls_tls_prf_types in )$/;"	f
 mbedtls_version_check_feature	build/esp-idf/mbedtls/mbedtls/library/version_features.c	/^int mbedtls_version_check_feature(const char *feature)$/;"	f
+output_buffer	components/app_request_https/app_request_https.c	/^char *output_buffer; \/\/ Buffer to store response of http request from event handler$/;"	v
 psa_driver_wrapper_export_public_key	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	/^psa_status_t psa_driver_wrapper_export_public_key($/;"	f
 psa_driver_wrapper_get_builtin_key	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	/^psa_status_t psa_driver_wrapper_get_builtin_key($/;"	f
 psa_driver_wrapper_get_key_buffer_size	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	/^psa_status_t psa_driver_wrapper_get_key_buffer_size($/;"	f
@@ -2153,7 +2165,10 @@ qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char 
 qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 s_retry_num	components/app_wifi/app_wifi.c	/^static int s_retry_num = 0;$/;"	v	file:
 s_wifi_event_group	components/app_wifi/app_wifi.c	/^static EventGroupHandle_t s_wifi_event_group;$/;"	v	file:
+save_wifi	components/common_nvs/common_nvs.c	/^void save_wifi(void) { }$/;"	f
+test	test/main.c	/^void test(char *str) { printf("%s", str); }$/;"	f
 volatile	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 volatile	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
+wifi	components/common_nvs/common_nvs.c	/^nvs_handle_t wifi;$/;"	v
 x509_crt_bundle	build/x509_crt_bundle.S	/^x509_crt_bundle:$/;"	l
 x509_crt_bundle_length	build/x509_crt_bundle.S	/^x509_crt_bundle_length:$/;"	l

@@ -59,8 +59,13 @@
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/perfmon/libperfmon.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/spiffs/libspiffs.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/common_nvs/libcommon_nvs.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_enable_output/libdriver_enable_output.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_handle_query/libapp_handle_query.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_request_https/libapp_request_https.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_wifi/libapp_wifi.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_sleep_mode/libdriver_sleep_mode.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common/libcommon.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/libdriver_gpio.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/main/libmain.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_smart_config/libapp_smart_config.a

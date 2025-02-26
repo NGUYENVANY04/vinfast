@@ -9,9 +9,13 @@
 #include "hal/gpio_types.h"
 #include "nvs_flash.h"
 #include "app_wifi.h"
+#include "esp_log.h"
+#include "driver_sleep_mode.h"
+#include "app_handle_query.h"
 void app_main(void)
 {
-
+    init_gpio();
+    init_gpio_wakeup();
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
     {
@@ -21,5 +25,4 @@ void app_main(void)
 
     ESP_ERROR_CHECK(ret);
     init_wifi();
-    init_gpio();
 }
