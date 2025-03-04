@@ -621,6 +621,13 @@
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common_nvs/CMakeFiles/edit_cache.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common_nvs/CMakeFiles/install/strip.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/install/local.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/install.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/list_install_components.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/rebuild_cache.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/edit_cache.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/install/strip.dir
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/CMakeFiles/__idf_app_get_realtime.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_enable_output/CMakeFiles/install/strip.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_enable_output/CMakeFiles/install/local.dir
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_enable_output/CMakeFiles/install.dir

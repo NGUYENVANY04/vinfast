@@ -1,0 +1,59 @@
+[1/9] Building C object esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj
+../components/common_nvs/common_nvs.c: In function 'init_info_wifi':
+../components/common_nvs/common_nvs.c:20:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   20 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:19:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   19 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'init_info_last_id_payload':
+../components/common_nvs/common_nvs.c:32:19: warning: unused variable 'err_commit' [-Wunused-variable]
+   32 |         esp_err_t err_commit = nvs_commit(id);
+      |                   ^~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_last_id_payload':
+../components/common_nvs/common_nvs.c:40:15: warning: unused variable 'err_id' [-Wunused-variable]
+   40 |     esp_err_t err_id = nvs_get_u32(id, "ID_LAST", &last_id);
+      |               ^~~~~~
+../components/common_nvs/common_nvs.c:39:15: warning: unused variable 'err_open' [-Wunused-variable]
+   39 |     esp_err_t err_open = nvs_open("ID", NVS_READONLY, &id);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'save_wifi':
+../components/common_nvs/common_nvs.c:65:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   65 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", ssid);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:64:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   64 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", pass);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_info_last_wifi':
+../components/common_nvs/common_nvs.c:78:40: warning: passing argument 4 of 'nvs_get_str' from incompatible pointer type [-Wincompatible-pointer-types]
+   78 |     nvs_get_str(wifi, "SSID", ssid_bf, &length_ssid);
+      |                                        ^~~~~~~~~~~~
+      |                                        |
+      |                                        uint32_t * {aka long unsigned int *}
+In file included from ../components/common_nvs/include/common_nvs.h:3,
+                 from ../components/common_nvs/common_nvs.c:4:
+/home/ynghia/esp/esp-idf/components/nvs_flash/include/nvs.h:457:87: note: expected 'size_t *' {aka 'unsigned int *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+  457 | esp_err_t nvs_get_str (nvs_handle_t handle, const char* key, char* out_value, size_t* length);
+      |                                                                               ~~~~~~~~^~~~~~
+../components/common_nvs/common_nvs.c:79:44: warning: passing argument 4 of 'nvs_get_str' from incompatible pointer type [-Wincompatible-pointer-types]
+   79 |     nvs_get_str(wifi, "PASSWORD", pass_bf, &length_pass);
+      |                                            ^~~~~~~~~~~~
+      |                                            |
+      |                                            uint32_t * {aka long unsigned int *}
+/home/ynghia/esp/esp-idf/components/nvs_flash/include/nvs.h:457:87: note: expected 'size_t *' {aka 'unsigned int *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+  457 | esp_err_t nvs_get_str (nvs_handle_t handle, const char* key, char* out_value, size_t* length);
+      |                                                                               ~~~~~~~~^~~~~~
+[2/9] Linking C static library esp-idf/common_nvs/libcommon_nvs.a
+[3/9] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable vinfast.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+[7/7] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xe4260 bytes. Smallest app partition is 0x100000 bytes. 0x1bda0 bytes (11%) free.

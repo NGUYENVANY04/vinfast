@@ -404,6 +404,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_get_realtime/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_enable_output/cmake_install.cmake")
 endif()
 

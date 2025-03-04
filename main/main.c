@@ -13,6 +13,8 @@
 #include "driver_sleep_mode.h"
 #include "app_handle_query.h"
 #include "common_nvs.h"
+
+#include "app_get_realtime.h"
 void app_main(void)
 {
     init_gpio();
@@ -30,3 +32,4 @@ void app_main(void)
 
     init_wifi();
 }
+

@@ -7,6 +7,8 @@
 #include "app_handle_query.h"
 #include "string.h"
 #include "common_nvs.h"
+
+#include "app_get_realtime.h"
 #define MIN(index_1, index_2) (index_1 < index_2 ? index_1 : index_2)
 #define HTTP_RECEIVE_BUFFER_SIZE 1024
 #define CONFIG_CALE_BEARER_TOKEN "IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7"
@@ -59,7 +61,10 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         ESP_LOGI(TAG, "HTTP_EVENT_ON_FINISH");
         if (output_buffer != NULL)
         {
-            handler_json_query(output_buffer, "HAU");
+            handler_json_query(output_buffer, "em");
+
+            ESP_LOGI("", "%s", output_buffer);
+            // hau is key in response
         }
         output_len = 0;
         break;
@@ -86,11 +91,16 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
     return ESP_OK;
 }
 // void parse_json() { printf("Data get =%s", buffer); }
-void init_https(void)
+void init_https(const char *time)
 {
 
+    char buffer[87];
+    sprintf(buffer, "%s%s",
+            "https://my.sepay.vn/userapi/transactions/list?transaction_date_min=", time);
+    ESP_LOGI("test", "%s", buffer);
+
     esp_http_client_config_t config = {
-        .url = "https://my.sepay.vn/userapi/transactions/list?since_id=8672446",
+        .url = buffer,
         .event_handler = _http_event_handler,
         .method = HTTP_METHOD_GET,
         .timeout_ms = 9000,
@@ -99,7 +109,7 @@ void init_https(void)
 
     esp_http_client_handle_t client = esp_http_client_init(&config);
 
-    // Thêm Bearer Token
+    //  Bearer Token
     esp_http_client_set_header(
         client, "Authorization",
         "Bearer IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7");

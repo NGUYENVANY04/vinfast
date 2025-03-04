@@ -7,6 +7,7 @@ extern nvs_handle_t wifi;
 void init_info_wifi(void);
 void init_info_last_id_payload(void);
 uint32_t get_last_id_payload(void);
-void set_last_id_payload(uint32_t id_last);
+void set_last_time_payload(const char *time);
 void save_wifi(char *pass, char *ssid);
+void set_last_id_payload(const uint32_t id);
 #endif

@@ -48,6 +48,7 @@ void handler_json_query(char *buffer_input, char *charger_id)
         cJSON *ref_number = cJSON_GetObjectItem(transaction, "reference_number");
         cJSON *amount_out = cJSON_GetObjectItem(transaction, "amount_out");
         cJSON *amount_in = cJSON_GetObjectItem(transaction, "amount_in");
+        cJSON *time_pay = cJSON_GetObjectItem(transaction, "transaction_date");
         if (!cJSON_IsString(content) || !cJSON_IsString(ref_number) || !cJSON_IsString(id))
         {
             continue;
@@ -68,6 +69,7 @@ void handler_json_query(char *buffer_input, char *charger_id)
                 printf("Nội dung: %s\n", content->valuestring);
                 printf("Mã tham chiếu: %s\n", ref_number->valuestring);
                 printf("Số tiền: %s\n", amount_in->valuestring);
+                printf("Thời gian thanh toán: %s\n", time_pay->valuestring);
                 found = 1;
                 last_transaction_id = transaction_id; // update new id
                 enable_output();
@@ -83,7 +85,8 @@ void handler_json_query(char *buffer_input, char *charger_id)
     if (!found)
     {
         printf("Không có giao dịch mới phù hợp.\n");
-        printf("Tiến hành sạc thủ công .\n");
+        printf("Tiến hành kiểm tra lại hoặc sạc thủ công .\n");
+        printf("Hệ thống sleep sau 5p .\n");
     }
     cJSON_Delete(root);
     free(buffer_input);

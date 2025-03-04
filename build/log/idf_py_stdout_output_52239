@@ -1,6 +1,0 @@
-[0/1] Re-running CMake...
--- Building ESP-IDF components for target esp32
--- Configuring incomplete, errors occurred!
-See also "/home/ynghia/CODE/IDF/vinfast/build/CMakeFiles/CMakeOutput.log".
-FAILED: build.ninja 
-/usr/bin/cmake -S/home/ynghia/CODE/IDF/vinfast -B/home/ynghia/CODE/IDF/vinfast/build

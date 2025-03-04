@@ -1,0 +1,29 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400fa757: esp_http_client_set_header at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:338
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x400fa754: esp_http_client_set_header at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:337
+0x400d815c: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:112
+0x400d7f73: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:41
+0x400d7c54: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x401701a5: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016fcff: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4016fdb5: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008cddd: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m
