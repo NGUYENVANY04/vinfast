@@ -15,8 +15,8 @@
 #include "app_request_https.h"
 #include "common_nvs.h"
 #include "app_get_realtime.h"
-#define EXAMPLE_ESP_WIFI_SSID "iPhone của Ngợi"
-#define EXAMPLE_ESP_WIFI_PASS "00000000"
+#define EXAMPLE_ESP_WIFI_SSID "P401"
+#define EXAMPLE_ESP_WIFI_PASS "conmeovang"
 #define EXAMPLE_ESP_MAXIMUM_RETRY CONFIG_ESP_MAXIMUM_RETRY
 static EventGroupHandle_t s_wifi_event_group;
 

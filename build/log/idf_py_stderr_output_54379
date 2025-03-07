@@ -1,0 +1,34 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892cd: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090581: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008e87d: tlsf_realloc at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1171 (discriminator 1)
+0x4008df76: multi_heap_realloc_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:251
+0x40082374: heap_caps_realloc_base at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:442
+0x400823d8: heap_caps_realloc at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:474
+0x4008240f: heap_caps_realloc_default at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:256
+0x400905a1: realloc at /home/ynghia/esp/esp-idf/components/newlib/heap.c:34
+0x400d7e61: _http_event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:42 (discriminator 13)
+0x40167ddf: http_dispatch_event at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:183
+0x400f90b0: http_on_body at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:306
+0x4014bfae: http_parser_execute at /home/ynghia/esp/esp-idf/components/http_parser/http_parser.c:2067 (discriminator 5)
+0x400f9661: esp_http_client_fetch_headers at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1357
+0x400fa59c: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1268
+0x400d7ffd: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:128
+0x400d7df3: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:42
+0x400d7acc: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x4016d5b1: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016d10b: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4016d1c1: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd29: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

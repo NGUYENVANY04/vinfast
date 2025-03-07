@@ -38,6 +38,7 @@ void init_time(void)
     // ESP_LOGW("STATUS", "%d", status);
     localtime_r(&now, &timeinfo);
     strftime(strftime_buf, sizeof(strftime_buf), "%Y-%m-%d+%H:%M:%S", &timeinfo);
+
     init_https(strftime_buf);
     ESP_LOGI(TAG, "The current date/time in Viet Nam is: %s", strftime_buf);
 }

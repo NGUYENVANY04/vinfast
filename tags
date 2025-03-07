@@ -2140,7 +2140,6 @@ init_info_last_id_payload	components/common_nvs/common_nvs.c	/^void init_info_la
 init_info_wifi	components/common_nvs/common_nvs.c	/^void init_info_wifi(void)$/;"	f
 init_time	components/app_get_realtime/app_get_realtime.c	/^void init_time(void)$/;"	f
 init_wifi	components/app_wifi/app_wifi.c	/^void init_wifi(void)$/;"	f
-last_id	components/common_nvs/common_nvs.c	/^uint32_t last_id = 0;$/;"	v
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
@@ -2173,11 +2172,11 @@ qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/
 s_retry_num	components/app_wifi/app_wifi.c	/^static int s_retry_num = 0;$/;"	v	file:
 s_wifi_event_group	components/app_wifi/app_wifi.c	/^static EventGroupHandle_t s_wifi_event_group;$/;"	v	file:
 save_wifi	components/common_nvs/common_nvs.c	/^void save_wifi(char *pass, char *ssid)$/;"	f
+scan_transactions_with_timeout	components/app_request_https/app_request_https.c	/^void scan_transactions_with_timeout(const char *charger_id, const char *time)$/;"	f
 set_last_id_payload	components/common_nvs/common_nvs.c	/^void set_last_id_payload(const uint32_t id_last)$/;"	f
 set_last_time_payload	components/common_nvs/common_nvs.c	/^void set_last_time_payload(const char *time_last)$/;"	f
 test	test/main.c	/^void test(char **str)$/;"	f
-time	components/common_nvs/common_nvs.c	/^nvs_handle_t time;$/;"	v
-time_sync_notification_cb	components/app_get_realtime/app_get_realtime.c	/^void time_sync_notification_cb(struct timeval *tv)$/;"	f
+time_hanlde	components/common_nvs/common_nvs.c	/^nvs_handle_t time_hanlde;$/;"	v
 volatile	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 volatile	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 wifi	components/common_nvs/common_nvs.c	/^nvs_handle_t wifi;$/;"	v

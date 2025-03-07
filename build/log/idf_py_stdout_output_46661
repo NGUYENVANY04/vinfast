@@ -1,0 +1,183 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25480h (152704) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=000354a8 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003917c vaddr=40080000 size=06e9ch ( 28316) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a069ch (657052) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e06c4 vaddr=40086e9c size=0f2c0h ( 62144) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu up.[0m
+[0;32mI (467) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (485) cpu_start: Pro cpu start user code[0m
+[0;32mI (485) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (485) cpu_start: Application information:[0m
+[0;32mI (490) cpu_start: Project name:     vinfast[0m
+[0;32mI (495) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (500) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (507) cpu_start: ELF file SHA256:  dfbe91a2359e3391...[0m
+[0;32mI (513) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFB83B0 len 00027C50 (159 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 4009615C len 00009EA4 (39 KiB): IRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;33mW (581) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (594) app_start: Starting scheduler on CPU0[0m
+[0;32mI (599) app_start: Starting scheduler on CPU1[0m
+[0;32mI (599) main_task: Started on CPU0[0m
+[0;32mI (609) main_task: Calling app_main()[0m
+[0;32mI (609) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (669) wifi:wifi driver task: 3ffc3af4, prio:23, stack:6656, core=0[0m
+[0;32mI (679) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (679) wifi:wifi certification version: v7.0[0m
+[0;32mI (689) wifi:config NVS flash: enabled[0m
+[0;32mI (689) wifi:config nano formating: disabled[0m
+[0;32mI (689) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (689) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (699) wifi:Init management short buffer num: 32[0m
+[0;32mI (699) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (709) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (709) wifi:Init static rx buffer num: 10[0m
+[0;32mI (709) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (719) wifi_init: rx ba win: 6[0m
+[0;32mI (719) wifi_init: tcpip mbox: 32[0m
+[0;32mI (729) wifi_init: udp mbox: 6[0m
+[0;32mI (729) wifi_init: tcp mbox: 6[0m
+[0;32mI (729) wifi_init: tcp tx win: 5760[0m
+[0;32mI (739) wifi_init: tcp rx win: 5760[0m
+[0;32mI (739) wifi_init: tcp mss: 1440[0m
+[0;32mI (749) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (749) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (759) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (839) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (839) wifi:enable tsf[0m
+[0;32mI (839) wifi station: wifi_init_sta finished.[0m
+[0;32mI (849) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (859) wifi:state: init -> auth (b0)[0m
+[0;32mI (859) wifi:state: auth -> assoc (0)[0m
+[0;32mI (869) wifi:state: assoc -> run (10)[0m
+[0;32mI (1109) wifi:connected with quochoc1, aid = 1, channel 6, BW20, bssid = 4a:a7:1a:a8:dc:b2[0m
+[0;32mI (1109) wifi:security: WPA2-PSK, phy: bgn, rssi: -80[0m
+[0;32mI (1119) wifi:pm start, type: 1[0m
+
+[0;32mI (1119) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1139) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3129) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5129) TIME: Waiting for system time to be set... (1/15)[0m
+[0;32mI (5649) wifi:<ba-add>idx:0 (ifx:0, 4a:a7:1a:a8:dc:b2), tid:0, ssn:2, winSize:64[0m
+[0;32mI (7129) TIME: Waiting for system time to be set... (2/15)[0m
+[0;32mI (9129) TIME: Waiting for system time to be set... (3/15)[0m
+[0;32mI (11129) TIME: Waiting for system time to be set... (4/15)[0m
+[0;32mI (13129) TIME: Waiting for system time to be set... (5/15)[0m
+[0;32mI (15129) TIME: Waiting for system time to be set... (6/15)[0m
+[0;32mI (17129) TIME: Waiting for system time to be set... (7/15)[0m
+[0;32mI (19129) TIME: Waiting for system time to be set... (8/15)[0m
+[0;32mI (21129) TIME: Waiting for system time to be set... (9/15)[0m
+[0;32mI (23129) TIME: Waiting for system time to be set... (10/15)[0m
+[0;32mI (25129) TIME: Waiting for system time to be set... (11/15)[0m
+[0;32mI (27129) TIME: Waiting for system time to be set... (12/15)[0m
+[0;32mI (29129) TIME: Waiting for system time to be set... (13/15)[0m
+[0;32mI (31129) TIME: Waiting for system time to be set... (14/15)[0m
+[0;32mI (43129) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=1970-01-01+07:00:32[0m
+[0;32mI (44889) HTTPS: HTTP_EVENT_ON_DATA, len=2900[0m
+[0;32mI (44889) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (44889) : {"status":200,"error":null,"messages":{"success":true},"transactions":[{"id":"9223926","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:52:00","amount_out":"200000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 801316","reference_number":"FT25064680328015","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"9223752","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:47:00","amount_out":"0.00","amount_in":"200000.00","accumulated":"0.00","transaction_content":"MAI THI ANH NGOC chuyen thanh toanFT25064960780167   Ma giao dich  Trace459166 Trace 459166","reference_number":"FT25064107884608","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8939824","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 13:30:00","amount_out":"50000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 402248","reference_number":"FT25059060430839","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8938391","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 12:47:00","amount_out":"0.00","amount_in":"1000000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN NGHIA transfer   Ma giaodich  Trace168788 Trace 168788","reference_number":"FT25059480843544","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8735565","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-24 19:15:00","amount_out":"0.00","amount_in":"480000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN HAU chuyen tien","reference_number":"FT25055559546732","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8672446","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-23 17:51:00","amount_out":"30000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien","reference_number":"FT25055006044556","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8615300","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-22 12:29:00","amount_out":"55000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 078785","reference_number":"FT25053283826589","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8564100","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-21 16:55:00","amount_out":"0.00","amount_in":"5000.00","accumulated":"0.00","transaction_content":"TA VIET HOANG chuyen FT25052971187839   Ma giao dich  Trace587046 Trace 587046","reference_number":"FT25052903073851","code":null,"sub_account":null,"bank_account_id":"7305"}]}[0m
+[0;32mI (45139) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (45149) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (45159) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (45159) HTTPS: Last esp error code: 0x3ffb83c4[0m
+[0;32mI (45159) HTTPS: Last mbedtls failure: 0x3ffb83c4[0m
+[0;32mI (55169) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=1970-01-01+07:00:32[0m
+[0;32mI (56549) HTTPS: HTTP_EVENT_ON_DATA, len=2900[0m
+[0;32mI (56549) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (56549) : {"status":200,"error":null,"messages":{"success":true},"transactions":[{"id":"9223926","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:52:00","amount_out":"200000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 801316","reference_number":"FT25064680328015","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"9223752","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:47:00","amount_out":"0.00","amount_in":"200000.00","accumulated":"0.00","transaction_content":"MAI THI ANH NGOC chuyen thanh toanFT25064960780167   Ma giao dich  Trace459166 Trace 459166","reference_number":"FT25064107884608","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8939824","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 13:30:00","amount_out":"50000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 402248","reference_number":"FT25059060430839","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8938391","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 12:47:00","amount_out":"0.00","amount_in":"1000000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN NGHIA transfer   Ma giaodich  Trace168788 Trace 168788","reference_number":"FT25059480843544","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8735565","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-24 19:15:00","amount_out":"0.00","amount_in":"480000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN HAU chuyen tien","reference_number":"FT25055559546732","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8672446","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-23 17:51:00","amount_out":"30000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien","reference_number":"FT25055006044556","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8615300","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-22 12:29:00","amount_out":"55000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 078785","reference_number":"FT25053283826589","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8564100","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-21 16:55:00","amount_out":"0.00","amount_in":"5000.00","accumulated":"0.00","transaction_content":"TA VIET HOANG chuyen FT25052971187839   Ma giao dich  Trace587046 Trace 587046","reference_number":"FT25052903073851","code":null,"sub_account":null,"bank_account_id":"7305"}]}[0m
+[0;32mI (56809) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (56809) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56819) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (56819) HTTPS: Last esp error code: 0x7d41f30e[0m
+[0;32mI (56829) HTTPS: Last mbedtls failure: 0x53955750[0m
+[0;32mI (66829) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=1970-01-01+07:00:32[0m
+[0;31mE (68009) HTTP_CLIENT: Failed to post https_ota event: 1, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68019) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68229) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68229) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68229) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68239) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68249) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68259) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68269) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68269) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68279) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (68289) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (68299) HTTPS: HTTP_EVENT_ON_DATA, len=2900[0m
+[0;31mE (68299) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (68309) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (68319) : {"status":200,"error":null,"messages":{"success":true},"transactions":[{"id":"9223926","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:52:00","amount_out":"200000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 801316","reference_number":"FT25064680328015","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"9223752","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:47:00","amount_out":"0.00","amount_in":"200000.00","accumulated":"0.00","transaction_content":"MAI THI ANH NGOC chuyen thanh toanFT25064960780167   Ma giao dich  Trace459166 Trace 459166","reference_number":"FT25064107884608","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8939824","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 13:30:00","amount_out":"50000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 402248","reference_number":"FT25059060430839","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8938391","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 12:47:00","amount_out":"0.00","amount_in":"1000000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN NGHIA transfer   Ma giaodich  Trace168788 Trace 168788","reference_number":"FT25059480843544","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8735565","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-24 19:15:00","amount_out":"0.00","amount_in":"480000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN HAU chuyen tien","reference_number":"FT25055559546732","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8672446","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-23 17:51:00","amount_out":"30000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien","reference_number":"FT25055006044556","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8615300","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-22 12:29:00","amount_out":"55000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 078785","reference_number":"FT25053283826589","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8564100","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-21 16:55:00","amount_out":"0.00","amount_in":"5000.00","accumulated":"0.00","transaction_content":"TA VIET HOANG chuyen FT25052971187839   Ma giao dich  Trace587046 Trace 587046","reference_number":"FT25052903073851","code":null,"sub_account":null,"bank_account_id":"7305"}]}[0m
+[0;31mE (68569) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (68579) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (68589) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;31mE (68589) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (68599) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (68599) HTTPS: Last esp error code: 0x3ffb83c4[0m
+[0;32mI (68609) HTTPS: Last mbedtls failure: 0x3ffb83c4[0m
+[0;31mE (68609) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (78619) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=1970-01-01+07:00:32[0m
+[0;31mE (79799) HTTP_CLIENT: Failed to post https_ota event: 1, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (79799) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80009) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80009) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80019) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80019) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80029) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80039) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80049) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80059) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80059) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80069) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (80079) HTTPS: HTTP_EVENT_ON_DATA, len=2900[0m
+[0;31mE (80089) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (80089) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (80099) : {"status":200,"error":null,"messages":{"success":true},"transactions":[{"id":"9223926","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:52:00","amount_out":"200000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 801316","reference_number":"FT25064680328015","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"9223752","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-03-05 15:47:00","amount_out":"0.00","amount_in":"200000.00","accumulated":"0.00","transaction_content":"MAI THI ANH NGOC chuyen thanh toanFT25064960780167   Ma giao dich  Trace459166 Trace 459166","reference_number":"FT25064107884608","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8939824","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 13:30:00","amount_out":"50000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 402248","reference_number":"FT25059060430839","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8938391","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-28 12:47:00","amount_out":"0.00","amount_in":"1000000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN NGHIA transfer   Ma giaodich  Trace168788 Trace 168788","reference_number":"FT25059480843544","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8735565","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-24 19:15:00","amount_out":"0.00","amount_in":"480000.00","accumulated":"0.00","transaction_content":"NGUYEN VAN HAU chuyen tien","reference_number":"FT25055559546732","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8672446","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-23 17:51:00","amount_out":"30000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien","reference_number":"FT25055006044556","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8615300","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-22 12:29:00","amount_out":"55000.00","amount_in":"0.00","accumulated":"0.00","transaction_content":"NGUYEN VAN Y chuyen tien - Ma giaodich/ Trace 078785","reference_number":"FT25053283826589","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"8564100","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-02-21 16:55:00","amount_out":"0.00","amount_in":"5000.00","accumulated":"0.00","transaction_content":"TA VIET HOANG chuyen FT25052971187839   Ma giao dich  Trace587046 Trace 587046","reference_number":"FT25052903073851","code":null,"sub_account":null,"bank_account_id":"7305"}]}[0m
+[0;31mE (80349) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (80359) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (80369) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;31mE (80369) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (80379) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (80379) HTTPS: Last esp error code: 0x3ffb83c4[0m
+[0;32mI (80389) HTTPS: Last mbedtls failure: 0x3ffb83c4[0m
+[0;31mE (80399) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m

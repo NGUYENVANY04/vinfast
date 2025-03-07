@@ -5,4 +5,5 @@ extern char *output_buffer; // Buffer to store response of http request from eve
 extern bool flag;
 void init_https(const char *time);
 void parse_json(void);
+void scan_transactions_with_timeout(const char *charger_id, const char *time);
 #endif

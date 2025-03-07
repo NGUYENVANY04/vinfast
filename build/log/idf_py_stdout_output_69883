@@ -1,0 +1,1149 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (482) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (501) cpu_start: Application information:[0m
+[0;32mI (505) cpu_start: Project name:     vinfast[0m
+[0;32mI (510) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (516) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (522) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (528) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (539) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (544) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (549) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (556) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (562) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (589) spi_flash: detected chip: generic[0m
+[0;32mI (592) spi_flash: flash io: dio[0m
+[0;33mW (596) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (610) app_start: Starting scheduler on CPU0[0m
+[0;32mI (614) app_start: Starting scheduler on CPU1[0m
+[0;32mI (614) main_task: Started on CPU0[0m
+[0;32mI (624) main_task: Calling app_main()[0m
+[0;32mI (624) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (684) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (694) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (694) wifi:wifi certification version: v7.0[0m
+[0;32mI (694) wifi:config NVS flash: enabled[0m
+[0;32mI (704) wifi:config nano formating: disabled[0m
+[0;32mI (704) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (704) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (714) wifi:Init management short buffer num: 32[0m
+[0;32mI (714) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (724) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (724) wifi:Init static rx buffer num: 10[0m
+[0;32mI (724) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (734) wifi_init: rx ba win: 6[0m
+[0;32mI (734) wifi_init: tcpip mbox: 32[0m
+[0;32mI (744) wifi_init: udp mbox: 6[0m
+[0;32mI (744) wifi_init: tcp mbox: 6[0m
+[0;32mI (744) wifi_init: tcp tx win: 5760[0m
+[0;32mI (754) wifi_init: tcp rx win: 5760[0m
+[0;32mI (754) wifi_init: tcp mss: 1440[0m
+[0;32mI (764) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (764) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (774) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (854) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (854) wifi:enable tsf[0m
+[0;32mI (854) wifi station: wifi_init_sta finished.[0m
+[0;32mI (864) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (864) wifi:state: init -> auth (b0)[0m
+[0;32mI (864) wifi:state: auth -> assoc (0)[0m
+[0;32mI (874) wifi:state: assoc -> run (10)[0m
+[0;32mI (914) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (934) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (934) wifi:security: WPA2-PSK, phy: bgn, rssi: -72[0m
+[0;32mI (944) wifi:pm start, type: 1[0m
+
+[0;32mI (944) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (954) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1964) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2284) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:29:39[0m
+[0;32mI (3204) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (3204) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (3204) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (3214) : ��?���?[0m
+[0;32mI (3214) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (13344) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (13354) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (13354) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (13354) : ��?���?[0m
+[0;32mI (13354) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (23484) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23484) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23484) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23494) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23504) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23514) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23524) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (865) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (865) wifi:state: init -> auth (b0)[0m
+[0;32mI (875) wifi:state: auth -> assoc (0)[0m
+[0;32mI (875) wifi:state: assoc -> run (10)[0m
+[0;32mI (885) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (905) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (905) wifi:security: WPA2-PSK, phy: bgn, rssi: -79[0m
+[0;32mI (915) wifi:pm start, type: 1[0m
+
+[0;32mI (915) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1005) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2425) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2425) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:30:03[0m
+[0;32mI (3565) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (3575) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (3575) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (3575) : ��?���?[0m
+[0;32mI (3575) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (13815) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (13815) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (13815) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (13815) : ��?���?[0m
+[0;32mI (13815) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (24975) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (24975) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (24975) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (24985) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (24995) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25005) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25015) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;31mE (25015) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25025) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (25025) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (25035) : ��?���?[0m
+[0;31mE (25035) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25045) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (35055) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35225) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35225) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35235) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35235) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35245) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35255) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35265) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35275) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35285) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35285) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (35295) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (865) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (865) wifi:state: init -> auth (b0)[0m
+[0;32mI (875) wifi:state: auth -> assoc (0)[0m
+[0;32mI (875) wifi:state: assoc -> run (10)[0m
+[0;32mI (915) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (10885) wifi:state: run -> init (cc00)[0m
+[0;32mI (10885) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (10885) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (10885) wifi station: retry to connect to the AP[0m
+[0;32mI (10885) wifi station: connect to the AP fail[0m
+[0;32mI (13305) wifi station: retry to connect to the AP[0m
+[0;32mI (13305) wifi station: connect to the AP fail[0m
+[0;32mI (13315) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (13325) wifi:state: init -> auth (b0)[0m
+[0;32mI (13325) wifi:state: auth -> assoc (0)[0m
+[0;32mI (13335) wifi:state: assoc -> run (10)[0m
+[0;32mI (13385) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (13405) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (13405) wifi:security: WPA2-PSK, phy: bgn, rssi: -78[0m
+[0;32mI (13415) wifi:pm start, type: 1[0m
+
+[0;32mI (13415) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (13455) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (14425) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (14425) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:30:51[0m
+[0;32mI (15505) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (15505) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (15505) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (15505) : ��?���?[0m
+[0;32mI (15515) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (25655) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (25655) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (25655) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (25655) : ��?���?":200,"error":null,"messages":{"success":true},"transactions":[]H�?[0m
+[0;32mI (25665) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (35895) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35895) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35895) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35905) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35915) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35925) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (35935) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;31mE (35935) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (35945) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (35945) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (35955) : ��?���?":200,"error":null,"messages":{"success":true},"transactions":[]��?+[0m
+[0;31mE (35965) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (35975) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (45975) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46225) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46225) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46235) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46235) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46245) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46255) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46265) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46275) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46275) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (46285) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (46295) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (865) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (865) wifi:state: init -> auth (b0)[0m
+[0;32mI (875) wifi:state: auth -> assoc (0)[0m
+[0;32mI (875) wifi:state: assoc -> run (10)[0m
+[0;32mI (885) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (925) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (925) wifi:security: WPA2-PSK, phy: bgn, rssi: -80[0m
+[0;32mI (935) wifi:pm start, type: 1[0m
+
+[0;32mI (935) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (975) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2435) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2435) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:31:25[0m
+[0;32mI (3535) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (3535) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (3545) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (3545) : ��?���?[0m
+[0;32mI (3545) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (13675) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (13675) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (13685) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (13685) : ��?���?":200,"error":null,"messages":{"success":true},"transactions":[]0A�?[0m
+[0;32mI (13695) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (23915) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23915) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23925) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23925) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23935) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23945) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23955) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (905) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (905) wifi:state: init -> auth (b0)[0m
+[0;32mI (905) wifi:state: auth -> assoc (0)[0m
+[0;32mI (915) wifi:state: assoc -> run (10)[0m
+[0;32mI (925) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (965) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (965) wifi:security: WPA2-PSK, phy: bgn, rssi: -76[0m
+[0;32mI (975) wifi:pm start, type: 1[0m
+
+[0;32mI (975) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1005) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1985) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1985) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:31:48[0m
+[0;32mI (3165) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (3165) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (3165) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (3165) : ��?���?[0m
+[0;32mI (3165) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (13405) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (13405) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (13405) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (13405) : ��?���?[0m
+[0;32mI (13405) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (23535) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23535) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23545) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23555) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23565) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23565) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23575) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;31mE (23585) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23585) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (23595) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (23595) : ��?���?[0m
+[0;31mE (23605) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23605) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (33615) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33775) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33775) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33785) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33795) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33795) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33805) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33815) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33825) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33835) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (33845) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (33845) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (865) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (865) wifi:state: init -> auth (b0)[0m
+[0;32mI (875) wifi:state: auth -> assoc (0)[0m
+[0;32mI (875) wifi:state: assoc -> run (10)[0m
+[0;32mI (885) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (925) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (925) wifi:security: WPA2-PSK, phy: bgn, rssi: -77[0m
+[0;32mI (925) wifi:pm start, type: 1[0m
+
+[0;32mI (925) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (975) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2435) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2435) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:32:23[0m
+[0;32mI (3645) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (3645) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (3645) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (3645) : ��?���?[0m
+[0;32mI (3645) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (14085) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (14085) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (14085) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (14095) : ��?���?[0m
+[0;32mI (14095) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (25655) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25655) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25665) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25675) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25685) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25685) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25695) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (915) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (915) wifi:state: init -> auth (b0)[0m
+[0;32mI (925) wifi:state: auth -> assoc (0)[0m
+[0;32mI (935) wifi:state: assoc -> run (10)[0m
+[0;32mI (955) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (995) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (995) wifi:security: WPA2-PSK, phy: bgn, rssi: -77[0m
+[0;32mI (1005) wifi:pm start, type: 1[0m
+
+[0;32mI (1005) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1015) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2015) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2015) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:32:48[0m
+[0;32mI (3265) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (3265) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (3265) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (3275) : ��?���?[0m
+[0;32mI (3275) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (13515) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (13515) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (13515) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (13525) : ��?���?[0m
+[0;32mI (13525) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (23745) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23745) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23745) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23755) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23765) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (23775) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23775) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;31mE (23785) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23795) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (23795) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (23805) : ��?���?[0m
+[0;31mE (23805) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (23815) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (33815) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34395) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34395) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34395) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34405) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34415) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34425) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34435) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34435) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34445) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (34455) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (34465) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+
+assert failed: tlsf_realloc tlsf.c:1171 (!block_is_free(block) && "block already marked as free")
+
+
+Backtrace: 0x40081b7e:0x3ffc0ce0 0x4008a381:0x3ffc0d00 0x40091635:0x3ffc0d20 0x4008f931:0x3ffc0e40 0x4008f02a:0x3ffc0e70 0x400824fc:0x3ffc0e90 0x40082560:0x3ffc0ec0 0x40082597:0x3ffc0ee0 0x40091655:0x3ffc0f00 0x400d7fe6:0x3ffc0f20 0x4016a9df:0x3ffc0f50 0x400fa38c:0x3ffc0f70 0x4014d35e:0x3ffc0fa0 0x400fa941:0x3ffc1000 0x400fb8ac:0x3ffc1020 0x400d8181:0x3ffc1050 0x400d7f77:0x3ffc1170 0x400d7c58:0x3ffc1200 0x401701c5:0x3ffc1230 0x4016fd1f:0x3ffc1260 0x4016fdd5:0x3ffc12a0 0x4008cddd:0x3ffc12c0
+
+
+
+
+ELF file SHA256: 9095460d54301847
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25fd8h (155608) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036000 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=00036010 vaddr=3ffb0000 size=03cdch ( 15580) load[0m
+[0;32mI (176) esp_image: segment 3: paddr=00039cf4 vaddr=40080000 size=06324h ( 25380) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3314h (668436) map[0m
+[0;32mI (430) esp_image: segment 5: paddr=000e333c vaddr=40086324 size=10ee8h ( 69352) load[0m
+[0;32mI (459) esp_image: segment 6: paddr=000f422c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (471) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (471) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu up.[0m
+[0;32mI (483) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (470) cpu_start: App cpu up.[0m
+[0;32mI (501) cpu_start: Pro cpu start user code[0m
+[0;32mI (501) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     vinfast[0m
+[0;32mI (511) cpu_start: App version:      65deeaf-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Mar  4 2025 16:54:02[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  9095460d54301847...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (535) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (540) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (545) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (550) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (563) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (575) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 4009720C len 00008DF4 (35 KiB): IRAM[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (597) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (611) app_start: Starting scheduler on CPU0[0m
+[0;32mI (615) app_start: Starting scheduler on CPU1[0m
+[0;32mI (615) main_task: Started on CPU0[0m
+[0;32mI (625) main_task: Calling app_main()[0m
+[0;32mI (625) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (685) wifi:wifi driver task: 3ffc3aa0, prio:23, stack:6656, core=0[0m
+[0;32mI (695) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (695) wifi:wifi certification version: v7.0[0m
+[0;32mI (695) wifi:config NVS flash: enabled[0m
+[0;32mI (705) wifi:config nano formating: disabled[0m
+[0;32mI (705) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (715) wifi:Init management short buffer num: 32[0m
+[0;32mI (715) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (735) wifi_init: rx ba win: 6[0m
+[0;32mI (735) wifi_init: tcpip mbox: 32[0m
+[0;32mI (745) wifi_init: udp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+[0;32mI (755) wifi_init: tcp mss: 1440[0m
+[0;32mI (765) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (765) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (775) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (855) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) wifi station: wifi_init_sta finished.[0m
+[0;32mI (865) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (865) wifi:state: init -> auth (b0)[0m
+[0;32mI (875) wifi:state: auth -> assoc (0)[0m
+[0;32mI (875) wifi:state: assoc -> run (10)[0m
+[0;32mI (885) wifi:<ba-add>idx:0 (ifx:0, d2:f8:27:bd:15:bc), tid:0, ssn:0, winSize:64[0m
+[0;32mI (905) wifi:connected with iPhone của Ngợi, aid = 1, channel 1, BW20, bssid = d2:f8:27:bd:15:bc[0m
+[0;32mI (905) wifi:security: WPA2-PSK, phy: bgn, rssi: -78[0m
+[0;32mI (905) wifi:pm start, type: 1[0m
+
+[0;32mI (905) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (965) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1915) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1915) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-04+17:33:23[0m
+[0;32mI (2825) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (2825) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (2825) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (2825) : ��?���?[0m
+[0;32mI (2825) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (12965) HTTPS: HTTP_EVENT_ON_DATA, len=73[0m
+[0;32mI (12965) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (12965) NVS TEST: 0[0m
+JSON parsing error!
+[0;32mI (12965) : ��?���?[0m
+[0;32mI (12975) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m

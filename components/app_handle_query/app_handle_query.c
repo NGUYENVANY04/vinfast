@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <cJSON.h>
 #include <stdlib.h>
-#include "include/app_handle_query.h"
+#include "app_handle_query.h"
 #include "arch/sys_arch.h"
 #include "esp_log.h"
 #include <string.h>

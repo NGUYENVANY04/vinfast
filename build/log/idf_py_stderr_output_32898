@@ -1,0 +1,51 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a381: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40091635: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008f0ba: tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1120 (discriminator 1)
+0x4008ef64: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x4008244a: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x40091665: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400d807b: _http_event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:68
+0x4016a9cb: http_dispatch_event at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:183
+0x400fb9fe: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1316
+0x400d816d: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:121
+0x400d7f73: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:41
+0x400d7c54: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x401701b1: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016fd0b: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4016fdc1: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008cddd: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a381: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40091635: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008f0ba: tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1120 (discriminator 1)
+0x4008ef64: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x4008244a: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x40091665: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400d807b: _http_event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:68
+0x4016a9cb: http_dispatch_event at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:183
+0x400fb9fe: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1316
+0x400d816d: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:121
+0x400d7f73: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:41
+0x400d7c54: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x401701b1: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016fd0b: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4016fdc1: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008cddd: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

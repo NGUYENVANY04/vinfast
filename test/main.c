@@ -2,10 +2,12 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-void test(char **str)
+void test(char *str)
 {
-    char *test = "Hello";
-    *str = test;
+    printf("%s", str);
+
+    free(str);
+    printf("%s", str);
 }
 int main()
 {
@@ -27,19 +29,8 @@ int main()
       sprintf(buffer, "%u", number);
       printf("Chuỗi: %s\n", buffer);
   */
-    char *he;
-    printf("%s\n", he);
-    char *test = "hello";
-    printf("%p\n", test);
-    test = "hi";
-    int a = 10;
-    int *pA = &a;
-    printf("%p\n", pA);
-    *pA = 5;
-    printf("%p\n", pA);
-
-    printf("%p\n", test);
-    char str[10];
-    printf("%p\n", str);
-    printf("%p\n", &str);
+    char *t = " hehe";
+    char *h = malloc(4);
+    strcpy(h, "he"); // Sao chép nội dung thay vì gán trực tiếp
+    test(h);
 }
