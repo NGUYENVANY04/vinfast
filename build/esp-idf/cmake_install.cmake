@@ -439,6 +439,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/ynghia/CODE/IDF/vinfast/build/esp-idf/admin_menu_congfi/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_handle_wifi_mode_sta/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/ynghia/CODE/IDF/vinfast/build/esp-idf/admin_into_setup/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/cmake_install.cmake")
 endif()
 

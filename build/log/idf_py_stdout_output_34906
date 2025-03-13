@@ -1,0 +1,114 @@
+[1/16] Building C object esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj
+../components/common_nvs/common_nvs.c: In function 'init_info_wifi':
+../components/common_nvs/common_nvs.c:19:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   19 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:18:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   18 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'init_info_last_id_payload':
+../components/common_nvs/common_nvs.c:31:19: warning: unused variable 'err_commit' [-Wunused-variable]
+   31 |         esp_err_t err_commit = nvs_commit(id);
+      |                   ^~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_last_id_payload':
+../components/common_nvs/common_nvs.c:40:15: warning: unused variable 'err_id' [-Wunused-variable]
+   40 |     esp_err_t err_id = nvs_get_u32(id, "ID_LAST", &last_id);
+      |               ^~~~~~
+../components/common_nvs/common_nvs.c:39:15: warning: unused variable 'err_open' [-Wunused-variable]
+   39 |     esp_err_t err_open = nvs_open("ID", NVS_READONLY, &id);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'save_wifi':
+../components/common_nvs/common_nvs.c:65:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   65 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", ssid);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:64:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   64 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", pass);
+      |               ^~~~~~~~
+[2/16] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[3/14] Linking C static library esp-idf/common_nvs/libcommon_nvs.a
+[4/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/14] Building C object esp-idf/admin_menu_congfi/CMakeFiles/__idf_admin_menu_congfi.dir/admin_menu_congfi.c.obj
+../components/admin_menu_congfi/admin_menu_congfi.c:121:18: warning: 'stop_webserver' defined but not used [-Wunused-function]
+  121 | static esp_err_t stop_webserver(httpd_handle_t server)
+      |                  ^~~~~~~~~~~~~~
+[6/14] Linking C static library esp-idf/admin_menu_congfi/libadmin_menu_congfi.a
+[7/14] Building C object esp-idf/app_handle_wifi_mode_sta/CMakeFiles/__idf_app_handle_wifi_mode_sta.dir/app_handle_wifi_mode_sta.c.obj
+[8/14] Linking C static library esp-idf/app_handle_wifi_mode_sta/libapp_handle_wifi_mode_sta.a
+[9/14] Linking C static library esp-idf/main/libmain.a
+[10/14] Generating ld/sections.ld
+[11/14] Linking CXX executable vinfast.elf
+[12/14] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+[13/14] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xc65f0 bytes. Smallest app partition is 0x100000 bytes. 0x39a10 bytes (23%) free.
+[13/14] cd /home/ynghia/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ynghia/esp/esp-idf -D "SERIAL_TOOL=/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ynghia/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ynghia/CODE/IDF/vinfast/build -P /home/ynghia/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 vinfast.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 58:bf:25:34:32:8c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26736 bytes to 16751...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007699... (100 %)
+Wrote 26736 bytes (16751 compressed) at 0x00001000 in 0.9 seconds (effective 239.5 kbit/s)...
+Hash of data verified.
+Compressed 812528 bytes to 523108...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c542... (6 %)
+Writing at 0x00025e25... (9 %)
+Writing at 0x0002abf3... (12 %)
+Writing at 0x000330eb... (15 %)
+Writing at 0x0003ac05... (18 %)
+Writing at 0x00040514... (21 %)
+Writing at 0x00045ed7... (25 %)
+Writing at 0x0004b87b... (28 %)
+Writing at 0x000512e4... (31 %)
+Writing at 0x000570d7... (34 %)
+Writing at 0x0005c758... (37 %)
+Writing at 0x00061992... (40 %)
+Writing at 0x00066f4c... (43 %)
+Writing at 0x0006c0ec... (46 %)
+Writing at 0x00071848... (50 %)
+Writing at 0x00076f28... (53 %)
+Writing at 0x0007cbbd... (56 %)
+Writing at 0x00082559... (59 %)
+Writing at 0x000879ee... (62 %)
+Writing at 0x0008d1ec... (65 %)
+Writing at 0x00092c48... (68 %)
+Writing at 0x0009822a... (71 %)
+Writing at 0x0009dc07... (75 %)
+Writing at 0x000a3dd3... (78 %)
+Writing at 0x000aa167... (81 %)
+Writing at 0x000af9b9... (84 %)
+Writing at 0x000b52c0... (87 %)
+Writing at 0x000be612... (90 %)
+Writing at 0x000c5ec9... (93 %)
+Writing at 0x000cbe6e... (96 %)
+Writing at 0x000d14d8... (100 %)
+Wrote 812528 bytes (523108 compressed) at 0x00010000 in 11.9 seconds (effective 546.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 327.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

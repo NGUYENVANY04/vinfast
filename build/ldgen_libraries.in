@@ -67,6 +67,9 @@ $<TARGET_FILE:__idf_app_request_https>
 $<TARGET_FILE:__idf_app_wifi>
 $<TARGET_FILE:__idf_driver_sleep_mode>
 $<TARGET_FILE:__idf_common>
+$<TARGET_FILE:__idf_admin_menu_congfi>
+$<TARGET_FILE:__idf_app_handle_wifi_mode_sta>
+$<TARGET_FILE:__idf_admin_into_setup>
 $<TARGET_FILE:__idf_driver_gpio>
 $<TARGET_FILE:__idf_main>
 $<TARGET_FILE:__idf_app_smart_config>

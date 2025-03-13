@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include "app_request_https.h"
 #include "arch/sys_arch.h"
@@ -6,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "esp_err.h"
+#include "esp_system.h"
 #include "esp_tls.h"
 #include "app_handle_query.h"
 #include "string.h"
@@ -19,7 +21,6 @@
 char *output_buffer; // Buffer to store response of http request from event handler
 bool flag = false;
 static int output_len; // Stores number of bytes read
-int i = 0;
 const char *TAG = "HTTPS";
 esp_err_t _http_event_handler(esp_http_client_event_t *evt)
 {
@@ -40,44 +41,40 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         break;
     case HTTP_EVENT_ON_DATA:
         ESP_LOGI(TAG, "HTTP_EVENT_ON_DATA, len=%d data= %s", evt->data_len, (char *)evt->data);
-        i++;
-        /* if (flag)
-         {
-             output_buffer = realloc(output_buffer, output_len + evt->data_len + 1);
-             memcpy(output_buffer + output_len, evt->data, evt->data_len);
-             output_len += evt->data_len;
-             output_buffer[output_len] = '\0';
-         }
-         flag = true;
-         output_buffer = malloc(evt->data_len);
-         memcpy(output_buffer, evt->data, evt->data_len);
-         if (new_buffer == NULL)
-         {
-             ESP_LOGE(TAG, "Failed to allocate memory!");
-             free(output_buffer);
-             output_buffer = NULL;
-             output_len = 0;
-             return ESP_FAIL;
-         }
- */
-        // Gán buffer mới và nối dữ liệu vào cuối
-        //    output_buffer = new_buffer;
+        if (flag)
+        {
+            output_buffer = realloc(output_buffer, output_len + evt->data_len + 1);
+            memcpy(output_buffer + output_len, evt->data, evt->data_len);
+            output_len += evt->data_len;
+            output_buffer[output_len] = '\0';
+        }
+        else
+        {
+            flag = true;
+            output_buffer = malloc(evt->data_len);
+            memcpy(output_buffer, evt->data, evt->data_len);
+            output_len += evt->data_len;
+            if (output_buffer == NULL)
+            {
+                ESP_LOGE(TAG, "Failed to allocate memory!");
+                free(output_buffer);
+                output_buffer = NULL;
+                output_len = 0;
+                return ESP_FAIL;
+            }
+        }
         break;
 
     case HTTP_EVENT_ON_FINISH:
         ESP_LOGI(TAG, "HTTP_EVENT_ON_FINISH");
-        /*if (output_buffer != NULL)
+        if (output_buffer != NULL)
         {
-            handler_json_query(output_buffer, "em");
-
-            ESP_LOGI("", "%s", output_buffer);
+            handler_json_query(output_buffer, "trusac1");
+            ESP_LOGI("HTTPS", "%s", output_buffer);
             // hau is key in response
         }
-        free(output_buffer);
-        output_buffer = NULL;
         output_len = 0;
-       */
-
+        flag = false;
         break;
     case HTTP_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
@@ -102,19 +99,19 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
     return ESP_OK;
 }
 // void parse_json() { printf("Data get =%s", buffer); }
-void init_https(const char *time)
+void init_https(char *time)
 {
 
     char buffer[87];
-    sprintf(buffer, "%s%s",
-            "https://my.sepay.vn/userapi/transactions/list?transaction_date_min=", time);
+    sprintf(buffer, "%s%s", "https://my.sepay.vn/userapi/transactions/list?transaction_date_min=",
+            handle_time(time));
     ESP_LOGI("test", "%s", buffer);
 
     esp_http_client_config_t config = {
         .url = buffer,
         .event_handler = _http_event_handler,
         .method = HTTP_METHOD_GET,
-        .timeout_ms = 9000,
+        .timeout_ms = 30000,
         .buffer_size = DEFAULT_HTTP_BUF_SIZE,
     };
 
@@ -125,26 +122,6 @@ void init_https(const char *time)
         client, "Authorization",
         "Bearer IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7");
 
-    esp_err_t err = esp_http_client_perform(client);
-    /* int count = 5;
-     while (count--)
-     {
-         esp_err_t err = esp_http_client_open(client, 0);
-         if (err == ESP_OK)
-         {
-             ESP_LOGI(TAG, "HTTP GET Status = %d, content_length = %" PRIu64,
-                      esp_http_client_get_status_code(client),
-                      esp_http_client_get_content_length(client));
-         }
-         else
-         {
-             ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
-         }
-         esp_http_client_close(client);
-         vTaskDelay(1000);
-     }
-     */
-    esp_http_client_close(client);
+    esp_http_client_perform(client);
     esp_http_client_cleanup(client);
-    printf("%d", i);
 }

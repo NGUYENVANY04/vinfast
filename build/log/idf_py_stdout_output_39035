@@ -1,0 +1,58 @@
+[1/22] Building C object esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj
+../components/common_nvs/common_nvs.c: In function 'init_info_wifi':
+../components/common_nvs/common_nvs.c:19:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   19 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:18:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   18 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'init_info_last_id_payload':
+../components/common_nvs/common_nvs.c:31:19: warning: unused variable 'err_commit' [-Wunused-variable]
+   31 |         esp_err_t err_commit = nvs_commit(id);
+      |                   ^~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_last_id_payload':
+../components/common_nvs/common_nvs.c:40:15: warning: unused variable 'err_id' [-Wunused-variable]
+   40 |     esp_err_t err_id = nvs_get_u32(id, "ID_LAST", &last_id);
+      |               ^~~~~~
+../components/common_nvs/common_nvs.c:39:15: warning: unused variable 'err_open' [-Wunused-variable]
+   39 |     esp_err_t err_open = nvs_open("ID", NVS_READONLY, &id);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'save_wifi':
+../components/common_nvs/common_nvs.c:65:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   65 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", ssid);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:64:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   64 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", pass);
+      |               ^~~~~~~~
+[2/22] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[3/20] Linking C static library esp-idf/common_nvs/libcommon_nvs.a
+[4/20] Building C object esp-idf/app_handle_query/CMakeFiles/__idf_app_handle_query.dir/app_handle_query.c.obj
+../components/app_handle_query/app_handle_query.c: In function 'handler_json_query':
+../components/app_handle_query/app_handle_query.c:49:16: warning: unused variable 'amount_out' [-Wunused-variable]
+   49 |         cJSON *amount_out = cJSON_GetObjectItem(transaction, "amount_out");
+      |                ^~~~~~~~~~
+[5/20] Building C object esp-idf/app_get_realtime/CMakeFiles/__idf_app_get_realtime.dir/app_get_realtime.c.obj
+[6/20] Building C object esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj
+[7/20] Building C object esp-idf/app_request_https/CMakeFiles/__idf_app_request_https.dir/app_request_https.c.obj
+[8/20] Linking C static library esp-idf/app_request_https/libapp_request_https.a
+[9/20] Linking C static library esp-idf/app_handle_query/libapp_handle_query.a
+[10/20] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/ynghia/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.4-52-g978d574e5e-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I../main -I/home/ynghia/esp/esp-idf/components/newlib/platform_include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/ynghia/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/ynghia/esp/esp-idf/components/heap/include -I/home/ynghia/esp/esp-idf/components/log/include -I/home/ynghia/esp/esp-idf/components/soc/include -I/home/ynghia/esp/esp-idf/components/soc/esp32 -I/home/ynghia/esp/esp-idf/components/soc/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/include -I/home/ynghia/esp/esp-idf/components/hal/platform_port/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include/esp32 -I/home/ynghia/esp/esp-idf/components/esp_rom/esp32 -I/home/ynghia/esp/esp-idf/components/esp_common/include -I/home/ynghia/esp/esp-idf/components/esp_system/include -I/home/ynghia/esp/esp-idf/components/esp_system/port/soc -I/home/ynghia/esp/esp-idf/components/esp_system/port/include/private -I/home/ynghia/esp/esp-idf/components/xtensa/include -I/home/ynghia/esp/esp-idf/components/xtensa/esp32/include -I/home/ynghia/esp/esp-idf/components/lwip/include -I/home/ynghia/esp/esp-idf/components/lwip/include/apps -I/home/ynghia/esp/esp-idf/components/lwip/include/apps/sntp -I/home/ynghia/esp/esp-idf/components/lwip/lwip/src/include -I/home/ynghia/esp/esp-idf/components/lwip/port/include -I/home/ynghia/esp/esp-idf/components/lwip/port/freertos/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/ynghia/esp/esp-idf/components/mbedtls/port/include -I/home/ynghia/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/ynghia/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/ynghia/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/ynghia/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/ynghia/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/ynghia/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/ynghia/esp/esp-idf/components/nvs_flash/include -I/home/ynghia/esp/esp-idf/components/esp_partition/include -I/home/ynghia/esp/esp-idf/components/spi_flash/include -I../components/app_wifi/include -I/home/ynghia/esp/esp-idf/components/esp_event/include -I../components/app_request_https/include -I../components/app_get_realtime/include -I/home/ynghia/esp/esp-idf/components/esp_netif/include -I../components/common_nvs/include -I../components/app_handle_query/include -I../components/driver_sleep_mode/include -I/home/ynghia/esp/esp-idf/components/driver/include -I/home/ynghia/esp/esp-idf/components/driver/deprecated -I/home/ynghia/esp/esp-idf/components/driver/analog_comparator/include -I/home/ynghia/esp/esp-idf/components/driver/dac/include -I/home/ynghia/esp/esp-idf/components/driver/gpio/include -I/home/ynghia/esp/esp-idf/components/driver/gptimer/include -I/home/ynghia/esp/esp-idf/components/driver/i2c/include -I/home/ynghia/esp/esp-idf/components/driver/i2s/include -I/home/ynghia/esp/esp-idf/components/driver/ledc/include -I/home/ynghia/esp/esp-idf/components/driver/mcpwm/include -I/home/ynghia/esp/esp-idf/components/driver/parlio/include -I/home/ynghia/esp/esp-idf/components/driver/pcnt/include -I/home/ynghia/esp/esp-idf/components/driver/rmt/include -I/home/ynghia/esp/esp-idf/components/driver/sdio_slave/include -I/home/ynghia/esp/esp-idf/components/driver/sdmmc/include -I/home/ynghia/esp/esp-idf/components/driver/sigma_delta/include -I/home/ynghia/esp/esp-idf/components/driver/spi/include -I/home/ynghia/esp/esp-idf/components/driver/temperature_sensor/include -I/home/ynghia/esp/esp-idf/components/driver/touch_sensor/include -I/home/ynghia/esp/esp-idf/components/driver/twai/include -I/home/ynghia/esp/esp-idf/components/driver/uart/include -I/home/ynghia/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/ynghia/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/ynghia/esp/esp-idf/components/esp_pm/include -I/home/ynghia/esp/esp-idf/components/esp_ringbuf/include -I../components/common/include -I../components/app_handle_wifi_mode_sta/include -I../components/driver_gpio/include -I../components/admin_into_setup/include -I../components/admin_menu_congfi/include -I/home/ynghia/esp/esp-idf/components/esp_http_server/include -I/home/ynghia/esp/esp-idf/components/http_parser -I/home/ynghia/esp/esp-idf/components/esp_eth/include -I/home/ynghia/esp/esp-idf/components/esp_wifi/include -I/home/ynghia/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/ynghia/esp/esp-idf/components/esp_phy/include -I/home/ynghia/esp/esp-idf/components/esp_phy/esp32/include -I/home/ynghia/esp/esp-idf/components/esp-tls -I/home/ynghia/esp/esp-idf/components/esp-tls/esp-tls-crypto -mlongcalls -Wno-frame-address    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/ynghia/CODE/IDF/vinfast=. -fmacro-prefix-map=/home/ynghia/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj   -c ../main/main.c
+../main/main.c:8:1: warning: data definition has no type or storage class
+    8 | flag_reset = true;
+      | ^~~~~~~~~~
+../main/main.c:8:1: error: type defaults to 'int' in declaration of 'flag_reset' [-Werror=implicit-int]
+../main/main.c:8:1: error: conflicting types for 'flag_reset'; have 'int'
+../main/main.c:7:13: note: previous declaration of 'flag_reset' with type '_Bool'
+    7 | extern bool flag_reset;
+      |             ^~~~~~~~~~
+cc1: some warnings being treated as errors
+[11/20] Linking C static library esp-idf/app_get_realtime/libapp_get_realtime.a
+[12/20] Building C object esp-idf/admin_menu_congfi/CMakeFiles/__idf_admin_menu_congfi.dir/admin_menu_congfi.c.obj
+../components/admin_menu_congfi/admin_menu_congfi.c:124:18: warning: 'stop_webserver' defined but not used [-Wunused-function]
+  124 | static esp_err_t stop_webserver(httpd_handle_t server)
+      |                  ^~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

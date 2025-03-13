@@ -1,0 +1,417 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25278h (152184) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=000352a0 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0128h (655656) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e0150 vaddr=400870a4 size=0f0b8h ( 61624) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (466) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu up.[0m
+[0;32mI (467) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (485) cpu_start: Pro cpu start user code[0m
+[0;32mI (485) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (485) cpu_start: Application information:[0m
+[0;32mI (489) cpu_start: Project name:     vinfast[0m
+[0;32mI (494) cpu_start: App version:      9ae3b86-dirty[0m
+[0;32mI (500) cpu_start: Compile time:     Mar  7 2025 20:20:20[0m
+[0;32mI (506) cpu_start: ELF file SHA256:  42206bb6ce66c5ca...[0m
+[0;32mI (512) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (523) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (528) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (540) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FFB83B0 len 00027C50 (159 KiB): DRAM[0m
+[0;32mI (552) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (565) heap_init: At 4009615C len 00009EA4 (39 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (576) spi_flash: flash io: dio[0m
+[0;33mW (580) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (594) app_start: Starting scheduler on CPU0[0m
+[0;32mI (598) app_start: Starting scheduler on CPU1[0m
+[0;32mI (598) main_task: Started on CPU0[0m
+[0;32mI (608) main_task: Calling app_main()[0m
+[0;32mI (608) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (668) wifi:wifi driver task: 3ffc3af4, prio:23, stack:6656, core=0[0m
+[0;32mI (678) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (688) wifi:wifi certification version: v7.0[0m
+[0;32mI (688) wifi:config NVS flash: enabled[0m
+[0;32mI (688) wifi:config nano formating: disabled[0m
+[0;32mI (688) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (688) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (698) wifi:Init management short buffer num: 32[0m
+[0;32mI (698) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (708) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (708) wifi:Init static rx buffer num: 10[0m
+[0;32mI (708) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (718) wifi_init: rx ba win: 6[0m
+[0;32mI (718) wifi_init: tcpip mbox: 32[0m
+[0;32mI (728) wifi_init: udp mbox: 6[0m
+[0;32mI (728) wifi_init: tcp mbox: 6[0m
+[0;32mI (728) wifi_init: tcp tx win: 5760[0m
+[0;32mI (738) wifi_init: tcp rx win: 5760[0m
+[0;32mI (738) wifi_init: tcp mss: 1440[0m
+[0;32mI (748) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (748) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (758) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (838) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (838) wifi:enable tsf[0m
+[0;32mI (838) wifi station: wifi_init_sta finished.[0m
+[0;32mI (898) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (898) wifi:state: init -> auth (b0)[0m
+[0;32mI (918) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1918) wifi:state: assoc -> init (2700)[0m
+[0;32mI (1918) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (1918) wifi station: retry to connect to the AP[0m
+[0;32mI (1918) wifi station: connect to the AP fail[0m
+[0;32mI (4338) wifi station: retry to connect to the AP[0m
+[0;32mI (4338) wifi station: connect to the AP fail[0m
+[0;32mI (4378) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (4378) wifi:state: init -> auth (b0)[0m
+[0;32mI (4398) wifi:state: auth -> assoc (0)[0m
+[0;32mI (5398) wifi:state: assoc -> init (2700)[0m
+[0;32mI (5398) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (5398) wifi station: retry to connect to the AP[0m
+[0;32mI (5398) wifi station: connect to the AP fail[0m
+[0;32mI (7818) wifi station: retry to connect to the AP[0m
+[0;32mI (7818) wifi station: connect to the AP fail[0m
+[0;32mI (7858) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (7858) wifi:state: init -> auth (b0)[0m
+[0;32mI (8868) wifi:state: auth -> init (200)[0m
+[0;32mI (8868) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (8868) wifi station: retry to connect to the AP[0m
+[0;32mI (8868) wifi station: connect to the AP fail[0m
+[0;32mI (11288) wifi station: retry to connect to the AP[0m
+[0;32mI (11288) wifi station: connect to the AP fail[0m
+[0;32mI (11338) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (11348) wifi:state: init -> auth (b0)[0m
+[0;32mI (12348) wifi:state: auth -> init (200)[0m
+[0;32mI (12348) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (12348) wifi station: retry to connect to the AP[0m
+[0;32mI (12348) wifi station: connect to the AP fail[0m
+[0;32mI (14768) wifi station: retry to connect to the AP[0m
+[0;32mI (14768) wifi station: connect to the AP fail[0m
+[0;32mI (14828) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (14828) wifi:state: init -> auth (b0)[0m
+[0;32mI (14858) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14918) wifi:state: assoc -> run (10)[0m
+[0;32mI (17068) wifi:connected with P401, aid = 8, channel 11, BW20, bssid = cc:71:90:b3:51:30[0m
+[0;32mI (17068) wifi:security: WPA2-PSK, phy: bgn, rssi: -78[0m
+[0;32mI (17078) wifi:pm start, type: 1[0m
+
+[0;32mI (17078) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (17088) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (19168) wifi:<ba-add>idx:0 (ifx:0, cc:71:90:b3:51:30), tid:0, ssn:6, winSize:64[0m
+[0;32mI (20088) esp_netif_handlers: sta ip: 192.168.1.11, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (22088) TIME: Waiting for system time to be set... (1/15)[0m
+[0;32mI (24088) TIME: Waiting for system time to be set... (2/15)[0m
+[0;32mI (26088) TIME: Waiting for system time to be set... (3/15)[0m
+[0;32mI (28088) TIME: Waiting for system time to be set... (4/15)[0m
+[0;32mI (30088) TIME: Waiting for system time to be set... (5/15)[0m
+[0;32mI (32088) TIME: Waiting for system time to be set... (6/15)[0m
+[0;32mI (34088) TIME: Waiting for system time to be set... (7/15)[0m
+[0;32mI (36088) TIME: Waiting for system time to be set... (8/15)[0m
+[0;32mI (38088) TIME: Waiting for system time to be set... (9/15)[0m
+[0;32mI (40088) TIME: Waiting for system time to be set... (10/15)[0m
+[0;32mI (42088) TIME: Waiting for system time to be set... (11/15)[0m
+[0;32mI (44088) TIME: Waiting for system time to be set... (12/15)[0m
+[0;32mI (46088) TIME: Waiting for system time to be set... (13/15)[0m
+[0;32mI (48088) TIME: Waiting for system time to be set... (14/15)[0m
+[0;32mI (50088) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=1970-01-01+07:00:49[0m
+[0;33mW (87648) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (87648) transport_base: Failed to open a new connection[0m
+[0;31mE (87648) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (87648) HTTPS: HTTP GET request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (87658) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (87658) HTTPS: Last esp error code: 0x8006[0m
+[0;32mI (87668) HTTPS: Last mbedtls failure: 0x0[0m
+[0;33mW (130168) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (130168) transport_base: Failed to open a new connection[0m
+[0;31mE (130168) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (130168) HTTPS: HTTP GET request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (130178) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (130188) HTTPS: Last esp error code: 0x8006[0m
+[0;32mI (130188) HTTPS: Last mbedtls failure: 0x0[0m
+[0;33mW (180428) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (180428) transport_base: Failed to open a new connection[0m
+[0;31mE (180428) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (180428) HTTPS: HTTP GET request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (180438) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (180448) HTTPS: Last esp error code: 0x8006[0m
+[0;32mI (180448) HTTPS: Last mbedtls failure: 0x0[0m
+[0;31mE (200918) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[0;31mE (200918) esp-tls: Failed to open new connection[0m
+[0;31mE (200918) transport_base: Failed to open a new connection[0m
+[0;31mE (200928) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (200928) HTTPS: HTTP GET request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (200938) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (200938) HTTPS: Last esp error code: 0x8004[0m
+[0;32mI (200948) HTTPS: Last mbedtls failure: 0x0[0m
+[0;31mE (221418) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[0;31mE (221418) esp-tls: Failed to open new connection[0m
+[0;31mE (221418) transport_base: Failed to open a new connection[0m
+[0;31mE (221428) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (221428) HTTPS: HTTP GET request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (221438) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (221438) HTTPS: Last esp error code: 0x8004[0m
+[0;32mI (221448) HTTPS: Last mbedtls failure: 0x0[0m
+[0;32mI (223448) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+0[0;32mI (223448) TIME: The current date/time in Viet Nam is: 1970-01-01+07:00:49[0m
+[0;32mI (223448) wifi station: connect to the AP complete[0m
+[0;32mI (223448) wifi station: got ip:192.168.1.11[0m
+[0;32mI (223458) wifi station: connected to ap SSID:P401 password:conmeovang[0m
+[0;32mI (223458) main_task: Returned from app_main()[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25278h (152184) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=000352a0 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0128h (655656) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e0150 vaddr=400870a4 size=0f0b8h ( 61624) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (466) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu up.[0m
+[0;32mI (467) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (485) cpu_start: Pro cpu start user code[0m
+[0;32mI (485) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (485) cpu_start: Application information:[0m
+[0;32mI (489) cpu_start: Project name:     vinfast[0m
+[0;32mI (494) cpu_start: App version:      9ae3b86-dirty[0m
+[0;32mI (500) cpu_start: Compile time:     Mar  7 2025 20:20:20[0m
+[0;32mI (506) cpu_start: ELF file SHA256:  42206bb6ce66c5ca...[0m
+[0;32mI (512) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (523) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (528) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (540) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FFB83B0 len 00027C50 (159 KiB): DRAM[0m
+[0;32mI (552) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (565) heap_init: At 4009615C len 00009EA4 (39 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (576) spi_flash: flash io: dio[0m
+[0;33mW (580) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (594) app_start: Starting scheduler on CPU0[0m
+[0;32mI (598) app_start: Starting scheduler on CPU1[0m
+[0;32mI (598) main_task: Started on CPU0[0m
+[0;32mI (608) main_task: Calling app_main()[0m
+[0;32mI (608) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (668) wifi:wifi driver task: 3ffc3af4, prio:23, stack:6656, core=0[0m
+[0;32mI (678) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (688) wifi:wifi certification version: v7.0[0m
+[0;32mI (688) wifi:config NVS flash: enabled[0m
+[0;32mI (688) wifi:config nano formating: disabled[0m
+[0;32mI (688) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (688) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (698) wifi:Init management short buffer num: 32[0m
+[0;32mI (698) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (708) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (708) wifi:Init static rx buffer num: 10[0m
+[0;32mI (708) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (718) wifi_init: rx ba win: 6[0m
+[0;32mI (718) wifi_init: tcpip mbox: 32[0m
+[0;32mI (728) wifi_init: udp mbox: 6[0m
+[0;32mI (728) wifi_init: tcp mbox: 6[0m
+[0;32mI (728) wifi_init: tcp tx win: 5760[0m
+[0;32mI (738) wifi_init: tcp rx win: 5760[0m
+[0;32mI (738) wifi_init: tcp mss: 1440[0m
+[0;32mI (748) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (748) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (758) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (838) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (838) wifi:enable tsf[0m
+[0;32mI (838) wifi station: wifi_init_sta finished.[0m
+[0;32mI (938) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (938) wifi:state: init -> auth (b0)[0m
+[0;32mI (968) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1968) wifi:state: assoc -> init (2700)[0m
+[0;32mI (1968) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (1968) wifi station: retry to connect to the AP[0m
+[0;32mI (1968) wifi station: connect to the AP fail[0m
+[0;32mI (4388) wifi station: retry to connect to the AP[0m
+[0;32mI (4388) wifi station: connect to the AP fail[0m
+[0;32mI (4418) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (4428) wifi:state: init -> auth (b0)[0m
+[0;32mI (5428) wifi:state: auth -> init (200)[0m
+[0;32mI (5428) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (5428) wifi station: retry to connect to the AP[0m
+[0;32mI (5428) wifi station: connect to the AP fail[0m
+[0;32mI (7848) wifi station: retry to connect to the AP[0m
+[0;32mI (7848) wifi station: connect to the AP fail[0m
+[0;32mI (7908) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (7908) wifi:state: init -> auth (b0)[0m
+[0;32mI (7928) wifi:state: auth -> assoc (0)[0m
+[0;32mI (7978) wifi:state: assoc -> run (10)[0m
+[0;32mI (12108) wifi:state: run -> init (fc0)[0m
+[0;32mI (12108) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (12108) wifi station: retry to connect to the AP[0m
+[0;32mI (12108) wifi station: connect to the AP fail[0m
+[0;32mI (14528) wifi station: retry to connect to the AP[0m
+[0;32mI (14528) wifi station: connect to the AP fail[0m
+[0;32mI (14558) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (14558) wifi:state: init -> auth (b0)[0m
+[0;32mI (14578) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14618) wifi:state: assoc -> run (10)[0m
+[0;32mI (17708) wifi:state: run -> init (fc0)[0m
+[0;32mI (17708) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (17718) wifi station: retry to connect to the AP[0m
+[0;32mI (17718) wifi station: connect to the AP fail[0m
+[0;32mI (20128) wifi station: retry to connect to the AP[0m
+[0;32mI (20128) wifi station: connect to the AP fail[0m
+[0;32mI (20188) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (20198) wifi:state: init -> auth (b0)[0m
+[0;32mI (20208) wifi:state: auth -> assoc (0)[0m
+[0;32mI (20238) wifi:state: assoc -> run (10)[0m
+[0;32mI (24358) wifi:state: run -> init (fc0)[0m
+[0;32mI (24368) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (24368) wifi station: retry to connect to the AP[0m
+[0;32mI (24368) wifi station: connect to the AP fail[0m
+[0;32mI (26778) wifi station: retry to connect to the AP[0m
+[0;32mI (26778) wifi station: connect to the AP fail[0m
+[0;32mI (26848) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (26848) wifi:state: init -> auth (b0)[0m
+[0;32mI (26868) wifi:state: auth -> assoc (0)[0m
+[0;32mI (26888) wifi:state: assoc -> run (10)[0m
+[0;32mI (27018) wifi:connected with P401, aid = 11, channel 11, BW20, bssid = cc:71:90:b3:51:30[0m
+[0;32mI (27018) wifi:security: WPA2-PSK, phy: bgn, rssi: -82[0m
+[0;32mI (27028) wifi:pm start, type: 1[0m
+
+[0;32mI (27028) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (27258) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (28538) esp_netif_handlers: sta ip: 192.168.1.11, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (30538) TIME: Waiting for system time to be set... (1/15)[0m
+[0;32mI (31728) wifi:<ba-add>idx:0 (ifx:0, cc:71:90:b3:51:30), tid:0, ssn:5, winSize:64[0m
+[0;32mI (32538) TIME: Waiting for system time to be set... (2/15)[0m
+[0;32mI (34538) TIME: Waiting for system time to be set... (3/15)[0m
+[0;32mI (36538) TIME: Waiting for system time to be set... (4/15)[0m
+[0;32mI (38538) TIME: Waiting for system time to be set... (5/15)[0m
+[0;32mI (40538) TIME: Waiting for system time to be set... (6/15)[0m
+[0;32mI (42538) TIME: Waiting for system time to be set... (7/15)[0m
+[0;32mI (44538) TIME: Waiting for system time to be set... (8/15)[0m
+[0;32mI (46538) TIME: Waiting for system time to be set... (9/15)[0m
+[0;32mI (48538) TIME: Waiting for system time to be set... (10/15)[0m
+[0;32mI (50538) TIME: Waiting for system time to be set... (11/15)[0m
+[0;32mI (52538) TIME: Waiting for system time to be set... (12/15)[0m
+[0;32mI (54538) TIME: Waiting for system time to be set... (13/15)[0m
+[0;32mI (56538) TIME: Waiting for system time to be set... (14/15)[0m
+[0;32mI (58538) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=1970-01-01+07:00:58[0m
+[0;32mI (63148) HTTPS: HTTP GET Status = 0, content_length = 0[0m
+[0;32mI (64548) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+179340[0;32mI (64548) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (67468) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;32mI (67548) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+178804[0;32mI (67548) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (70308) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (70488) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70488) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70498) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70508) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70508) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70518) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70528) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (70538) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (70548) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+[0;31mE (70558) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+178656[0;32mI (70558) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;31mE (70568) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74578) HTTP_CLIENT: Failed to post https_ota event: 1, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74578) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (74588) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (74798) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74798) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74798) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74808) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74818) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74828) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74838) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74838) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74848) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (74858) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (74868) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+[0;31mE (74878) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+178188[0;32mI (74888) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;31mE (74888) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80668) HTTP_CLIENT: Failed to post https_ota event: 1, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (80668) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (80678) HTTPS: HTTP GET Status = 200, content_length = 18446744073709551615[0m
+[0;31mE (85738) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85738) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85748) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85758) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85758) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85768) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85778) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85788) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85798) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (85798) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (85808) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+[0;31mE (85818) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+178336[0;32mI (85828) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;31mE (85838) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (87848) HTTPS: HTTP_EVENT_DISCONNECTED[0m
+[0;31mE (87848) HTTP_CLIENT: Failed to post https_ota event: 6, error: ESP_ERR_TIMEOUT[0m
+5[0;32mI (87848) TIME: The current date/time in Viet Nam is: 1970-01-01+07:00:58[0m
+[0;32mI (87848) wifi station: connect to the AP complete[0m
+[0;32mI (87858) wifi station: got ip:192.168.1.11[0m
+[0;32mI (87868) wifi station: connected to ap SSID:P401 password:conmeovang[0m
+[0;32mI (87868) main_task: Returned from app_main()[0m
+[0;32mI (332438) wifi:<ba-add>idx:1 (ifx:0, cc:71:90:b3:51:30), tid:4, ssn:0, winSize:64[0m

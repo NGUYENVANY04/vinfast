@@ -15,7 +15,7 @@
 void handler_json_query(char *buffer_input, char *charger_id)
 {
     uint32_t last_transaction_id = get_last_id_payload();
-    ESP_LOGI("NVS TEST", "%ld", last_transaction_id);
+    ESP_LOGI("NVS", "%ld", last_transaction_id);
     cJSON *root = cJSON_Parse(buffer_input);
     if (!root)
     {
@@ -61,8 +61,7 @@ void handler_json_query(char *buffer_input, char *charger_id)
         if (transaction_id > last_transaction_id || last_transaction_id == 0)
         {
             // Check key
-            if (strstr(content->valuestring, charger_id) != NULL
-                && strstr(amount_out->valuestring, "0.00") != NULL)
+            if (strstr(content->valuestring, charger_id) != NULL)
             {
                 printf("Giao dich hợp lệ:\n");
                 printf("ID: %d\n", transaction_id);
@@ -71,23 +70,25 @@ void handler_json_query(char *buffer_input, char *charger_id)
                 printf("Số tiền: %s\n", amount_in->valuestring);
                 printf("Thời gian thanh toán: %s\n", time_pay->valuestring);
                 found = 1;
-                last_transaction_id = transaction_id; // update new id
+                // last_transaction_id = transaction_id; // update new id
                 enable_output();
-                set_last_id_payload(last_transaction_id);
-                vTaskDelay(1000);
+                set_last_id_payload(transaction_id);
+                set_last_time_payload(time_pay->valuestring);
                 ESP_LOGW("HTTP", "Sleep mode start");
                 esp_deep_sleep_start();
                 break; // get ID the first and break
             }
         }
     }
-
+    cJSON_Delete(root);
+    free(buffer_input);
+    buffer_input = NULL;
     if (!found)
     {
         printf("Không có giao dịch mới phù hợp.\n");
         printf("Tiến hành kiểm tra lại hoặc sạc thủ công .\n");
         printf("Hệ thống sleep sau 5p .\n");
+        vTaskDelay(2000);
+        esp_deep_sleep_start();
     }
-    cJSON_Delete(root);
-    free(buffer_input);
 }

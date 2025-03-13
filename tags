@@ -681,7 +681,7 @@ CONFIG_BROWNOUT_DET_LVL	build/bootloader/config/sdkconfig.h	384;"	d
 CONFIG_BROWNOUT_DET_LVL	build/config/sdkconfig.h	661;"	d
 CONFIG_BROWNOUT_DET_LVL_SEL_0	build/bootloader/config/sdkconfig.h	385;"	d
 CONFIG_BROWNOUT_DET_LVL_SEL_0	build/config/sdkconfig.h	662;"	d
-CONFIG_CALE_BEARER_TOKEN	components/app_request_https/app_request_https.c	14;"	d	file:
+CONFIG_CALE_BEARER_TOKEN	components/app_request_https/app_request_https.c	19;"	d	file:
 CONFIG_COMPILER_FLOAT_LIB_FROM_GCCLIB	build/bootloader/config/sdkconfig.h	265;"	d
 CONFIG_COMPILER_FLOAT_LIB_FROM_GCCLIB	build/config/sdkconfig.h	265;"	d
 CONFIG_COMPILER_HIDE_PATHS_MACROS	build/bootloader/config/sdkconfig.h	267;"	d
@@ -1845,7 +1845,7 @@ HEX	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
 HEX	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	540;"	d	file:
 HEX	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
 HEX	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	540;"	d	file:
-HTTP_RECEIVE_BUFFER_SIZE	components/app_request_https/app_request_https.c	13;"	d	file:
+HTTP_RECEIVE_BUFFER_SIZE	components/app_request_https/app_request_https.c	18;"	d	file:
 ID_VOID_MAIN	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 ID_VOID_MAIN	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 KEY	build/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	10;"	d	file:
@@ -1864,10 +1864,10 @@ KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	18;"	d	file:
 KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	20;"	d	file:
 KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	6;"	d	file:
 KEY	build/bootloader/CMakeFiles/CheckTypeSize/TIME_T_SIZE.c	8;"	d	file:
-MAX_HTTP_OUTPUT_BUFFER	components/app_request_https/app_request_https.c	15;"	d	file:
+MAX_HTTP_OUTPUT_BUFFER	components/app_request_https/app_request_https.c	20;"	d	file:
 MBEDTLS_TEST_OPAQUE_DRIVER_ID	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	51;"	d	file:
 MBEDTLS_TEST_TRANSPARENT_DRIVER_ID	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	52;"	d	file:
-MIN	components/app_request_https/app_request_https.c	12;"	d	file:
+MIN	components/app_request_https/app_request_https.c	17;"	d	file:
 P256_TRANSPARENT_DRIVER_ID	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	53;"	d	file:
 PIN_TEST	components/common/include/common.h	5;"	d
 PLATFORM_ID	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	339;"	d	file:
@@ -2066,13 +2066,17 @@ STRINGIFY_HELPER	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	334;"	d	
 STRINGIFY_HELPER	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
 STRINGIFY_HELPER	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
 STRINGIFY_HELPER	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
+TAG	components/admin_menu_congfi/admin_menu_congfi.c	/^static const char *TAG = "example";$/;"	v	file:
 TAG	components/app_get_realtime/app_get_realtime.c	/^static const char *TAG = "TIME";$/;"	v	file:
+TAG	components/app_handle_wifi_mode_sta/app_handle_wifi_mode_sta.c	15;"	d	file:
 TAG	components/app_request_https/app_request_https.c	/^const char *TAG = "HTTPS";$/;"	v
 TAG	components/app_wifi/app_wifi.c	/^static const char *TAG = "wifi station";$/;"	v	file:
 WIFI_CONNECTED_BIT	components/app_wifi/app_wifi.c	26;"	d	file:
 WIFI_FAIL_BIT	components/app_wifi/app_wifi.c	27;"	d	file:
+_ADMIN_MENU_CONGFI_H_	components/admin_menu_congfi/include/admin_menu_congfi.h	2;"	d
 _APP_GET_REALTIME_H_	components/app_get_realtime/include/app_get_realtime.h	2;"	d
 _APP_HANDLE_QUERY_H_	components/app_handle_query/include/app_handle_query.h	2;"	d
+_APP_HANDLE_WIFI_MODE_STA_H_	components/app_handle_wifi_mode_sta/include/app_handle_wifi_mode_sta.h	2;"	d
 _APP_REQUEST_HTTPS_H_	components/app_request_https/include/app_request_https.h	2;"	d
 _APP_WIFI_H_	components/app_wifi/include/app_wifi.h	2;"	d
 _COMMON_H_	components/common/include/common.h	2;"	d
@@ -2083,16 +2087,24 @@ _binary_x509_crt_bundle_end	build/x509_crt_bundle.S	/^_binary_x509_crt_bundle_en
 _binary_x509_crt_bundle_start	build/x509_crt_bundle.S	/^_binary_x509_crt_bundle_start: \/* for objcopy compatibility *\/$/;"	l
 _http_event_handler	components/app_request_https/app_request_https.c	/^esp_err_t _http_event_handler(esp_http_client_event_t *evt)$/;"	f
 app_main	main/main.c	/^void app_main(void)$/;"	f
+config	components/common_nvs/common_nvs.c	/^nvs_handle_t config;$/;"	v
 const	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
 const	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
-enable_output	components/driver_enable_output/driver_enable_output.c	/^void enable_output(void) { gpio_set_level(GPIO_NUM_2, 1); }$/;"	f
+enable_output	components/driver_enable_output/driver_enable_output.c	/^void enable_output(void)$/;"	f
 event_handler	components/app_wifi/app_wifi.c	/^static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_id,$/;"	f	file:
 features	build/esp-idf/mbedtls/mbedtls/library/version_features.c	/^static const char * const features[] = {$/;"	v	file:
 flag	components/app_request_https/app_request_https.c	/^bool flag = false;$/;"	v
+flag_reset	main/main.c	/^bool flag_reset = true;$/;"	v
 fuct	components/common/common.c	/^void fuct(void) { printf("Hello\\n"); }$/;"	f
 func	components/app_smart_config/app_smart_config.c	/^void func(void)$/;"	f
+get	components/admin_menu_congfi/admin_menu_congfi.c	/^static const httpd_uri_t get = {$/;"	v	file:
+get_handler	components/admin_menu_congfi/admin_menu_congfi.c	/^esp_err_t get_handler(httpd_req_t *req)$/;"	f
 get_info_last_wifi	components/common_nvs/common_nvs.c	/^void get_info_last_wifi(char **ssid, char **pass)$/;"	f
 get_last_id_payload	components/common_nvs/common_nvs.c	/^uint32_t get_last_id_payload(void)$/;"	f
+handle_into_setup	components/admin_into_setup/admin_into_setup.c	/^void handle_into_setup(void *arg)$/;"	f
+handle_result	components/admin_menu_congfi/admin_menu_congfi.c	/^static void handle_result(char *result)$/;"	f	file:
+handle_result	test/main.c	/^void handle_result(char *result)$/;"	f
+handle_time	components/app_get_realtime/app_get_realtime.c	/^char *handle_time(char *realtime)$/;"	f
 handler_json_query	components/app_handle_query/app_handle_query.c	/^void handler_json_query(char *buffer_input, char *charger_id)$/;"	f
 id	components/common_nvs/common_nvs.c	/^nvs_handle_t id;$/;"	v
 info_arch	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
@@ -2133,13 +2145,16 @@ info_version_internal	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^c
 info_version_internal	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
 info_version_internal	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
 info_version_internal	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
-init_gpio	components/driver_gpio/driver_gpio.c	/^void init_gpio(void)$/;"	f
+init_ap_mode	components/app_handle_wifi_mode_sta/app_handle_wifi_mode_sta.c	/^void init_ap_mode(void)$/;"	f
+init_gpio_device	components/driver_gpio/driver_gpio.c	/^void init_gpio_device(void)$/;"	f
+init_gpio_into_setup	components/driver_gpio/driver_gpio.c	/^void init_gpio_into_setup(void)$/;"	f
 init_gpio_wakeup	components/driver_sleep_mode/driver_sleep_mode.c	/^void init_gpio_wakeup(void)$/;"	f
-init_https	components/app_request_https/app_request_https.c	/^void init_https(const char *time)$/;"	f
+init_https	components/app_request_https/app_request_https.c	/^void init_https(char *time)$/;"	f
 init_info_last_id_payload	components/common_nvs/common_nvs.c	/^void init_info_last_id_payload(void)$/;"	f
 init_info_wifi	components/common_nvs/common_nvs.c	/^void init_info_wifi(void)$/;"	f
 init_time	components/app_get_realtime/app_get_realtime.c	/^void init_time(void)$/;"	f
 init_wifi	components/app_wifi/app_wifi.c	/^void init_wifi(void)$/;"	f
+last_time	components/admin_into_setup/admin_into_setup.c	/^uint32_t last_time = 0;$/;"	v
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
@@ -2162,6 +2177,9 @@ mbedtls_tls_prf_types_str	build/esp-idf/mbedtls/mbedtls/library/ssl_debug_helper
 mbedtls_version_check_feature	build/esp-idf/mbedtls/mbedtls/library/version_features.c	/^int mbedtls_version_check_feature(const char *feature)$/;"	f
 obtain_time	components/app_get_realtime/app_get_realtime.c	/^static void obtain_time(void)$/;"	f	file:
 output_buffer	components/app_request_https/app_request_https.c	/^char *output_buffer; \/\/ Buffer to store response of http request from event handler$/;"	v
+output_len	components/app_request_https/app_request_https.c	/^static int output_len; \/\/ Stores number of bytes read$/;"	v	file:
+post	components/admin_menu_congfi/admin_menu_congfi.c	/^static const httpd_uri_t post = {$/;"	v	file:
+post_handler	components/admin_menu_congfi/admin_menu_congfi.c	/^static esp_err_t post_handler(httpd_req_t *req)$/;"	f	file:
 psa_driver_wrapper_export_public_key	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	/^psa_status_t psa_driver_wrapper_export_public_key($/;"	f
 psa_driver_wrapper_get_builtin_key	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	/^psa_status_t psa_driver_wrapper_get_builtin_key($/;"	f
 psa_driver_wrapper_get_key_buffer_size	build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c	/^psa_status_t psa_driver_wrapper_get_key_buffer_size($/;"	f
@@ -2171,14 +2189,18 @@ qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	/^char 
 qnxnto	build/bootloader/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 s_retry_num	components/app_wifi/app_wifi.c	/^static int s_retry_num = 0;$/;"	v	file:
 s_wifi_event_group	components/app_wifi/app_wifi.c	/^static EventGroupHandle_t s_wifi_event_group;$/;"	v	file:
+save_config	components/common_nvs/common_nvs.c	/^void save_config(const char *result_parse)$/;"	f
 save_wifi	components/common_nvs/common_nvs.c	/^void save_wifi(char *pass, char *ssid)$/;"	f
-scan_transactions_with_timeout	components/app_request_https/app_request_https.c	/^void scan_transactions_with_timeout(const char *charger_id, const char *time)$/;"	f
 set_last_id_payload	components/common_nvs/common_nvs.c	/^void set_last_id_payload(const uint32_t id_last)$/;"	f
 set_last_time_payload	components/common_nvs/common_nvs.c	/^void set_last_time_payload(const char *time_last)$/;"	f
-test	test/main.c	/^void test(char **str)$/;"	f
+start_webserver	components/admin_menu_congfi/admin_menu_congfi.c	/^httpd_handle_t start_webserver(void)$/;"	f
+stop_webserver	components/admin_menu_congfi/admin_menu_congfi.c	/^static esp_err_t stop_webserver(httpd_handle_t server)$/;"	f	file:
+success_page	components/admin_menu_congfi/admin_menu_congfi.c	/^const char success_page[] = "<!DOCTYPE HTML><html><head>\\$/;"	v
 time_hanlde	components/common_nvs/common_nvs.c	/^nvs_handle_t time_hanlde;$/;"	v
+ui_config	components/admin_menu_congfi/admin_menu_congfi.c	/^const char ui_config[] = "<!DOCTYPE HTML><html><head>\\$/;"	v
 volatile	build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 volatile	build/bootloader/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 wifi	components/common_nvs/common_nvs.c	/^nvs_handle_t wifi;$/;"	v
+wifi_event_handler	components/app_handle_wifi_mode_sta/app_handle_wifi_mode_sta.c	/^static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id,$/;"	f	file:
 x509_crt_bundle	build/x509_crt_bundle.S	/^x509_crt_bundle:$/;"	l
 x509_crt_bundle_length	build/x509_crt_bundle.S	/^x509_crt_bundle_length:$/;"	l

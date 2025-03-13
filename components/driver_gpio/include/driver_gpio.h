@@ -7,6 +7,6 @@
  * @return void
  **/
 
-void init_gpio(void);
-
+void init_gpio_device(void);
+void init_gpio_into_setup(void);
 #endif

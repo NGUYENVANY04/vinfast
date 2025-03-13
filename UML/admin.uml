@@ -1,0 +1,33 @@
+@startuml
+skinparam sequenceMessageAlign center
+skinparam sequenceArrowThickness 1
+skinparam ParticipantBackgroundColor lightblue
+skinparam ParticipantBorderColor darkblue
+skinparam ParticipantFontStyle bold
+
+participant "Admin" as Admin
+participant "ESP32 Board" as Board
+participant "Web Server" as WebServer
+participant "NVS" as NVS
+== Kiểm tra tài nguyên có sẵn ==
+Board -> NVS  : Không tồn tại tài nguyên
+== Vào Chế độ Setup ==
+Admin -> Board : Nhấn giữ button (>= 5s)
+Board -> Board : Kiểm tra thời gian nhấn nút
+Board -> Board : Vào chế độ setup
+Board -> Board : Phát Access Point (AP)
+
+== Cấu hình từ Web Server ==
+Admin -> Board : Kết nối vào AP
+Admin -> WebServer : Mở trang cấu hình
+Admin -> WebServer : Nhập SSID, PASSWORD,\nGiá niêm yết, KeyID, Token-Payload
+Admin -> WebServer : Nhấn Submit
+WebServer -> Board : Gửi thông tin cấu hình
+
+== Lưu và Reset ==
+Board -> Board : Lưu thông tin vào bộ nhớ
+Board -> Board : Tự động reset
+Board -> Board : Tự động quay lại trạng thái sleep
+
+@enduml
+

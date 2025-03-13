@@ -1,0 +1,47 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d8f63: set_last_time_payload at /home/ynghia/CODE/IDF/vinfast/build/../components/common_nvs/common_nvs.c:48 (discriminator 1)
+[0m
+[0;33m--- 0x4008a377: _esp_error_check_failed at /home/ynghia/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a381: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x400914f6: abort at /home/ynghia/esp/esp-idf/components/newlib/abort.c:38
+0x4008a377: _esp_error_check_failed at /home/ynghia/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d8f63: set_last_time_payload at /home/ynghia/CODE/IDF/vinfast/build/../components/common_nvs/common_nvs.c:48 (discriminator 1)
+0x400d7fd3: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:41
+0x400d7cb0: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x4017291d: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x40172477: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4017252d: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008cddd: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d8f63: set_last_time_payload at /home/ynghia/CODE/IDF/vinfast/build/../components/common_nvs/common_nvs.c:48 (discriminator 1)
+[0m
+[0;33m--- 0x4008a377: _esp_error_check_failed at /home/ynghia/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a381: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x400914f6: abort at /home/ynghia/esp/esp-idf/components/newlib/abort.c:38
+0x4008a377: _esp_error_check_failed at /home/ynghia/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d8f63: set_last_time_payload at /home/ynghia/CODE/IDF/vinfast/build/../components/common_nvs/common_nvs.c:48 (discriminator 1)
+0x400d7fd3: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:41
+0x400d7cb0: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x4017291d: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x40172477: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4017252d: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008cddd: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

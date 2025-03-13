@@ -38,6 +38,7 @@ void init_time(void)
     // ESP_LOGW("STATUS", "%d", status);
     localtime_r(&now, &timeinfo);
     strftime(strftime_buf, sizeof(strftime_buf), "%Y-%m-%d+%H:%M:%S", &timeinfo);
+    // set_last_time_payload(strftime_buf);
 
     init_https(strftime_buf);
     ESP_LOGI(TAG, "The current date/time in Viet Nam is: %s", strftime_buf);
@@ -61,5 +62,48 @@ static void obtain_time(void)
     }
     // time(&now);
     // localtime_r(&now, &timeinfo);
+}
+char *handle_time(char *realtime)
+{
+
+    // Tách các thành phần thời gian
+    int year, month, day, hour, minute, second;
+    sscanf(realtime, "%4d-%2d-%2d+%2d:%2d:%2d", &year, &month, &day, &hour, &minute, &second);
+
+    // Trừ đi 5 phút
+    minute -= 15;
+    if (minute < 0)
+    {
+        minute += 60;
+        hour--;
+        if (hour < 0)
+        {
+            hour = 23;
+            day--;
+            if (day < 1)
+            {
+                // Xử lý số ngày của tháng trước
+                month--;
+                if (month < 1)
+                {
+                    month = 12;
+                    year--;
+                }
+                // Số ngày trong tháng trước
+                int days_in_month[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+                if (month == 2 && ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0))
+                {
+                    days_in_month[1] = 29; // Năm nhuận
+                }
+                day = days_in_month[month - 1];
+            }
+        }
+    }
+
+    // Cập nhật lại chuỗi thời gian
+    snprintf(realtime, 20, "%04d-%02d-%02d+%02d:%02d:%02d", year, month, day, hour, minute, second);
+
+    printf("Thời gian sau khi trừ 5 phút: %s\n", realtime);
+    return realtime;
 }
 

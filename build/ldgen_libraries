@@ -67,6 +67,9 @@
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_wifi/libapp_wifi.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_sleep_mode/libdriver_sleep_mode.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/common/libcommon.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/admin_menu_congfi/libadmin_menu_congfi.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_handle_wifi_mode_sta/libapp_handle_wifi_mode_sta.a
+/home/ynghia/CODE/IDF/vinfast/build/esp-idf/admin_into_setup/libadmin_into_setup.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/driver_gpio/libdriver_gpio.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/main/libmain.a
 /home/ynghia/CODE/IDF/vinfast/build/esp-idf/app_smart_config/libapp_smart_config.a

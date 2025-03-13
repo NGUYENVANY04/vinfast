@@ -1,24 +1,17 @@
-#include <stdio.h>
-#include "driver/gpio.h"
-#include "driver/gpio_etm.h"
-#include "driver_gpio.h"
 #include <freertos/FreeRTOS.h>
 #include "freertos/task.h"
-#include "app_request_https.h"
-#include "common.h"
-#include "hal/gpio_types.h"
 #include "nvs_flash.h"
-#include "app_wifi.h"
-#include "esp_log.h"
 #include "driver_sleep_mode.h"
-#include "app_handle_query.h"
+#include "app_handle_wifi_mode_sta.h"
 #include "common_nvs.h"
-
-#include "app_get_realtime.h"
+bool flag_reset = true;
 void app_main(void)
 {
-    init_gpio();
+    /* init_gpio_into_setup();
+    init_gpio_device();
+    // check neu co du lieu thi se cau hinh hoac de xem da nhe hihi
     init_gpio_wakeup();
+   */
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
     {
@@ -27,9 +20,14 @@ void app_main(void)
     }
 
     ESP_ERROR_CHECK(ret);
-    init_info_last_id_payload();
+    if (flag_reset)
+    {
+        init_ap_mode();
+    }
+    //   init_info_last_id_payload();
     // init_info_wifi();
-
-    init_wifi();
+    get_info_last_wifi(NULL, NULL);
+    /*init_wifi();
+     */
 }
 

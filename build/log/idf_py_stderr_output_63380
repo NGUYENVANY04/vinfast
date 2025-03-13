@@ -1,0 +1,38 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892cd: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090581: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008e028: block_next at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:94
+ (inlined by) block_link_next at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:101
+ (inlined by) block_mark_as_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:109
+ (inlined by) tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1121
+0x4008deb0: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x400822c2: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x400905b1: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400f936d: esp_http_client_prepare at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:583
+0x400fa34a: esp_http_client_perform at /home/ynghia/esp/esp-idf/components/esp_http_client/esp_http_client.c:1227
+0x400d7f45: init_https at /home/ynghia/CODE/IDF/vinfast/build/../components/app_request_https/app_request_https.c:132 (discriminator 1)
+0x400d7dd7: init_time at /home/ynghia/CODE/IDF/vinfast/build/../components/app_get_realtime/app_get_realtime.c:42
+0x400d7ab4: event_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/app_wifi/app_wifi.c:55
+0x4016d43d: handler_execute at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:137
+0x4016cf97: esp_event_loop_run at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:601 (discriminator 3)
+0x4016d04d: esp_event_loop_run_task at /home/ynghia/esp/esp-idf/components/esp_event/esp_event.c:107 (discriminator 15)
+0x4008bd29: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

@@ -1,0 +1,207 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=253d8h (152536) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00035400 vaddr=3ffb0000 size=03ccch ( 15564) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=000390d4 vaddr=40080000 size=06f44h ( 28484) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0524h (656676) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e054c vaddr=40086f44 size=0f218h ( 61976) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu up.[0m
+[0;32mI (467) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (485) cpu_start: Pro cpu start user code[0m
+[0;32mI (485) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (485) cpu_start: Application information:[0m
+[0;32mI (490) cpu_start: Project name:     vinfast[0m
+[0;32mI (495) cpu_start: App version:      9ae3b86-dirty[0m
+[0;32mI (500) cpu_start: Compile time:     Mar  7 2025 20:20:20[0m
+[0;32mI (506) cpu_start: ELF file SHA256:  7291e514cb9e170d...[0m
+[0;32mI (512) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFB83B0 len 00027C50 (159 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 4009615C len 00009EA4 (39 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (576) spi_flash: flash io: dio[0m
+[0;33mW (580) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (594) app_start: Starting scheduler on CPU0[0m
+[0;32mI (599) app_start: Starting scheduler on CPU1[0m
+[0;32mI (599) main_task: Started on CPU0[0m
+[0;32mI (609) main_task: Calling app_main()[0m
+[0;32mI (609) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+Done
+[0;32mI (669) wifi:wifi driver task: 3ffc3af4, prio:23, stack:6656, core=0[0m
+[0;32mI (679) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (689) wifi:wifi certification version: v7.0[0m
+[0;32mI (689) wifi:config NVS flash: enabled[0m
+[0;32mI (689) wifi:config nano formating: disabled[0m
+[0;32mI (689) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (689) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (699) wifi:Init management short buffer num: 32[0m
+[0;32mI (699) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (709) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (709) wifi:Init static rx buffer num: 10[0m
+[0;32mI (709) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (719) wifi_init: rx ba win: 6[0m
+[0;32mI (719) wifi_init: tcpip mbox: 32[0m
+[0;32mI (729) wifi_init: udp mbox: 6[0m
+[0;32mI (729) wifi_init: tcp mbox: 6[0m
+[0;32mI (729) wifi_init: tcp tx win: 5760[0m
+[0;32mI (739) wifi_init: tcp rx win: 5760[0m
+[0;32mI (739) wifi_init: tcp mss: 1440[0m
+[0;32mI (749) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (749) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (759) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (839) wifi:mode : sta (58:bf:25:34:32:8c)[0m
+[0;32mI (839) wifi:enable tsf[0m
+[0;32mI (839) wifi station: wifi_init_sta finished.[0m
+[0;32mI (859) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1[0m
+[0;32mI (859) wifi:state: init -> auth (b0)[0m
+[0;32mI (869) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1869) wifi:state: assoc -> init (2700)[0m
+[0;32mI (1879) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1[0m
+[0;32mI (1879) wifi station: retry to connect to the AP[0m
+[0;32mI (1879) wifi station: connect to the AP fail[0m
+[0;32mI (4289) wifi station: retry to connect to the AP[0m
+[0;32mI (4289) wifi station: connect to the AP fail[0m
+[0;32mI (4339) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1[0m
+[0;32mI (4339) wifi:state: init -> auth (b0)[0m
+[0;32mI (4359) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4369) wifi:state: assoc -> run (10)[0m
+[0;32mI (5509) wifi:connected with P401, aid = 4, channel 5, BW20, bssid = cc:71:90:b3:51:30[0m
+[0;32mI (5509) wifi:security: WPA2-PSK, phy: bgn, rssi: -75[0m
+[0;32mI (5519) wifi:pm start, type: 1[0m
+
+[0;32mI (5519) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5569) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (7289) wifi:<ba-add>idx:0 (ifx:0, cc:71:90:b3:51:30), tid:0, ssn:4, winSize:64[0m
+[0;32mI (8029) esp_netif_handlers: sta ip: 192.168.1.24, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8729) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-03-07+21:25:59[0m
+[0;32mI (15119) HTTPS: HTTP_EVENT_ON_DATA, len=44 data= {"status":200,"error":null,"messages":{"succ[0m
+[0;32mI (15119) HTTPS: HTTP_EVENT_ON_DATA, len=29 data= ess":true},"transactions":[]}
+0
+
+: Fri, 07 Mar 2025 14:26:05 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: ap_s=cr1n3bc5lj4vl31k5kv1glgig09llaor; expires=Fri, 14 Mar 2025 14:26:05 GMT; Max-Age=604800; path=/; HttpOnly; SameSite=Lax
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Cache-control: no-store, max-age=0, no-cache
+
+49
+{"status":200,"error":null,"messages":{"succ[0m
+[0;32mI (15169) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (20329) HTTPS: HTTP_EVENT_ON_DATA, len=44 data= {"status":200,"error":null,"messages":{"succ[0m
+[0;32mI (20329) HTTPS: HTTP_EVENT_ON_DATA, len=29 data= ess":true},"transactions":[]}
+0
+
+: Fri, 07 Mar 2025 14:26:10 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: ap_s=7rhviicpe7hbqma9jkdrrs3csp0vuqu7; expires=Fri, 14 Mar 2025 14:26:10 GMT; Max-Age=604800; path=/; HttpOnly; SameSite=Lax
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Cache-control: no-store, max-age=0, no-cache
+
+49
+{"status":200,"error":null,"messages":{"succ[0m
+[0;32mI (20379) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;31mE (25549) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25549) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25559) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25569) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25569) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25579) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25589) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (25599) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25609) HTTPS: HTTP_EVENT_ON_DATA, len=44 data= {"status":200,"error":null,"messages":{"succ[0m
+[0;31mE (25619) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25619) HTTPS: HTTP_EVENT_ON_DATA, len=29 data= ess":true},"transactions":[]}
+0
+
+: Fri, 07 Mar 2025 14:26:16 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: ap_s=soav78ng3jnnumnqm5c2rbl53e2h0qlh; expires=Fri, 14 Mar 2025 14:26:16 GMT; Max-Age=604800; path=/; HttpOnly; SameSite=Lax
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Cache-control: no-store, max-age=0, no-cache
+
+49
+{"status":200,"error":null,"messages":{"succ[0m
+[0;31mE (25679) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (25679) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;31mE (25689) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30699) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30789) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30789) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30799) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30809) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30809) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30819) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30829) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30839) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30849) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (30849) HTTP_CLIENT: Failed to post https_ota event: 3, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (30859) HTTPS: HTTP_EVENT_ON_DATA, len=44 data= {"status":200,"error":null,"messages":{"succ[0m
+[0;31mE (30869) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (30879) HTTPS: HTTP_EVENT_ON_DATA, len=29 data= ess":true},"transactions":[]}
+0
+
+: Fri, 07 Mar 2025 14:26:21 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: ap_s=3t3ci3gijr00slnqespp0i7a8lm9rf6u; expires=Fri, 14 Mar 2025 14:26:21 GMT; Max-Age=604800; path=/; HttpOnly; SameSite=Lax
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Cache-control: no-store, max-age=0, no-cache
+
+49
+{"status":200,"error":null,"messages":{"succ[0m
+[0;31mE (30929) HTTP_CLIENT: Failed to post https_ota event: 4, error: ESP_ERR_TIMEOUT[0m
+[0;32mI (30939) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;31mE (30939) HTTP_CLIENT: Failed to post https_ota event: 5, error: ESP_ERR_TIMEOUT[0m
+[0;31mE (35949) HTTP_CLIENT: Failed to post https_ota event: 2, error: ESP_ERR_TIMEOUT[0m
+[0;33mW (44959) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (58969) HTTP_CLIENT: Connection timed out before data was ready![0m
