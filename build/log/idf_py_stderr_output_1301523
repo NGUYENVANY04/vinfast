@@ -1,0 +1,38 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008151c: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008db03: uxListRemove at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:195
+[0m
+[0;33m--- 0x4008db00: uxListRemove at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:192
+0x4008c044: vTaskDelete at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1439 (discriminator 4)
+0x400d6988: task_check_setup at /home/ynghia/CODE/IDF/vinfast/build/../main/main.c:23
+0x4008cf51: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008151c: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008db03: uxListRemove at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:195
+[0m
+[0;33m--- 0x4008db00: uxListRemove at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:192
+0x4008c044: vTaskDelete at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1439 (discriminator 4)
+0x400d6988: task_check_setup at /home/ynghia/CODE/IDF/vinfast/build/../main/main.c:23
+0x4008cf51: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008151c: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008db03: uxListRemove at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:195
+[0m
+[0;33m--- 0x4008db00: uxListRemove at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:192
+0x4008c044: vTaskDelete at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1439 (discriminator 4)
+0x400d6988: task_check_setup at /home/ynghia/CODE/IDF/vinfast/build/../main/main.c:23
+0x4008cf51: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

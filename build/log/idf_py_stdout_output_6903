@@ -1,0 +1,76 @@
+[1/5] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xedba0 bytes. Smallest app partition is 0x100000 bytes. 0x12460 bytes (7%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/3] cd /home/ynghia/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ynghia/esp/esp-idf -D "SERIAL_TOOL=/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ynghia/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ynghia/CODE/IDF/vinfast/build -P /home/ynghia/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 vinfast.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:64:c9:86:0a:10
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fdfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26736 bytes to 16751...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007699... (100 %)
+Wrote 26736 bytes (16751 compressed) at 0x00001000 in 0.8 seconds (effective 264.4 kbit/s)...
+Hash of data verified.
+Compressed 973728 bytes to 622446...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c550... (5 %)
+Writing at 0x00027098... (7 %)
+Writing at 0x0002bdba... (10 %)
+Writing at 0x00034316... (13 %)
+Writing at 0x0003edaf... (15 %)
+Writing at 0x00044a67... (18 %)
+Writing at 0x0004a336... (21 %)
+Writing at 0x00050143... (23 %)
+Writing at 0x000556ec... (26 %)
+Writing at 0x0005ae99... (28 %)
+Writing at 0x000607b6... (31 %)
+Writing at 0x00066139... (34 %)
+Writing at 0x0006bc6c... (36 %)
+Writing at 0x000717a4... (39 %)
+Writing at 0x000770b1... (42 %)
+Writing at 0x0007d645... (44 %)
+Writing at 0x00082ea5... (47 %)
+Writing at 0x00088bef... (50 %)
+Writing at 0x0008e173... (52 %)
+Writing at 0x00093389... (55 %)
+Writing at 0x000988f5... (57 %)
+Writing at 0x0009db4d... (60 %)
+Writing at 0x000a321f... (63 %)
+Writing at 0x000a89b8... (65 %)
+Writing at 0x000ae382... (68 %)
+Writing at 0x000b3bb1... (71 %)
+Writing at 0x000b93e5... (73 %)
+Writing at 0x000bef12... (76 %)
+Writing at 0x000c5070... (78 %)
+Writing at 0x000ca9e0... (81 %)
+Writing at 0x000d0b93... (84 %)
+Writing at 0x000d8b85... (86 %)
+Writing at 0x000e1519... (89 %)
+Writing at 0x000e7300... (92 %)
+Writing at 0x000ed0ca... (94 %)
+Writing at 0x000f2dc0... (97 %)
+Writing at 0x000f850c... (100 %)
+Wrote 973728 bytes (622446 compressed) at 0x00010000 in 15.3 seconds (effective 509.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 493.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -19,31 +19,41 @@ static void obtain_time(void);
 void init_time(void)
 {
     char strftime_buf[64];
-
+    char *timelast = NULL;
     time_t now;
     struct tm timeinfo;
     time(&now);
     localtime_r(&now, &timeinfo);
-    // Is time set? If not, tm_year will be (1970 - 1900).
     if (timeinfo.tm_year < (2016 - 1900))
     {
         obtain_time();
-        // update 'now' variable with current time
         time(&now);
     }
-    // Set timezone to China Standard Time
     setenv("TZ", "GMT-7", 1);
     tzset();
-    // int status = sntp_get_sync_status();
-    // ESP_LOGW("STATUS", "%d", status);
     localtime_r(&now, &timeinfo);
     strftime(strftime_buf, sizeof(strftime_buf), "%Y-%m-%d+%H:%M:%S", &timeinfo);
-    // set_last_time_payload(strftime_buf);
-
-    init_https(strftime_buf);
-    ESP_LOGI(TAG, "The current date/time in Viet Nam is: %s", strftime_buf);
+    if (strftime_buf[0] != '1')
+    {
+        ESP_LOGI(TAG, "The current date/time in Viet Nam is: %s", strftime_buf);
+        init_https(strftime_buf);
+    }
+    else
+    {
+        ESP_LOGI(TAG, "The current date/time in default is: %s", strftime_buf);
+        get_last_time_payload(&timelast);
+        ESP_LOGI(TAG, "The last date/time request is: %s", timelast);
+        if (timelast == NULL)
+        {
+            ESP_LOGE("TIME Error", "TIME Error");
+            // Handler
+        }
+        else
+        {
+            init_https(timelast);
+        }
+    }
 }
-
 static void obtain_time(void)
 {
 
@@ -70,7 +80,7 @@ char *handle_time(char *realtime)
     int year, month, day, hour, minute, second;
     sscanf(realtime, "%4d-%2d-%2d+%2d:%2d:%2d", &year, &month, &day, &hour, &minute, &second);
 
-    // Trừ đi 5 phút
+    // Trừ đi 15 phút
     minute -= 15;
     if (minute < 0)
     {

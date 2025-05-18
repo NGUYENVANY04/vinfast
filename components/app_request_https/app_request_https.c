@@ -12,16 +12,17 @@
 #include "app_handle_query.h"
 #include "string.h"
 #include "common_nvs.h"
-
+#include "driver_sleep_mode.h"
 #include "app_get_realtime.h"
 #define MIN(index_1, index_2) (index_1 < index_2 ? index_1 : index_2)
 #define HTTP_RECEIVE_BUFFER_SIZE 1024
 #define CONFIG_CALE_BEARER_TOKEN "IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7"
 #define MAX_HTTP_OUTPUT_BUFFER 2048
-char *output_buffer; // Buffer to store response of http request from event handler
+
+const char *TAG = "HTTPS";
+char *output_buffer = NULL; // Buffer to store response of http request from event handler
 bool flag = false;
 static int output_len; // Stores number of bytes read
-const char *TAG = "HTTPS";
 esp_err_t _http_event_handler(esp_http_client_event_t *evt)
 {
 
@@ -29,6 +30,7 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
     {
     case HTTP_EVENT_ERROR:
         ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
+        init_gpio_wakeup();
         break;
     case HTTP_EVENT_ON_CONNECTED:
         ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
@@ -60,7 +62,6 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
                 free(output_buffer);
                 output_buffer = NULL;
                 output_len = 0;
-                return ESP_FAIL;
             }
         }
         break;
@@ -69,9 +70,9 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         ESP_LOGI(TAG, "HTTP_EVENT_ON_FINISH");
         if (output_buffer != NULL)
         {
-            handler_json_query(output_buffer, "trusac1");
+            handler_json_query(output_buffer, "TRUSAC1");
             ESP_LOGI("HTTPS", "%s", output_buffer);
-            // hau is key in response
+            // TRUSAC1 is key in response
         }
         output_len = 0;
         flag = false;
@@ -98,14 +99,13 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
     }
     return ESP_OK;
 }
-// void parse_json() { printf("Data get =%s", buffer); }
 void init_https(char *time)
 {
 
     char buffer[87];
     sprintf(buffer, "%s%s", "https://my.sepay.vn/userapi/transactions/list?transaction_date_min=",
             handle_time(time));
-    ESP_LOGI("test", "%s", buffer);
+    ESP_LOGW("Test", "%s", buffer);
 
     esp_http_client_config_t config = {
         .url = buffer,
@@ -116,12 +116,9 @@ void init_https(char *time)
     };
 
     esp_http_client_handle_t client = esp_http_client_init(&config);
-
-    //  Bearer Token
     esp_http_client_set_header(
         client, "Authorization",
         "Bearer IGFVJTEYH2IJFYZJLO3STQ901Q4UCTXDPBU2SQD9NYZVGMXLXO1NCZDYUJSP4IK7");
-
     esp_http_client_perform(client);
     esp_http_client_cleanup(client);
 }

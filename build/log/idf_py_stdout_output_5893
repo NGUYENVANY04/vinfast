@@ -1,0 +1,58 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/13] Building C object esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj
+FAILED: esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj 
+/home/ynghia/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.4-52-g978d574e5e-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I../components/common_nvs/include -I/home/ynghia/esp/esp-idf/components/newlib/platform_include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/ynghia/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/ynghia/esp/esp-idf/components/heap/include -I/home/ynghia/esp/esp-idf/components/log/include -I/home/ynghia/esp/esp-idf/components/soc/include -I/home/ynghia/esp/esp-idf/components/soc/esp32 -I/home/ynghia/esp/esp-idf/components/soc/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/include -I/home/ynghia/esp/esp-idf/components/hal/platform_port/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include/esp32 -I/home/ynghia/esp/esp-idf/components/esp_rom/esp32 -I/home/ynghia/esp/esp-idf/components/esp_common/include -I/home/ynghia/esp/esp-idf/components/esp_system/include -I/home/ynghia/esp/esp-idf/components/esp_system/port/soc -I/home/ynghia/esp/esp-idf/components/esp_system/port/include/private -I/home/ynghia/esp/esp-idf/components/xtensa/include -I/home/ynghia/esp/esp-idf/components/xtensa/esp32/include -I/home/ynghia/esp/esp-idf/components/lwip/include -I/home/ynghia/esp/esp-idf/components/lwip/include/apps -I/home/ynghia/esp/esp-idf/components/lwip/include/apps/sntp -I/home/ynghia/esp/esp-idf/components/lwip/lwip/src/include -I/home/ynghia/esp/esp-idf/components/lwip/port/include -I/home/ynghia/esp/esp-idf/components/lwip/port/freertos/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/ynghia/esp/esp-idf/components/nvs_flash/include -I/home/ynghia/esp/esp-idf/components/esp_partition/include -I/home/ynghia/esp/esp-idf/components/spi_flash/include -mlongcalls -Wno-frame-address    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/ynghia/CODE/IDF/vinfast=. -fmacro-prefix-map=/home/ynghia/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj -MF esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj.d -o esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj   -c ../components/common_nvs/common_nvs.c
+../components/common_nvs/common_nvs.c: In function 'init_info_wifi':
+../components/common_nvs/common_nvs.c:23:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   23 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:22:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   22 |     esp_err_t err_pass = nvs_set_str(wifi, "PASS", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:20:15: warning: unused variable 'err_open_wifi' [-Wunused-variable]
+   20 |     esp_err_t err_open_wifi = nvs_open("CONFIG", NVS_READWRITE, &config);
+      |               ^~~~~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'init_info_last_id_payload':
+../components/common_nvs/common_nvs.c:30:15: warning: unused variable 'err_open_id' [-Wunused-variable]
+   30 |     esp_err_t err_open_id = nvs_open("ID", NVS_READWRITE, &id);
+      |               ^~~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_last_id_payload':
+../components/common_nvs/common_nvs.c:40:15: warning: unused variable 'err_id' [-Wunused-variable]
+   40 |     esp_err_t err_id = nvs_get_u32(id, "ID_LAST", &last_id);
+      |               ^~~~~~
+../components/common_nvs/common_nvs.c:39:15: warning: unused variable 'err_open' [-Wunused-variable]
+   39 |     esp_err_t err_open = nvs_open("ID", NVS_READONLY, &id);
+      |               ^~~~~~~~
+In file included from /home/ynghia/esp/esp-idf/components/nvs_flash/include/nvs.h:13,
+                 from ../components/common_nvs/include/common_nvs.h:3,
+                 from ../components/common_nvs/common_nvs.c:8:
+../components/common_nvs/common_nvs.c: In function 'set_last_time_payload':
+../components/common_nvs/common_nvs.c:47:54: error: 'time_hanlde' undeclared (first use in this function); did you mean 'time_handler'?
+   47 |     ESP_ERROR_CHECK(nvs_open("TIME", NVS_READWRITE, &time_hanlde));
+      |                                                      ^~~~~~~~~~~
+/home/ynghia/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+../components/common_nvs/common_nvs.c:47:54: note: each undeclared identifier is reported only once for each function it appears in
+   47 |     ESP_ERROR_CHECK(nvs_open("TIME", NVS_READWRITE, &time_hanlde));
+      |                                                      ^~~~~~~~~~~
+/home/ynghia/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+../components/common_nvs/common_nvs.c: In function 'get_last_time_payload':
+../components/common_nvs/common_nvs.c:57:60: error: 'time_last' undeclared (first use in this function); did you mean 'timelast'?
+   57 |     ESP_ERROR_CHECK(nvs_get_str(time_handler, "TIME_LAST", time_last, &length_time));
+      |                                                            ^~~~~~~~~
+/home/ynghia/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+../components/common_nvs/common_nvs.c: In function 'save_wifi':
+../components/common_nvs/common_nvs.c:83:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   83 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", ssid);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:82:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   82 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", pass);
+      |               ^~~~~~~~
+ninja: build stopped: subcommand failed.

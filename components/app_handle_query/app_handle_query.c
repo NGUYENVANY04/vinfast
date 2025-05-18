@@ -12,6 +12,7 @@
 #include "driver_enable_output.h"
 #include "app_request_https.h"
 #include "common_nvs.h"
+#include "driver_sleep_mode.h"
 void handler_json_query(char *buffer_input, char *charger_id)
 {
     uint32_t last_transaction_id = get_last_id_payload();
@@ -71,11 +72,11 @@ void handler_json_query(char *buffer_input, char *charger_id)
                 printf("Thời gian thanh toán: %s\n", time_pay->valuestring);
                 found = 1;
                 // last_transaction_id = transaction_id; // update new id
-                enable_output();
+                enable_output(amount_in->valueint);
                 set_last_id_payload(transaction_id);
                 set_last_time_payload(time_pay->valuestring);
                 ESP_LOGW("HTTP", "Sleep mode start");
-                esp_deep_sleep_start();
+                init_gpio_wakeup();
                 break; // get ID the first and break
             }
         }
@@ -85,10 +86,11 @@ void handler_json_query(char *buffer_input, char *charger_id)
     buffer_input = NULL;
     if (!found)
     {
-        printf("Không có giao dịch mới phù hợp.\n");
-        printf("Tiến hành kiểm tra lại hoặc sạc thủ công .\n");
-        printf("Hệ thống sleep sau 5p .\n");
+        ESP_LOGW("HTTP", "Không có giao dịch mới phù hợp.\n");
+        ESP_LOGW("HTTP", "Tiến hành kiểm tra lại hoặc sạc thủ công .\n");
+        ESP_LOGW("HTTP", "Hệ thống sleep sau 5p .\n");
+
         vTaskDelay(2000);
-        esp_deep_sleep_start();
+        init_gpio_wakeup();
     }
 }

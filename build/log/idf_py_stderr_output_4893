@@ -1,0 +1,38 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400819f6: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x400892a5: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090559: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008e536: remove_free_block at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:330
+ (inlined by) block_locate_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1005
+0x4008deda: multi_heap_malloc_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:207
+0x400821a1: heap_caps_malloc_base at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:176
+0x400821f9: heap_caps_malloc at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:197
+0x4008222e: heap_caps_malloc_default at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:223
+0x40090569: malloc at /home/ynghia/esp/esp-idf/components/newlib/heap.c:24
+0x40112e30: mem_malloc at /home/ynghia/esp/esp-idf/components/lwip/lwip/src/core/mem.c:209
+0x4012559a: esp_pbuf_allocate at /home/ynghia/esp/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c:52
+0x401254f2: wlanif_input at /home/ynghia/esp/esp-idf/components/esp_netif/lwip/netif/wlanif.c:151
+0x40152fe9: esp_netif_receive at /home/ynghia/esp/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1258
+0x4015900d: wifi_ap_receive at /home/ynghia/esp/esp-idf/components/esp_wifi/src/wifi_netif.c:45
+0x400ed651: hostap_deliver_data at ??:?
+0x400ef77e: hostap_input at ??:?
+0x4008f857: ampdu_dispatch at ??:?
+0x4008f8e1: ampdu_dispatch_as_many_as_possible at ??:?
+0x4008fb71: ieee80211_ampdu_reorder at ??:?
+0x400ef618: hostap_input at ??:?
+0x400ed7d7: ap_rx_cb at ??:?
+0x40094369: ppRxPkt at ??:?
+0x40091f44: ppTask at ??:?
+0x4008bd01: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081390: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

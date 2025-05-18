@@ -1,0 +1,302 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May  7 2025 11:13:25[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28e18h (167448) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038e40 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038e50 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cb44 vaddr=40080000 size=034d4h ( 13524) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9b84h (695172) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9bac vaddr=400834d4 size=13ed4h ( 81620) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fda88 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (518) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (533) cpu_start: Compile time:     May  7 2025 11:13:14[0m
+[0;32mI (539) cpu_start: ELF file SHA256:  158fb3933c128dfe...[0m
+[0;32mI (545) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (609) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (672) NVS: GET INFO CONFIG[0m
+[0;31mE (672) NVS: Failed to open NVS[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400014fd  PS      : 0x00060530  A0      : 0x801655d6  A1      : 0x3ffba340  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3ffba300  
+A10     : 0x3ffba320  A11     : 0x00060123  A12     : 0x00060120  A13     : 0x0000000c  
+A14     : 0x3ffba5e4  A15     : 0x3ffbb8c0  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400014fa:0x3ffba340 0x401655d3:0x3ffba350 0x4015b01d:0x3ffba670 0x400d8150:0x3ffba6c0 0x40177a0f:0x3ffba700 0x4008cf79:0x3ffba730
+
+
+
+
+ELF file SHA256: 158fb3933c128dfe
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May  7 2025 11:13:25[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28e18h (167448) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038e40 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038e50 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cb44 vaddr=40080000 size=034d4h ( 13524) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9b84h (695172) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9bac vaddr=400834d4 size=13ed4h ( 81620) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fda88 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (487) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (518) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (533) cpu_start: Compile time:     May  7 2025 11:13:14[0m
+[0;32mI (539) cpu_start: ELF file SHA256:  158fb3933c128dfe...[0m
+[0;32mI (545) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (610) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (672) NVS: GET INFO CONFIG[0m
+[0;31mE (672) NVS: Failed to open NVS[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400014fd  PS      : 0x00060530  A0      : 0x801655d6  A1      : 0x3ffba340  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3ffba300  
+A10     : 0x3ffba320  A11     : 0x00060123  A12     : 0x00060120  A13     : 0x0000000c  
+A14     : 0x3ffba5e4  A15     : 0x3ffbb8c0  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400014fa:0x3ffba340 0x401655d3:0x3ffba350 0x4015b01d:0x3ffba670 0x400d8150:0x3ffba6c0 0x40177a0f:0x3ffba700 0x4008cf79:0x3ffba730
+
+
+
+
+ELF file SHA256: 158fb3933c128dfe
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May  7 2025 11:13:25[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28e18h (167448) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038e40 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038e50 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cb44 vaddr=40080000 size=034d4h ( 13524) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9b84h (695172) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9bac vaddr=400834d4 size=13ed4h ( 81620) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fda88 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (487) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (518) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (533) cpu_start: Compile time:     May  7 2025 11:13:14[0m
+[0;32mI (539) cpu_start: ELF file SHA256:  158fb3933c128dfe...[0m
+[0;32mI (545) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (610) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (672) NVS: GET INFO CONFIG[0m
+[0;31mE (672) NVS: Failed to open NVS[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400014fd  PS      : 0x00060530  A0      : 0x801655d6  A1      : 0x3ffba340  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3ffba300  
+A10     : 0x3ffba320  A11     : 0x00060123  A12     : 0x00060120  A13     : 0x0000000c  
+A14     : 0x3ffba5e4  A15     : 0x3ffbb8c0  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400014fa:0x3ffba340 0x401655d3:0x3ffba350 0x4015b01d:0x3ffba670 0x400d8150:0x3ffba6c0 0x40177a0f:0x3ffba700 0x4008cf79:0x3ffba730
+
+
+
+
+ELF file SHA256: 158fb3933c128dfe
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May  7 2025 11:13:25[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28e18h (167448) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038e40 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038e50 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cb44 vaddr=40080000 size=034d4h ( 13524) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9b84h (695172) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9bac vaddr=400834d4 size=13ed4h ( 81620) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fda88 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (487) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m

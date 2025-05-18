@@ -1,0 +1,501 @@
+0m
+�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28f78h (167800) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=00038fa0 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038fb0 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=0003cca4 vaddr=40080000 size=03374h ( 13172) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9afch (695036) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9b24 vaddr=40083374 size=14034h ( 81972) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fdb60 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (489) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (501) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (518) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (534) cpu_start: Compile time:     Mar 20 2025 11:37:44[0m
+[0;32mI (540) cpu_start: ELF file SHA256:  55269331e4633908...[0m
+[0;32mI (546) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (607) spi_flash: detected chip: generic[0m
+[0;32mI (610) spi_flash: flash io: dio[0m
+[0;33mW (614) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (628) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (712) NVS: GET INFO CONFIG[0m
+ Log INFO DThinh - 12345678 
+ FLag resetb
+[0;32mI (722) wifi:wifi driver task: 3ffc5734, prio:23, stack:6656, core=0[0m
+[0;32mI (742) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (742) wifi:wifi certification version: v7.0[0m
+[0;32mI (742) wifi:config NVS flash: enabled[0m
+[0;32mI (742) wifi:config nano formating: disabled[0m
+[0;32mI (752) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (752) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (762) wifi:Init management short buffer num: 32[0m
+[0;32mI (762) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (762) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (772) wifi:Init static rx buffer num: 10[0m
+[0;32mI (772) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (782) wifi_init: rx ba win: 6[0m
+[0;32mI (782) wifi_init: tcpip mbox: 32[0m
+[0;32mI (782) wifi_init: udp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp tx win: 5760[0m
+[0;32mI (792) wifi_init: tcp rx win: 5760[0m
+[0;32mI (802) wifi_init: tcp mss: 1440[0m
+[0;32mI (802) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (812) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (822) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (912) wifi:mode : sta (ec:64:c9:86:0a:10)[0m
+[0;32mI (912) wifi:enable tsf[0m
+[0;32mI (912) wifi station: wifi_init_sta finished.[0m
+[0;32mI (932) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6[0m
+[0;32mI (932) wifi:state: init -> auth (b0)[0m
+[0;32mI (942) wifi:state: auth -> assoc (0)[0m
+[0;32mI (952) wifi:state: assoc -> run (10)[0m
+[0;32mI (982) wifi:connected with DThinh, aid = 1, channel 6, BW20, bssid = 9e:8c:4f:d4:7c:d4[0m
+[0;32mI (982) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (992) wifi:pm start, type: 1[0m
+
+[0;32mI (992) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1002) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1532) wifi:<ba-add>idx:0 (ifx:0, 9e:8c:4f:d4:7c:d4), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2012) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (4012) TIME: Waiting for system time to be set... (1/15)[0m
+Thời gian sau khi trừ 5 phút: 2025-04-15+08:29:22
+[0;32mI (4712) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-04-15+08:29:22[0m
+����������������������������������������������������������������
+[0m
+[0;32mI (41852) SET UP: Step :1
+[0m
+[0;32mI (42642) SET UP: Step :2
+[0m
+[0;32mI (42642) SET UP: Admin start config !!![0m
+[0;32mI (42712) setup: GO TO SET UP[0m
+[0;32mI (42722) wifi:state: run -> init (0)[0m
+[0;32mI (42722) wifi:pm stop, total sleep time: 38756056 us / 41728482 us[0m
+
+[0;32mI (42722) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (42722) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:6[0m
+[1;31mE (42732) wifi:NAN WiFi stop[0m
+[0;32mI (42812) wifi:flush txq[0m
+[0;32mI (42812) wifi:stop sw txq[0m
+[0;32mI (42812) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28f78h (167800) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038fa0 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00038fb0 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cca4 vaddr=40080000 size=03374h ( 13172) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9afch (695036) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9b24 vaddr=40083374 size=14034h ( 81972) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fdb60 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (487) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (519) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (534) cpu_start: Compile time:     Mar 20 2025 11:37:44[0m
+[0;32mI (540) cpu_start: ELF file SHA256:  55269331e4633908...[0m
+[0;32mI (546) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (607) spi_flash: detected chip: generic[0m
+[0;32mI (610) spi_flash: flash io: dio[0m
+[0;33mW (614) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (628) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (712) NVS: GET INFO CONFIG[0m
+ Log INFO DThinh - 12345678 
+ FLag resetb
+NVS init info wifi
+[0;32mI (722) wifi:wifi driver task: 3ffc5754, prio:23, stack:6656, core=0[0m
+[0;32mI (742) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (742) wifi:wifi certification version: v7.0[0m
+[0;32mI (742) wifi:config NVS flash: enabled[0m
+[0;32mI (742) wifi:config nano formating: disabled[0m
+[0;32mI (752) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (752) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (762) wifi:Init management short buffer num: 32[0m
+[0;32mI (762) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (762) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (772) wifi:Init static rx buffer num: 10[0m
+[0;32mI (772) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (782) wifi_init: rx ba win: 6[0m
+[0;32mI (782) wifi_init: tcpip mbox: 32[0m
+[0;32mI (782) wifi_init: udp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp tx win: 5760[0m
+[0;32mI (792) wifi_init: tcp rx win: 5760[0m
+[0;32mI (802) wifi_init: tcp mss: 1440[0m
+[0;32mI (802) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (812) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (822) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (912) wifi:mode : softAP (ec:64:c9:86:0a:11)[0m
+[0;32mI (1062) wifi:Total power save buffer number: 16[0m
+[0;32mI (1062) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1062) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1062) example: Starting server on port: '80'[0m
+[0;32mI (1072) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1082) example: Registering URI handlers[0m
+[0;32mI (1082) AP-mode: wifi_init_softap finished. SSID:admin password:123456789 [0m
+[0;32mI (1092) main_task: Returned from app_main()[0m
+[0;32mI (16032) wifi:new:<6,1>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6[0m
+[0;32mI (16032) wifi:station: 28:c6:3f:4f:29:b4 join, AID=1, bgn, 40U[0m
+[0;32mI (16062) AP-mode: station  28:c6:3f:4f:29:b4 join, AID=1[0m
+[0;32mI (16162) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16302) wifi:<ba-add>idx:2 (ifx:1, 28:c6:3f:4f:29:b4), tid:0, ssn:15, winSize:64[0m
+[0;32mI (62402) example: =========== RECEIVED DATA ==========[0m
+[0;32mI (62402) example: ssid=DThinh&pass=12345678&cost=5&id=TRUSAC1[0m
+[0;32mI (62402) example: ====================================[0m
+[0;32mI (62412) NVS: SAVE SSID DThinh[0m
+[0;32mI (62412) NVS: SAVE PASS 12345678[0m
+[0;32mI (62422) NVS: SAVE COST 5[0m
+[0;32mI (62432) NVS: SAVE ID TRUSAC1[0m
+[0;32mI (62432) NVS: SAVE Config Flag Is True[0m
+[0;32mI (62432) Tag: Complete[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28f78h (167800) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=00038fa0 vaddr=3ff80063 size=00008h (     8) [0m
+[0;32mI (169) esp_image: segment 2: paddr=00038fb0 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cca4 vaddr=40080000 size=03374h ( 13172) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9afch (695036) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9b24 vaddr=40083374 size=14034h ( 81972) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fdb60 vaddr=400c0000 size=00064h (   100) [0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (518) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (533) cpu_start: Compile time:     Mar 20 2025 11:37:44[0m
+[0;32mI (540) cpu_start: ELF file SHA256:  55269331e4633908...[0m
+[0;32mI (545) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (610) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (712) NVS: GET INFO CONFIG[0m
+ Log INFO DThinh - 12345678 
+ FLag resetb
+[0;32mI (722) wifi:wifi driver task: 3ffc5734, prio:23, stack:6656, core=0[0m
+[0;32mI (742) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (742) wifi:wifi certification version: v7.0[0m
+[0;32mI (742) wifi:config NVS flash: enabled[0m
+[0;32mI (742) wifi:config nano formating: disabled[0m
+[0;32mI (752) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (752) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (762) wifi:Init management short buffer num: 32[0m
+[0;32mI (762) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (762) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (772) wifi:Init static rx buffer num: 10[0m
+[0;32mI (772) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (782) wifi_init: rx ba win: 6[0m
+[0;32mI (782) wifi_init: tcpip mbox: 32[0m
+[0;32mI (782) wifi_init: udp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp mbox: 6[0m
+[0;32mI (792) wifi_init: tcp tx win: 5760[0m
+[0;32mI (792) wifi_init: tcp rx win: 5760[0m
+[0;32mI (802) wifi_init: tcp mss: 1440[0m
+[0;32mI (802) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (812) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (822) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (842) wifi:mode : sta (ec:64:c9:86:0a:10)[0m
+[0;32mI (842) wifi:enable tsf[0m
+[0;32mI (842) wifi station: wifi_init_sta finished.[0m
+[0;32mI (862) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6[0m
+[0;32mI (872) wifi:state: init -> auth (b0)[0m
+[0;32mI (872) wifi:state: auth -> assoc (0)[0m
+[0;32mI (882) wifi:state: assoc -> run (10)[0m
+[0;32mI (942) wifi:connected with DThinh, aid = 1, channel 6, BW20, bssid = 9e:8c:4f:d4:7c:d4[0m
+[0;32mI (942) wifi:security: WPA2-PSK, phy: bgn, rssi: -61[0m
+[0;32mI (952) wifi:pm start, type: 1[0m
+
+[0;32mI (952) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1052) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1962) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+Thời gian sau khi trừ 5 phút: 2025-04-15+08:31:14
+[0;32mI (1962) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-04-15+08:31:14[0m
+[0;32mI (1982) wifi:<ba-add>idx:0 (ifx:0, 9e:8c:4f:d4:7c:d4), tid:0, ssn:2, winSize:64[0m
+[0;32mI (7332) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+[0;32mI (7332) HTTPS: HTTP_EVENT_ON_DATA, len=512 data= cess":true},"transactions":[{"id":"11130127","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-04-15 08:41:00","amount_out":"0.00","amount_in":"5000.00","accumulated":"0.00","transaction_content":"TRUSAC1- Ma GD ACSP/ Fe414107","reference_number":"FT25105730576238","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"11130103","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-04-15 08:41:00","amount_out":"0.00","amount_in":"5000.00",[0m
+[0;32mI (7382) HTTPS: HTTP_EVENT_ON_DATA, len=188 data= "accumulated":"0.00","transaction_content":"HA NGOC QUOC CHUYEN TIEN- Ma GD ACSP/ wB410616","reference_number":"FT25105168144413","code":null,"sub_account":null,"bank_account_id":"7305"}]}
+0
+
+ed":"0.00","transaction_content":"TRUSAC1- Ma GD ACSP/ Fe414107","reference_number":"FT25105730576238","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"11130103","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-04-15 08:41:00","amount_out":"0.00","amount_in":"5000.00",[0m
+[0;32mI (7432) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (7432) NVS: 0[0m
+Giao dich hợp lệ:
+ID: 11130127
+Nội dung: TRUSAC1- Ma GD ACSP/ Fe414107
+Mã tham chiếu: FT25105730576238
+Số tiền: 5000.00
+Thời gian thanh toán: 2025-04-15 08:41:00
+Set ID to nvs 11130127 :Set TIME to nvs 2025-04-15 08:41:00 :[0;33mW (107452) HTTP: Sleep mode start[0m
+[0;32mI (107452) Tag: Complete[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28f78h (167800) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=00038fa0 vaddr=3ff80063 size=00008h (     8) [0m
+[0;32mI (169) esp_image: segment 2: paddr=00038fb0 vaddr=3ffb0000 size=03cech ( 15596) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=0003cca4 vaddr=40080000 size=03374h ( 13172) load[0m
+[0;32mI (188) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a9afch (695036) map[0m
+[0;32mI (442) esp_image: segment 5: paddr=000e9b24 vaddr=40083374 size=14034h ( 81972) load[0m
+[0;32mI (476) esp_image: segment 6: paddr=000fdb60 vaddr=400c0000 size=00064h (   100) [0m
+[0;32mI (488) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (488) boot: Disabling RNG early entropy source...[0m
+[0;32mI (500) cpu_start: Multicore app[0m
+[0;32mI (500) cpu_start: Pro cpu up.[0m
+[0;32mI (500) cpu_start: Starting app cpu, entry point is 0x4008151c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (518) cpu_start: Pro cpu start user code[0m
+[0;32mI (518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (518) cpu_start: Application information:[0m
+[0;32mI (523) cpu_start: Project name:     vinfast[0m
+[0;32mI (528) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (533) cpu_start: Compile time:     Mar 20 2025 11:37:44[0m
+[0;32mI (540) cpu_start: ELF file SHA256:  55269331e4633908...[0m
+[0;32mI (545) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (552) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (557) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (562) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8408 len 00027BF8 (158 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 400973A8 len 00008C58 (35 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (610) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+[0;32mI (642) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (652) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (712) NVS: GET INFO CONFIG[0m
+ Log INFO DThinh - 12345678 
+ FLag resetb
+[0;32mI (732) wifi:wifi driver task: 3ffc5774, prio:23, stack:6656, core=0[0m
+[0;32mI (752) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (752) wifi:wifi certification version: v7.0[0m
+[0;32mI (752) wifi:config NVS flash: enabled[0m
+[0;32mI (752) wifi:config nano formating: disabled[0m
+[0;32mI (762) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (762) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (772) wifi:Init management short buffer num: 32[0m
+[0;32mI (772) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (772) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (782) wifi:Init static rx buffer num: 10[0m
+[0;32mI (782) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (792) wifi_init: rx ba win: 6[0m
+[0;32mI (792) wifi_init: tcpip mbox: 32[0m
+[0;32mI (792) wifi_init: udp mbox: 6[0m
+[0;32mI (802) wifi_init: tcp mbox: 6[0m
+[0;32mI (802) wifi_init: tcp tx win: 5760[0m
+[0;32mI (802) wifi_init: tcp rx win: 5760[0m
+[0;32mI (812) wifi_init: tcp mss: 1440[0m
+[0;32mI (812) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (822) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (832) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (852) wifi:mode : sta (ec:64:c9:86:0a:10)[0m
+[0;32mI (852) wifi:enable tsf[0m
+[0;32mI (852) wifi station: wifi_init_sta finished.[0m
+[0;32mI (3272) wifi station: retry to connect to the AP[0m
+[0;32mI (3272) wifi station: connect to the AP fail[0m
+[0;32mI (5692) wifi station: retry to connect to the AP[0m
+[0;32mI (5692) wifi station: connect to the AP fail[0m
+[0;32mI (8102) wifi station: retry to connect to the AP[0m
+[0;32mI (8102) wifi station: connect to the AP fail[0m
+[0;32mI (10522) wifi station: retry to connect to the AP[0m
+[0;32mI (10522) wifi station: connect to the AP fail[0m
+[0;32mI (12932) wifi station: retry to connect to the AP[0m
+[0;32mI (12932) wifi station: connect to the AP fail[0m
+[0;32mI (15342) wifi station: retry to connect to the AP[0m
+[0;32mI (15352) wifi station: connect to the AP fail[0m
+[0;32mI (15402) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6[0m
+[0;32mI (15412) wifi:state: init -> auth (b0)[0m
+[0;32mI (15432) wifi:state: auth -> assoc (0)[0m
+[0;32mI (15442) wifi:state: assoc -> run (10)[0m
+[0;32mI (15612) wifi:connected with DThinh, aid = 1, channel 6, BW20, bssid = 3a:ba:d3:65:5f:21[0m
+[0;32mI (15612) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (15622) wifi:pm start, type: 1[0m
+
+[0;32mI (15622) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (15712) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (17132) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+Thời gian sau khi trừ 5 phút: 2025-04-15+08:35:45
+[0;32mI (17132) test: https://my.sepay.vn/userapi/transactions/list?transaction_date_min=2025-04-15+08:35:45[0m
+[0;32mI (17182) wifi:<ba-add>idx:0 (ifx:0, 3a:ba:d3:65:5f:21), tid:0, ssn:2, winSize:64[0m
+[0;32mI (20752) HTTPS: HTTP_EVENT_ON_DATA, len=43 data= {"status":200,"error":null,"messages":{"suc[0m
+[0;32mI (20762) HTTPS: HTTP_EVENT_ON_DATA, len=512 data= cess":true},"transactions":[{"id":"11130127","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-04-15 08:41:00","amount_out":"0.00","amount_in":"5000.00","accumulated":"0.00","transaction_content":"TRUSAC1- Ma GD ACSP/ Fe414107","reference_number":"FT25105730576238","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"11130103","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-04-15 08:41:00","amount_out":"0.00","amount_in":"5000.00",[0m
+[0;32mI (20802) HTTPS: HTTP_EVENT_ON_DATA, len=188 data= "accumulated":"0.00","transaction_content":"HA NGOC QUOC CHUYEN TIEN- Ma GD ACSP/ wB410616","reference_number":"FT25105168144413","code":null,"sub_account":null,"bank_account_id":"7305"}]}
+0
+
+ed":"0.00","transaction_content":"TRUSAC1- Ma GD ACSP/ Fe414107","reference_number":"FT25105730576238","code":null,"sub_account":null,"bank_account_id":"7305"},{"id":"11130103","bank_brand_name":"MBBank","account_number":"0364618543","transaction_date":"2025-04-15 08:41:00","amount_out":"0.00","amount_in":"5000.00",[0m
+[0;32mI (20852) HTTPS: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (20862) NVS: 11130127[0m
+[0;33mW (20862) HTTP: Không có giao dịch mới phù hợp.
+[0m
+[0;33mW (20872) HTTP: Tiến hành kiểm tra lại hoặc sạc thủ công .
+[0m
+[0;33mW (20882) HTTP: Hệ thống sleep sau 5p .
+[0m
+[0;32mI (40882) Tag: Complete[0m

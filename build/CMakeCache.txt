@@ -117,6 +117,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build/CMakeFiles/pkgRedirects
+
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
 
@@ -323,6 +326,9 @@ MBEDTLS_USER_CONFIG_FILE:FILEPATH=
 Mbed TLS_BINARY_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build/esp-idf/mbedtls/mbedtls
 
 //Value Computed by CMake
+Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
 Mbed TLS_SOURCE_DIR:STATIC=/home/ynghia/esp/esp-idf/components/mbedtls/mbedtls
 
 //No help, variable specified on the command line.
@@ -344,6 +350,9 @@ USE_STATIC_MBEDTLS_LIBRARY:BOOL=ON
 esp-idf_BINARY_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build/esp-idf
 
 //Value Computed by CMake
+esp-idf_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
 esp-idf_SOURCE_DIR:STATIC=/home/ynghia/esp/esp-idf
 
 //Dependencies for the target
@@ -363,6 +372,9 @@ p256m_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_fr
 
 //Value Computed by CMake
 vinfast_BINARY_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build
+
+//Value Computed by CMake
+vinfast_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 vinfast_SOURCE_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast
@@ -396,9 +408,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/ynghia/CODE/IDF/vinfast/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=16
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=25
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -511,7 +523,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=99
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=100
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -523,7 +535,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.16
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.25
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -574,10 +586,16 @@ HAVE_TIME_T_SIZE:INTERNAL=TRUE
 TIME_T_SIZE:INTERNAL=8
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-//ADVANCED property for variable: _Python3_EXECUTABLE
-_Python3_EXECUTABLE-ADVANCED:INTERNAL=1
+//Compiler reason failure
+_Python3_Compiler_REASON_FAILURE:INTERNAL=
+//Development reason failure
+_Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python
-//ADVANCED property for variable: _Python3_INTERPRETER_SIGNATURE
-_Python3_INTERPRETER_SIGNATURE-ADVANCED:INTERNAL=1
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=800d19f9ad06d77feb4e59a88b05871f
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;8;10;32;;;/usr/lib/python3.8;/usr/lib/python3.8;/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages;/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/lib/python3.8/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=77a62a654e50193b028a109e9f0dd851
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
+//NumPy reason failure
+_Python3_NumPy_REASON_FAILURE:INTERNAL=
 

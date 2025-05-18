@@ -1,0 +1,58 @@
+[1/14] Building C object esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj
+FAILED: esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj 
+/home/ynghia/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1.4-52-g978d574e5e-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I../components/common_nvs/include -I/home/ynghia/esp/esp-idf/components/newlib/platform_include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/include -I/home/ynghia/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc -I/home/ynghia/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/ynghia/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/ynghia/esp/esp-idf/components/heap/include -I/home/ynghia/esp/esp-idf/components/log/include -I/home/ynghia/esp/esp-idf/components/soc/include -I/home/ynghia/esp/esp-idf/components/soc/esp32 -I/home/ynghia/esp/esp-idf/components/soc/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/esp32/include -I/home/ynghia/esp/esp-idf/components/hal/include -I/home/ynghia/esp/esp-idf/components/hal/platform_port/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include -I/home/ynghia/esp/esp-idf/components/esp_rom/include/esp32 -I/home/ynghia/esp/esp-idf/components/esp_rom/esp32 -I/home/ynghia/esp/esp-idf/components/esp_common/include -I/home/ynghia/esp/esp-idf/components/esp_system/include -I/home/ynghia/esp/esp-idf/components/esp_system/port/soc -I/home/ynghia/esp/esp-idf/components/esp_system/port/include/private -I/home/ynghia/esp/esp-idf/components/xtensa/include -I/home/ynghia/esp/esp-idf/components/xtensa/esp32/include -I/home/ynghia/esp/esp-idf/components/lwip/include -I/home/ynghia/esp/esp-idf/components/lwip/include/apps -I/home/ynghia/esp/esp-idf/components/lwip/include/apps/sntp -I/home/ynghia/esp/esp-idf/components/lwip/lwip/src/include -I/home/ynghia/esp/esp-idf/components/lwip/port/include -I/home/ynghia/esp/esp-idf/components/lwip/port/freertos/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/ynghia/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/ynghia/esp/esp-idf/components/nvs_flash/include -I/home/ynghia/esp/esp-idf/components/esp_partition/include -I/home/ynghia/esp/esp-idf/components/spi_flash/include -mlongcalls -Wno-frame-address    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/ynghia/CODE/IDF/vinfast=. -fmacro-prefix-map=/home/ynghia/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj -MF esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj.d -o esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj   -c ../components/common_nvs/common_nvs.c
+../components/common_nvs/common_nvs.c: In function 'init_info_wifi':
+../components/common_nvs/common_nvs.c:20:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   20 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:19:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   19 |     esp_err_t err_pass = nvs_set_str(wifi, "PASS", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:17:15: warning: unused variable 'err_open_wifi' [-Wunused-variable]
+   17 |     esp_err_t err_open_wifi = nvs_open("CONFIG", NVS_READWRITE, &config);
+      |               ^~~~~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'init_info_last_id_payload':
+../components/common_nvs/common_nvs.c:27:15: warning: unused variable 'err_open_id' [-Wunused-variable]
+   27 |     esp_err_t err_open_id = nvs_open("ID", NVS_READWRITE, &id);
+      |               ^~~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_last_id_payload':
+../components/common_nvs/common_nvs.c:37:15: warning: unused variable 'err_id' [-Wunused-variable]
+   37 |     esp_err_t err_id = nvs_get_u32(id, "ID_LAST", &last_id);
+      |               ^~~~~~
+../components/common_nvs/common_nvs.c:36:15: warning: unused variable 'err_open' [-Wunused-variable]
+   36 |     esp_err_t err_open = nvs_open("ID", NVS_READONLY, &id);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'save_wifi':
+../components/common_nvs/common_nvs.c:62:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   62 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", ssid);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:61:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   61 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", pass);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_info_last_wifi':
+../components/common_nvs/common_nvs.c:99:13: error: implicit declaration of function 'strcpy' [-Werror=implicit-function-declaration]
+   99 |             strcpy(*ssid, ssid_bf);
+      |             ^~~~~~
+../components/common_nvs/common_nvs.c:8:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    7 | #include "nvs_flash.h"
+  +++ |+#include <string.h>
+    8 | #include "nvs.h"
+../components/common_nvs/common_nvs.c:99:13: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+   99 |             strcpy(*ssid, ssid_bf);
+      |             ^~~~~~
+../components/common_nvs/common_nvs.c:99:13: note: include '<string.h>' or provide a declaration of 'strcpy'
+../components/common_nvs/common_nvs.c:106:13: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+  106 |             strcpy(*pass, pass_bf);
+      |             ^~~~~~
+../components/common_nvs/common_nvs.c:106:13: note: include '<string.h>' or provide a declaration of 'strcpy'
+cc1: some warnings being treated as errors
+[2/14] Building C object esp-idf/app_handle_query/CMakeFiles/__idf_app_handle_query.dir/app_handle_query.c.obj
+../components/app_handle_query/app_handle_query.c: In function 'handler_json_query':
+../components/app_handle_query/app_handle_query.c:50:16: warning: unused variable 'amount_out' [-Wunused-variable]
+   50 |         cJSON *amount_out = cJSON_GetObjectItem(transaction, "amount_out");
+      |                ^~~~~~~~~~
+[3/14] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[4/12] Building C object esp-idf/app_wifi/CMakeFiles/__idf_app_wifi.dir/app_wifi.c.obj
+ninja: build stopped: subcommand failed.

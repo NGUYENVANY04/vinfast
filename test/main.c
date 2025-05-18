@@ -1,25 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-void handle_result(char *result);
-int main()
+
+void handler_free(char **ptr)
 {
-    char s[] = "ssid=dsf&pass=fs&cost=4&id=fsfs";
-    handle_result(s);
-    handle_result(s);
+    *ptr = malloc(4 * sizeof(char));
+    *ptr = "10";
 }
-void handle_result(char *result)
+
+int main(void)
 {
-    static int a = 1;
-    a++;
-    printf("%d", a);
-    /*    char *token;
-        int i = 0;
-        token = strtok(result, "&");
-        while (token != NULL)
-        {
-            while (token[i++] != '=') { }
-            printf("%s\n", &token[i]);
-            i = 0;
-            token = strtok(NULL, "&");
-        }*/
+    char *str = NULL;
+    printf("%s", str);
+    printf("%p \n", &(*str));
+
+    handler_free(&str);
+    printf("\n%s", str);
+    printf("\n%p", &(*str));
+    return 0;
 }

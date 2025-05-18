@@ -1,0 +1,86 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/10] Building C object esp-idf/admin_menu_congfi/CMakeFiles/__idf_admin_menu_congfi.dir/admin_menu_congfi.c.obj
+../components/admin_menu_congfi/admin_menu_congfi.c:127:18: warning: 'stop_webserver' defined but not used [-Wunused-function]
+  127 | static esp_err_t stop_webserver(httpd_handle_t server)
+      |                  ^~~~~~~~~~~~~~
+[4/10] Linking C static library esp-idf/admin_menu_congfi/libadmin_menu_congfi.a
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable vinfast.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+[9/10] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xc3a40 bytes. Smallest app partition is 0x100000 bytes. 0x3c5c0 bytes (24%) free.
+[9/10] cd /home/ynghia/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ynghia/esp/esp-idf -D "SERIAL_TOOL=/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ynghia/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ynghia/CODE/IDF/vinfast/build -P /home/ynghia/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 vinfast.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.01MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
+Crystal is 40MHz
+MAC: 58:bf:25:34:32:8c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26736 bytes to 16751...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007699... (100 %)
+Wrote 26736 bytes (16751 compressed) at 0x00001000 in 0.9 seconds (effective 237.1 kbit/s)...
+Hash of data verified.
+Compressed 801344 bytes to 516063...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c524... (6 %)
+Writing at 0x00025d55... (9 %)
+Writing at 0x0002ab20... (12 %)
+Writing at 0x00033218... (15 %)
+Writing at 0x0003abc3... (18 %)
+Writing at 0x00040445... (21 %)
+Writing at 0x00045d7c... (25 %)
+Writing at 0x0004b689... (28 %)
+Writing at 0x00051187... (31 %)
+Writing at 0x00056e08... (34 %)
+Writing at 0x0005c2ca... (37 %)
+Writing at 0x0006168b... (40 %)
+Writing at 0x00066ad7... (43 %)
+Writing at 0x0006be0b... (46 %)
+Writing at 0x000714e2... (50 %)
+Writing at 0x00076cb9... (53 %)
+Writing at 0x0007cabc... (56 %)
+Writing at 0x000820ba... (59 %)
+Writing at 0x000876e9... (62 %)
+Writing at 0x0008cee8... (65 %)
+Writing at 0x000927f8... (68 %)
+Writing at 0x00097e4c... (71 %)
+Writing at 0x0009d797... (75 %)
+Writing at 0x000a3af6... (78 %)
+Writing at 0x000a9dc0... (81 %)
+Writing at 0x000af47c... (84 %)
+Writing at 0x000b5e95... (87 %)
+Writing at 0x000bff55... (90 %)
+Writing at 0x000c5a62... (93 %)
+Writing at 0x000cba9c... (96 %)
+Writing at 0x000d0d88... (100 %)
+Wrote 801344 bytes (516063 compressed) at 0x00010000 in 11.7 seconds (effective 546.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 315.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

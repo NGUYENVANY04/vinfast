@@ -1,0 +1,116 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-52-g978d574e5e-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar  4 2025 09:28:40[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v3.1[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23270h (143984) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00033298 vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=000332a8 vaddr=3ffb0000 size=03bech ( 15340) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00036e9c vaddr=40080000 size=0917ch ( 37244) load[0m
+[0;32mI (190) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=8a984h (567684) map[0m
+[0;32mI (395) esp_image: segment 5: paddr=000ca9ac vaddr=4008917c size=0e068h ( 57448) load[0m
+[0;32mI (419) esp_image: segment 6: paddr=000d8a1c vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (431) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (431) boot: Disabling RNG early entropy source...[0m
+[0;32mI (443) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu up.[0m
+[0;32mI (443) cpu_start: Starting app cpu, entry point is 0x40081518[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (461) cpu_start: Pro cpu start user code[0m
+[0;32mI (461) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (461) cpu_start: Application information:[0m
+[0;32mI (466) cpu_start: Project name:     vinfast[0m
+[0;32mI (471) cpu_start: App version:      0105f49-dirty[0m
+[0;32mI (476) cpu_start: Compile time:     Mar 20 2025 11:37:44[0m
+[0;32mI (482) cpu_start: ELF file SHA256:  44d637b7fd08c320...[0m
+[0;32mI (488) cpu_start: ESP-IDF:          v5.1.4-52-g978d574e5e-dirty[0m
+[0;32mI (495) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (499) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (504) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (509) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (516) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFB7CA0 len 00028360 (160 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 400971E4 len 00008E1C (35 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (552) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (570) app_start: Starting scheduler on CPU0[0m
+[0;32mI (574) app_start: Starting scheduler on CPU1[0m
+[0;32mI (574) main_task: Started on CPU0[0m
+[0;32mI (584) main_task: Calling app_main()[0m
+[0;32mI (634) wifi:wifi driver task: 3ffc32fc, prio:23, stack:6656, core=0[0m
+[0;32mI (644) wifi:wifi firmware version: 3ce09e5[0m
+[0;32mI (644) wifi:wifi certification version: v7.0[0m
+[0;32mI (644) wifi:config NVS flash: enabled[0m
+[0;32mI (644) wifi:config nano formating: disabled[0m
+[0;32mI (644) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (654) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (654) wifi:Init management short buffer num: 32[0m
+[0;32mI (664) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (664) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (664) wifi:Init static rx buffer num: 10[0m
+[0;32mI (674) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (674) wifi_init: rx ba win: 6[0m
+[0;32mI (674) wifi_init: tcpip mbox: 32[0m
+[0;32mI (684) wifi_init: udp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp mbox: 6[0m
+[0;32mI (694) wifi_init: tcp tx win: 5760[0m
+[0;32mI (694) wifi_init: tcp rx win: 5760[0m
+[0;32mI (694) wifi_init: tcp mss: 1440[0m
+[0;32mI (704) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (704) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (724) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (804) wifi:mode : softAP (ec:64:c9:86:0a:11)[0m
+[0;32mI (914) wifi:Total power save buffer number: 16[0m
+[0;32mI (914) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (924) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (924) example: Starting server on port: '80'[0m
+[0;32mI (924) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (934) example: Registering URI handlers[0m
+[0;32mI (934) AP-mode: wifi_init_softap finished. SSID:admin password:123456789 [0m
+[0;32mI (944) main_task: Returned from app_main()[0m
+[0;32mI (7504) wifi:new:<6,1>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6[0m
+[0;32mI (7504) wifi:station: 28:c6:3f:4f:29:b4 join, AID=1, bgn, 40U[0m
+[0;32mI (7554) AP-mode: station  28:c6:3f:4f:29:b4 join, AID=1[0m
+[0;32mI (7644) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (7774) wifi:<ba-add>idx:2 (ifx:1, 28:c6:3f:4f:29:b4), tid:0, ssn:19, winSize:64[0m
+[0;33mW (11634) httpd_uri: httpd_uri: Method '1' not allowed for URI '/config'[0m
+[0;33mW (11634) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (24854) example: =========== RECEIVED DATA ==========[0m
+[0;32mI (24854) example: ssid=S%E1%BA%A4&pass=DADA&cost=12&id=122[0m
+[0;32mI (24854) example: ====================================[0m
+[0;32mI (24874) NVS: SAVE SSID S%E1%BA%A4[0m
+[0;32mI (24874) NVS: SAVE PASS DADA[0m
+[0;32mI (24874) NVS: SAVE COST 12
+[0m
+[0;32mI (24874) NVS: SAVE ID 122[0m
+[0;32mI (24874) NVS: SAVE Config Flag :b[0m
+[0;32mI (24884) Tag: Complete[0m
+[0;32mI (40944) wifi:station: 28:c6:3f:4f:29:b4 leave, AID = 1, bss_flags is 8391763, bss:0x3ffb9054[0m
+[0;32mI (40944) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6[0m
+[0;32mI (40944) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (40954) AP-mode: station 28:c6:3f:4f:29:b4 leave, AID=1[0m

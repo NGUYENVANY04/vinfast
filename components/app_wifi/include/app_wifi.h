@@ -16,5 +16,5 @@
  *
  * @return void
  **/
-void init_wifi(void);
+void init_wifi(char *ssid, char *pass);
 #endif

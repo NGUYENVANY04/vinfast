@@ -114,6 +114,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build/bootloader/CMakeFiles/pkgRedirects
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
@@ -257,10 +260,16 @@ SDKCONFIG:UNINITIALIZED=/home/ynghia/CODE/IDF/vinfast/sdkconfig
 bootloader_BINARY_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build/bootloader
 
 //Value Computed by CMake
+bootloader_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
 bootloader_SOURCE_DIR:STATIC=/home/ynghia/esp/esp-idf/components/bootloader/subproject
 
 //Value Computed by CMake
 esp-idf_BINARY_DIR:STATIC=/home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf
+
+//Value Computed by CMake
+esp-idf_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 esp-idf_SOURCE_DIR:STATIC=/home/ynghia/esp/esp-idf
@@ -294,9 +303,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/ynghia/CODE/IDF/vinfast/build/bootloader
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=16
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=25
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -389,7 +398,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.16
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.25
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG

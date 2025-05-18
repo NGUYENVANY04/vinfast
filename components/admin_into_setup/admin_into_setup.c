@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <freertos/FreeRTOS.h>
@@ -7,6 +8,7 @@
 #include "hal/gpio_types.h"
 #include "driver/gpio.h"
 uint32_t last_time = 0;
+bool setup = false;
 void handle_into_setup(void *arg)
 {
     static uint8_t count = 0;
@@ -27,6 +29,7 @@ void handle_into_setup(void *arg)
             if (count == 3)
             {
                 ESP_EARLY_LOGI("SET UP", "Admin start config !!!");
+                setup = true;
                 gpio_isr_handler_remove(GPIO_NUM_0);
             }
         }

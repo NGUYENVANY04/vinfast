@@ -7,12 +7,14 @@
 #include <nvs_flash.h>
 #include <sys/param.h>
 #include <esp_http_server.h>
+#include "esp_err.h"
 #include "esp_event.h"
 #include "http_parser.h"
 #include "nvs.h"
 #include <esp_wifi.h>
 #include <esp_system.h>
 #include "common_nvs.h"
+#include "driver_sleep_mode.h"
 static void handle_result(char *result);
 static const char *TAG = "example";
 const char success_page[] = "<!DOCTYPE HTML><html><head>\
@@ -37,37 +39,37 @@ const char success_page[] = "<!DOCTYPE HTML><html><head>\
                      </div>\
                      </body></html>";
 const char ui_config[] = "<!DOCTYPE HTML><html><head>\
-                     <meta charset=\"UTF-8\">\
-                     <title>Cấu hình hệ thống trạm sạc</title>\
-                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\
-                     <style>\
-                        * { margin: 0; padding: 0; box-sizing: border-box; }\
-                        body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #6e8efb, #a777e3); display: flex; height: 100vh; align-items: center; justify-content: center; }\
-                        .container { width: 100%; max-width: 400px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); text-align: center; animation: fadeIn 1s ease-in-out; }\
-                        @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }\
-                        h1 { color: #333; font-size: 22px; margin-bottom: 20px; }\
-                        label { font-weight: bold; text-align: left; display: block; color: #444; font-size: 14px; margin-top: 10px; }\
-                        input { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; margin-top: 5px; font-size: 16px; transition: 0.3s; }\
-                        input:focus { border-color: #6e8efb; outline: none; box-shadow: 0 0 8px rgba(110, 142, 251, 0.5); }\
-                        button { width: 100%; padding: 12px; border: none; border-radius: 6px; background-color: #6e8efb; color: white; font-size: 18px; cursor: pointer; transition: 0.3s; margin-top: 15px; }\
-                        button:hover { background-color: #5a7de9; box-shadow: 0 4px 10px rgba(90, 125, 233, 0.5); transform: scale(1.05); }\
-                     </style>\
-                     </head><body>\
-                     <div class=\"container\">\
-                     <h1>Cấu hình trạm sạc</h1>\
-                     <form action=\"/config\" method=\"post\">\
-                        <label for=\"ssid\">WiFi SSID:</label>\
-                        <input type=\"text\" id=\"ssid\" name=\"ssid\" required>\
-                        <label for=\"pass\">WiFi Password:</label>\
-                        <input type=\"password\" id=\"pass\" name=\"pass\" required>\
-                        <label for=\"cost\">Chi phí (VNĐ/kWh):</label>\
-                        <input type=\"number\" id=\"cost\" name=\"cost\" required>\
-                        <label for=\"id\">ID Trụ sạc:</label>\
-                        <input type=\"text\" id=\"id\" name=\"id\" required>\
-                        <button type=\"submit\">Lưu cấu hình</button>\
-                     </form>\
-                     </div>\
-                     </body></html>";
+  <meta charset=\"UTF-8\">\
+  <title>Cấu hình hệ thống trạm sạc</title>\
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\
+  <style>\
+    * { margin: 0; padding: 0; box-sizing: border-box; }\
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; height: 100vh; align-items: center; justify-content: center; }\
+    .container { width: 100%; max-width: 420px; background: #fff; padding: 30px 25px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); animation: fadeIn 1s ease-in-out; }\
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }\
+    h1 { color: #333; font-size: 24px; margin-bottom: 25px; }\
+    label { font-weight: 600; display: block; text-align: left; color: #555; font-size: 15px; margin-top: 15px; }\
+    input { width: 100%; padding: 12px 14px; border: 1.5px solid #ccc; border-radius: 8px; margin-top: 8px; font-size: 16px; transition: border-color 0.3s ease, box-shadow 0.3s ease; }\
+    input:focus { border-color: #667eea; outline: none; box-shadow: 0 0 8px rgba(102, 126, 234, 0.4); }\
+    button { width: 100%; padding: 14px; border: none; border-radius: 8px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; font-size: 18px; font-weight: 600; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; margin-top: 25px; }\
+    button:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4); }\
+  </style>\
+  </head><body>\
+  <div class=\"container\">\
+    <h1>Cấu hình trạm sạc</h1>\
+    <form action=\"/config\" method=\"post\">\
+      <label for=\"ssid\">WiFi SSID:</label>\
+      <input type=\"text\" id=\"ssid\" name=\"ssid\" required>\
+      <label for=\"pass\">WiFi Password:</label>\
+      <input type=\"password\" id=\"pass\" name=\"pass\" required>\
+      <label for=\"cost\">Chi phí (VNĐ/kWh):</label>\
+      <input type=\"number\" id=\"cost\" name=\"cost\" required>\
+      <label for=\"id\">ID Trụ sạc:</label>\
+      <input type=\"text\" id=\"id\" name=\"id\" required>\
+      <button type=\"submit\">Lưu cấu hình</button>\
+    </form>\
+  </div>\
+  </body></html>";
 static esp_err_t post_handler(httpd_req_t *req)
 {
     char buf[100];
@@ -89,17 +91,14 @@ static esp_err_t post_handler(httpd_req_t *req)
     ESP_LOGI(TAG, "=========== RECEIVED DATA ==========");
     ESP_LOGI(TAG, "%.*s", ret, buf);
     ESP_LOGI(TAG, "====================================");
-
-    esp_err_t err_open_wifi = nvs_open("CONFIG", NVS_READWRITE, &config);
-    printf("Error (%s) opening NVS handle!\n", esp_err_to_name(err_open_wifi));
-    handle_result(buf);
-    nvs_commit(config);
-    nvs_close(config);
-
-    // End responseG
     httpd_resp_send(req, success_page, HTTPD_RESP_USE_STRLEN);
-    flag_reset = false;
-    esp_restart();
+    esp_err_t err_open_wifi = nvs_open("CONFIG", NVS_READWRITE, &config);
+    handle_result(buf);
+    if (nvs_commit(config) == ESP_OK)
+    {
+        nvs_close(config);
+        init_gpio_wakeup();
+    }
     return ESP_OK;
 }
 esp_err_t get_handler(httpd_req_t *req)
@@ -154,10 +153,12 @@ static void handle_result(char *result)
     while (token != NULL)
     {
         while (token[i++] != '=') { }
-        printf("%s\n", &token[i]);
+        // printf("%s\n", &token[i]);
         save_config(&token[i]);
         i = 0;
         token = strtok(NULL, "&");
     }
+    ESP_ERROR_CHECK(nvs_set_i8(config, "FLAG_CONFIG", true));
+    ESP_LOGI("NVS", "SAVE Config Flag Is True");
 }
 

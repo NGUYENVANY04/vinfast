@@ -1,0 +1,49 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/13] Building C object esp-idf/common_nvs/CMakeFiles/__idf_common_nvs.dir/common_nvs.c.obj
+../components/common_nvs/common_nvs.c: In function 'init_info_wifi':
+../components/common_nvs/common_nvs.c:23:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   23 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:22:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   22 |     esp_err_t err_pass = nvs_set_str(wifi, "PASS", "");
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:20:15: warning: unused variable 'err_open_wifi' [-Wunused-variable]
+   20 |     esp_err_t err_open_wifi = nvs_open("CONFIG", NVS_READWRITE, &config);
+      |               ^~~~~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'init_info_last_id_payload':
+../components/common_nvs/common_nvs.c:30:15: warning: unused variable 'err_open_id' [-Wunused-variable]
+   30 |     esp_err_t err_open_id = nvs_open("ID", NVS_READWRITE, &id);
+      |               ^~~~~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'get_last_id_payload':
+../components/common_nvs/common_nvs.c:40:15: warning: unused variable 'err_id' [-Wunused-variable]
+   40 |     esp_err_t err_id = nvs_get_u32(id, "ID_LAST", &last_id);
+      |               ^~~~~~
+../components/common_nvs/common_nvs.c:39:15: warning: unused variable 'err_open' [-Wunused-variable]
+   39 |     esp_err_t err_open = nvs_open("ID", NVS_READONLY, &id);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c: In function 'save_wifi':
+../components/common_nvs/common_nvs.c:83:15: warning: unused variable 'err_ssid' [-Wunused-variable]
+   83 |     esp_err_t err_ssid = nvs_set_str(wifi, "SSID", ssid);
+      |               ^~~~~~~~
+../components/common_nvs/common_nvs.c:82:15: warning: unused variable 'err_pass' [-Wunused-variable]
+   82 |     esp_err_t err_pass = nvs_set_str(wifi, "PASSWORD", pass);
+      |               ^~~~~~~~
+[3/13] Linking C static library esp-idf/common_nvs/libcommon_nvs.a
+[4/13] Linking C static library esp-idf/admin_menu_congfi/libadmin_menu_congfi.a
+[5/13] Linking C static library esp-idf/app_request_https/libapp_request_https.a
+[6/13] Linking C static library esp-idf/app_handle_query/libapp_handle_query.a
+[7/13] Linking C static library esp-idf/app_get_realtime/libapp_get_realtime.a
+[8/13] Linking C static library esp-idf/app_wifi/libapp_wifi.a
+[9/13] Linking C static library esp-idf/main/libmain.a
+[10/13] Generating ld/sections.ld
+[11/13] Linking CXX executable vinfast.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+[13/13] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xedb10 bytes. Smallest app partition is 0x100000 bytes. 0x124f0 bytes (7%) free.

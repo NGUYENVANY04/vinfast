@@ -1,0 +1,100 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a359: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4009160d: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008f092: tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1120 (discriminator 1)
+0x4008ef3c: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x4008244a: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x4009163d: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400d6a79: handle_result at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:165
+0x400d6b4b: post_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:98
+0x400e1ff9: httpd_uri at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x400e2821: httpd_parse_req at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667 (discriminator 15)
+0x400e28b5: httpd_req_new at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x400e1784: httpd_sess_process at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:423 (discriminator 15)
+0x400e0a98: httpd_process_session at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255 (discriminator 15)
+0x401538e3: httpd_sess_enum at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x400e117a: httpd_server at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x400e11e2: httpd_thread at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327 (discriminator 15)
+0x4008cdb5: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a359: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4009160d: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008f092: tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1120 (discriminator 1)
+0x4008ef3c: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x4008244a: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x4009163d: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400d6a79: handle_result at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:165
+0x400d6b4b: post_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:98
+0x400e1ff9: httpd_uri at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x400e2821: httpd_parse_req at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667 (discriminator 15)
+0x400e28b5: httpd_req_new at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x400e1784: httpd_sess_process at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:423 (discriminator 15)
+0x400e0a98: httpd_process_session at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255 (discriminator 15)
+0x401538e3: httpd_sess_enum at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x400e117a: httpd_server at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x400e11e2: httpd_thread at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327 (discriminator 15)
+0x4008cdb5: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a359: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4009160d: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008f092: tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1120 (discriminator 1)
+0x4008ef3c: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x4008244a: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x4009163d: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400d6a79: handle_result at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:165
+0x400d6b4b: post_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:98
+0x400e1ff9: httpd_uri at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x400e2821: httpd_parse_req at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667 (discriminator 15)
+0x400e28b5: httpd_req_new at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x400e1784: httpd_sess_process at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:423 (discriminator 15)
+0x400e0a98: httpd_process_session at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255 (discriminator 15)
+0x401538e3: httpd_sess_enum at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x400e117a: httpd_server at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x400e11e2: httpd_thread at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327 (discriminator 15)
+0x4008cdb5: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081b7e: panic_abort at /home/ynghia/esp/esp-idf/components/esp_system/panic.c:466
+0x4008a359: esp_system_abort at /home/ynghia/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4009160d: __assert_func at /home/ynghia/esp/esp-idf/components/newlib/assert.c:81
+0x4008f0f9: block_merge_prev at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:469
+ (inlined by) tlsf_free at /home/ynghia/esp/esp-idf/components/heap/tlsf/tlsf.c:1122
+0x4008ef3c: multi_heap_free_impl at /home/ynghia/esp/esp-idf/components/heap/multi_heap.c:231
+0x4008244a: heap_caps_free at /home/ynghia/esp/esp-idf/components/heap/heap_caps.c:388
+0x4009163d: free at /home/ynghia/esp/esp-idf/components/newlib/heap.c:39
+0x400d6a79: handle_result at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:165
+0x400d6b4b: post_handler at /home/ynghia/CODE/IDF/vinfast/build/../components/admin_menu_congfi/admin_menu_congfi.c:98
+0x400e1ff9: httpd_uri at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x400e2821: httpd_parse_req at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667 (discriminator 15)
+0x400e28b5: httpd_req_new at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x400e1784: httpd_sess_process at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:423 (discriminator 15)
+0x400e0a98: httpd_process_session at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255 (discriminator 15)
+0x401538e3: httpd_sess_enum at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x400e117a: httpd_server at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x400e11e2: httpd_thread at /home/ynghia/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327 (discriminator 15)
+0x4008cdb5: vPortTaskWrapper at /home/ynghia/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081518: call_start_cpu1 at /home/ynghia/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

@@ -1,17 +1,13 @@
+#include <stdint.h>
 #include <stdio.h>
 #include "driver_enable_output.h"
 #include "hal/gpio_types.h"
 #include "driver/gpio.h"
 #include <freertos/FreeRTOS.h>
 #include "freertos/task.h"
-void enable_output(void)
+void enable_output(uint8_t money)
 {
-    int t = 5;
-    while (t--)
-    {
-        gpio_set_level(GPIO_NUM_2, 1);
-        vTaskDelay(1000);
-        gpio_set_level(GPIO_NUM_2, 0);
-        vTaskDelay(1000);
-    }
+    gpio_set_level(GPIO_NUM_33, 1);
+    vTaskDelay(pdMS_TO_TICKS(money * 1000));
+    gpio_set_level(GPIO_NUM_33, 0);
 }

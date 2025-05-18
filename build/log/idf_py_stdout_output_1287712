@@ -1,0 +1,82 @@
+[1/11] Building C object esp-idf/driver_sleep_mode/CMakeFiles/__idf_driver_sleep_mode.dir/driver_sleep_mode.c.obj
+[2/11] Performing build step for 'bootloader'
+[1/1] cd /home/ynghia/CODE/IDF/vinfast/build/bootloader/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ynghia/CODE/IDF/vinfast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[3/9] Linking C static library esp-idf/driver_sleep_mode/libdriver_sleep_mode.a
+[4/9] Linking C static library esp-idf/admin_menu_congfi/libadmin_menu_congfi.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable vinfast.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+[8/9] cd /home/ynghia/CODE/IDF/vinfast/build/esp-idf/esptool_py && /home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/ynghia/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ynghia/CODE/IDF/vinfast/build/partition_table/partition-table.bin /home/ynghia/CODE/IDF/vinfast/build/vinfast.bin
+vinfast.bin binary size 0xc8ac0 bytes. Smallest app partition is 0x100000 bytes. 0x37540 bytes (22%) free.
+[8/9] cd /home/ynghia/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ynghia/esp/esp-idf -D "SERIAL_TOOL=/home/ynghia/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/ynghia/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ynghia/CODE/IDF/vinfast/build -P /home/ynghia/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 vinfast.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:64:c9:86:0a:10
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26736 bytes to 16751...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007699... (100 %)
+Wrote 26736 bytes (16751 compressed) at 0x00001000 in 0.8 seconds (effective 271.8 kbit/s)...
+Hash of data verified.
+Compressed 821952 bytes to 528075...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c8b4... (6 %)
+Writing at 0x0002671a... (9 %)
+Writing at 0x0002b188... (12 %)
+Writing at 0x00033389... (15 %)
+Writing at 0x0003b428... (18 %)
+Writing at 0x00040e26... (21 %)
+Writing at 0x000466ce... (24 %)
+Writing at 0x0004c041... (27 %)
+Writing at 0x00051a9c... (30 %)
+Writing at 0x00057897... (33 %)
+Writing at 0x0005cf24... (36 %)
+Writing at 0x0006215c... (39 %)
+Writing at 0x0006770b... (42 %)
+Writing at 0x0006c8c0... (45 %)
+Writing at 0x00072007... (48 %)
+Writing at 0x000776e9... (51 %)
+Writing at 0x0007d37a... (54 %)
+Writing at 0x00082d10... (57 %)
+Writing at 0x0008819e... (60 %)
+Writing at 0x0008d974... (63 %)
+Writing at 0x000933e3... (66 %)
+Writing at 0x000989c9... (69 %)
+Writing at 0x0009e39c... (72 %)
+Writing at 0x000a4608... (75 %)
+Writing at 0x000aa90d... (78 %)
+Writing at 0x000b0150... (81 %)
+Writing at 0x000b5a53... (84 %)
+Writing at 0x000bed8c... (87 %)
+Writing at 0x000c6653... (90 %)
+Writing at 0x000cc6ef... (93 %)
+Writing at 0x000d20bf... (96 %)
+Writing at 0x000d7336... (100 %)
+Wrote 821952 bytes (528075 compressed) at 0x00010000 in 12.9 seconds (effective 508.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 491.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
